@@ -18,26 +18,26 @@ export default function SectionOverview({
 
   return (
     <>
-      <h1 className="p-4 md:p-6 bg-secondary/50 rounded-md text-center">
-        <span className="scroll-m-20 text-center text-4xl font-bold tracking-tight text-balance">
-          {sectionData.name} Blocks
-        </span>
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-balance">
+        {sectionData.name} Blocks
       </h1>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {sectionData.category.map(category => {
           const block = category.block?.[0];
           return block ? (
-            <Link className="group" href={sectionData.href + "/" + category.href} key={category.slug + "SectionPage"}>
-              <div className="p-3 bg-card rounded-md">
-                <div className="aspect-video w-full bg-secondary/30 rounded-md">
-                  <Image
-                    className="w-full object-cover"
-                    width={320}
-                    height={180}
-                    src={block.thumbnail}
-                    alt={siteConfig.name + " " + block.name + " Image"}
-                  />
+            <Link className="block group overflow-hidden" href={sectionData.href + "/" + category.href} key={category.slug + "SectionPage"}>
+              <div className="p-2 bg-card rounded-md aspect-video">
+                <div className="relative p-4 pb-0 size-full bg-secondary rounded-sm border group-hover:opacity-50">
+                  <div className="relative size-full z-0 bg-card/70 select-none touch-none pointer-events-none">
+                    <Image
+                      className="w-full object-cover"
+                      width={480}
+                      height={270}
+                      src={block.thumbnail}
+                      alt={siteConfig.name + " " + block.name + " Image"}
+                    />
+                  </div>
                 </div>
                 <div className="mt-2 group-hover:underline underline-offset-4">
                   {category.name}
@@ -46,7 +46,7 @@ export default function SectionOverview({
             </Link>
           ) : null;
         })}
-      </div>
+      </section>
     </>
   );
 }

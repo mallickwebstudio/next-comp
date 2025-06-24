@@ -1,5 +1,5 @@
 "use client"
-import { Bookmark, ChevronRight } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import {
   Collapsible,
   CollapsibleContent,
@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/sidebar"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
+// import { cn } from "@/lib/utils"
 import { ComponentData } from "@/types"
 
 export function SidebarNav({
@@ -30,14 +30,14 @@ export function SidebarNav({
     <SidebarGroup>
       <SidebarMenu>
 
-        <SidebarMenuItem>
+        {/* <SidebarMenuItem>
           <SidebarMenuButton tooltip="Bookmarks" asChild>
             <Link className={cn("flex items-center", path.includes("/bookmarks") && "text-primary bg-secondary/50")} href="/bookmarks">
               <Bookmark className="mr-1 size-4" />
               Bookmarks
             </Link>
           </SidebarMenuButton>
-        </SidebarMenuItem>
+        </SidebarMenuItem> */}
 
         {data.map((item) => {
           const isActive = path === `/components/${item.href}` || path.startsWith(`/components/${item.href}/`);

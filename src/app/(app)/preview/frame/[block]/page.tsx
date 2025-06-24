@@ -3,9 +3,8 @@
 import { notFound, useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import { componentMap, ComponentPath } from "@/lib/componentMap";
-import { data } from "@/lib/database";
 import { use, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { cn, getBlockBySlug } from "@/lib/utils";
 
 export default function PreviewFramePage({
   params,
@@ -26,17 +25,7 @@ export default function PreviewFramePage({
     }
   }, [theme]);
 
-  const allBlocks = data.flatMap((section) =>
-    section.category.flatMap((category) =>
-      category.block.map((block) => ({
-        ...block,
-        sectionSlug: section.slug,
-        categorySlug: category.slug,
-      }))
-    )
-  );
-
-  const blockData = allBlocks.find((block) => block.slug === blockSlug);
+  const blockData = getBlockBySlug(blockSlug);
 
   if (!blockData) return notFound();
 
@@ -50,11 +39,13 @@ export default function PreviewFramePage({
   return (
     <div
       className={cn(
-        "min-h-screen bg-background text-foreground antialiased",
+        "min-h-screen bg-secondary text-foreground antialiased",
         theme === "dark" && "dark"
       )}
     >
-      <PreviewComponent />
+      <div id="preview-wrapper">
+        <PreviewComponent />
+      </div>
     </div>
   );
 }

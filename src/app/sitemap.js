@@ -1,39 +1,51 @@
-// import { datas } from "@/lib/database";
+import { data } from "@/lib/database";
 import { siteConfig } from "@/lib/metadata";
 
 export default function sitemap() {
-  // const urls = datas.flatMap((data) =>
-  //   [
-  //     { url: siteConfig.baseUrl + "/resources/" + data.slug }
-  //   ]
-  // );
-
-  return [
+  const urls = [
     {
       url: siteConfig.baseUrl,
       changeFrequency: 'monthly',
       priority: 1,
     },
-    // {
-    //   url: `${siteConfig.baseUrl}/about-us`,
-    //   changeFrequency: 'yearly',
-    //   priority: 2,
-    // },
-    // {
-    //   url: `${siteConfig.baseUrl}/bookmarks`,
-    //   changeFrequency: 'yearly',
-    //   priority: 2,
-    // },
-    // {
-    //   url: `${siteConfig.baseUrl}/personal`,
-    //   changeFrequency: 'yearly',
-    //   priority: 2,
-    // },
-    // {
-    //   url: `${siteConfig.baseUrl}/privacy-policy`,
-    //   changeFrequency: 'yearly',
-    //   priority: 3,
-    // },
-    // ...urls
-  ]
+    {
+      url: `${siteConfig.baseUrl}/components`,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${siteConfig.baseUrl}/page-builder`,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+  ];
+
+  for (const section of data) {
+    // Section-level URL
+    urls.push({
+      url: `${siteConfig.baseUrl}/components/${section.href}`,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    });
+
+    for (const category of section.category) {
+      // Category-level URL
+      urls.push({
+        url: `${siteConfig.baseUrl}/components/${section.href}/${category.href}`,
+        changeFrequency: 'monthly',
+        priority: 0.9,
+      });
+
+      for (const block of category.block) {
+        // Block-level URL
+        urls.push({
+          url: `${siteConfig.baseUrl}/components/${section.href}/${category.href}/${block.slug}`,
+          changeFrequency: 'monthly',
+          priority: 0.8,
+        });
+      }
+    }
+  }
+
+  return urls;
 }

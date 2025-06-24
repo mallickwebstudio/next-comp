@@ -42,9 +42,7 @@ export default function Footer() {
                 </span>
             </div>
 
-            <Link className="block hover:underline hover:text-primary" href="/about-us">About Us</Link>
-
-            <Link className="block hover:underline hover:text-primary" href="/privacy-policy">Privacy Policy</Link>
+            {/* <Link className="block hover:underline hover:text-primary" href="/privacy-policy">Privacy Policy</Link> */}
         </footer>
     );
 }

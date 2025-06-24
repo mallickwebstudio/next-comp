@@ -11,11 +11,11 @@ export default function HeroFour() {
       <div className="container mx-auto p-6 sm:py-10  md:p-12 lg:py-16">
         <div className="flex flex-col md:flex-row items-center md:gap-8">
           {/* Text Content */}
-          <div className="w-full md:w-1/2">
+          <header className="w-full md:w-1/2">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance">
               Medium length hero heading goes here
             </h1>
-          </div>
+          </header>
 
           <div className="w-full md:w-1/2">
             <p className="mt-4 text-lg text-muted-foreground">
@@ -33,7 +33,7 @@ export default function HeroFour() {
         </div>
 
         {/* Hero Image */}
-        <div className="mt-8 w-full">
+        <div className="mt-12 w-full">
           <Image
             className="w-full aspect-video object-cover rounded-md"
             src="/image.svg"

@@ -20,7 +20,7 @@ export default function CategoryPage({ params
           {categoryData.name}
       </h1>
       
-      <div className="mt-8 grid gap-4 md:grid-cols-2 2xl:grid-cols-3">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {categoryData.block.map(block => (
             <PreviewTab data={block} key={block.id + "CagtegoryPage"}/>
         ))}

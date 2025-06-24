@@ -1,8 +1,7 @@
 "use client";
 import { use, useState } from "react";
-import { data } from "@/lib/database";
 import { notFound } from "next/navigation";
-import { cn } from "@/lib/utils";
+import { cn, getBlockBySlug } from "@/lib/utils";
 import TopBar from "./top-bar";
 
 export default function PreviewBlock({
@@ -14,11 +13,7 @@ export default function PreviewBlock({
 
     const [viewMode, setViewMode] = useState<"mobile" | "desktop">("desktop");
 
-    const allBlocks = data.flatMap(section => section.category.flatMap(category =>
-        category.block.map(block => ({ ...block }))
-    ));
-
-    const blockData = allBlocks.find((block) => block.slug === blockSlug);
+    const blockData = getBlockBySlug(blockSlug);
 
     if (!blockData) return notFound();
 
@@ -32,19 +27,19 @@ export default function PreviewBlock({
             />
 
             {/* Preview container */}
-            <div className="flex-1 flex justify-center">
+            <div className="flex justify-center flex-1 bg-background">
                 <div
                     data-view-mode={viewMode}
                     className={cn(
-                        "relative shadow bg-background w-full min-h-dvh h-full transition-all",
+                        "relative w-full transition-all",
                         viewMode === "mobile" && "max-w-[375px] border-x",
                         viewMode === "desktop" && "max-w-full"
                     )}
                 >
                     <iframe
-                        src={`/preview-frame/${blockSlug}`}
+                        src={`/preview/frame/${blockSlug}`}
                         className={cn(
-                            "w-full h-dvh border-none transition-all",
+                            "w-full min-h-screen border-none transition-all",
                             viewMode === "mobile" && "max-w-[375px]",
                             viewMode === "desktop" && "max-w-full"
                         )}

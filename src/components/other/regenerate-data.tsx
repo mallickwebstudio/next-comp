@@ -2,7 +2,15 @@
 
 import { data } from '@/lib/database'; // adjust path as needed
 
-const selectedCategorySlugs = ['navbar', 'hero', 'feature']; // set this to your desired category slugs
+const selectedCategorySlugs = [
+  "navbar",
+  "hero",
+  "feature",
+  "faq",
+  "testimonial",
+  "cta",
+  "footer"
+]; // set this to your desired category slugs
 
 export default function RegenerateData() {
   const formatThumbnail = (categorySlug: string, blockSlug: string) => {
@@ -11,6 +19,7 @@ export default function RegenerateData() {
 
   return (
     <div className="mt-12 p-4 bg-secondary rounded-md font-mono text-sm whitespace-pre-wrap">
+      [
       {data.map((section) => (
         <div key={section.slug}>
           {'{'} <br />
@@ -51,6 +60,7 @@ export default function RegenerateData() {
           {'},'}
         </div>
       ))}
+      ]
     </div>
   );
 }

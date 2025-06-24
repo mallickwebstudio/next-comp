@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 // import PanelUsage from "./panel-usage";
 
-const tabsContentClass = "relative aspect-video bg-accent dark:bg-card size-full rounded-md border overflow-hidden";
+const tabsContentClass = "relative aspect-video bg-accent dark:bg-card size-full rounded-sm border overflow-hidden";
 
 export default function PreviewTab({
     data,
@@ -18,7 +18,7 @@ export default function PreviewTab({
     const { slug, name, thumbnail, path } = data;
 
     return (
-        <div className="p-3 bg-card rounded-md" >
+        <div className="p-2 bg-card rounded-md">
             <Tabs defaultValue="preview" className="w-full min-w-4 scroll-m-4">
                 <TabsContent className={tabsContentClass} value="preview">
                     <PanelPreview thumbnail={thumbnail} name={name} />

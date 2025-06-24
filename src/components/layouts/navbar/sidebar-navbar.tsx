@@ -1,12 +1,12 @@
 "use client"
-import { AddSite } from "@/components/dialog/add-site"
+// import { AddSite } from "@/components/dialog/add-site"
 import { ModeToggle } from "@/components/other/mode-toggle"
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar"
 import KeepslinkLogo from "@/components/other/svg"
 import Link from "next/link"
 import { CommandDialog, CommandEmpty, CommandInput, CommandList } from "@/components/ui/command"
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 
 export function CommandMenu() {
     const [open, setOpen] = useState(false)
@@ -70,24 +70,37 @@ export default function Navbar() {
     const { open, isMobile } = useSidebar()
 
     return (
-        <header className="px-4 flex h-16 shrink-0 items-center justify-between gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 border-b">
-            <div className="flex items-center gap-2 transition-all">
-                <SidebarTrigger className={open
-                    ? isMobile
-                        ? "w-8 ml-0"
-                        : "w-0 -ml-2 overflow-hidden transition-all"
-                    : "w-8 ml-0"} />
-                <Link className="flex items-center text-primary ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 rounded-md" href="/">
-                    <KeepslinkLogo className="size-10" />
-                    <span className="h-fit block text-base font-semibold leading-4">Keeps Link</span>
-                </Link>
-            </div>
+        <>
+            <header className="hidden md:flex px-4 h-16 shrink-0 items-center justify-between gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 border-b">
+                <div className="flex items-center gap-2 transition-all">
+                    <SidebarTrigger className={open
+                        ? isMobile
+                            ? "w-8 ml-0"
+                            : "w-0 -ml-2 overflow-hidden transition-all"
+                        : "w-8 ml-0"} />
+                    <Link className="flex items-center text-primary ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 rounded-md" href="/">
+                        <KeepslinkLogo className="size-10" />
+                        <span className="h-fit block text-base font-semibold leading-4">Keeps Link</span>
+                    </Link>
+                </div>
 
-            <div className="flex gap-2">
-                <CommandMenu />
-                <AddSite />
+                <div className="flex gap-2">
+                    {/* <CommandMenu /> */}
+                    {/* <AddSite /> */}
+                    <Link className={buttonVariants({ variant: "ghost" })} href="/page-builder">Page Builder</Link>
+                    <ModeToggle />
+                </div>
+            </header>
+
+            <header className="fixed md:hidden bottom-0 left-0 right-0 px-4 flex h-16 bg-background shrink-0 items-center justify-between gap-2 border-t z-50">
                 <ModeToggle />
-            </div>
-        </header>
+
+                <Link className={buttonVariants({ variant: "ghost" })} href="/page-builder">Page Builder</Link>
+
+                <div className="flex items-center gap-2 transition-all">
+                    <SidebarTrigger className={buttonVariants({ variant: "outline", size: "icon" })} />
+                </div>
+            </header>
+        </>
     )
 }

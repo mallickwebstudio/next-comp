@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Blocks, Box, Diamond } from "lucide-react";
+import { ArrowRight, Box, Diamond } from "lucide-react";
 import Image from "next/image";
 
 export default function FeatureThree() {
@@ -10,18 +10,18 @@ export default function FeatureThree() {
       id="hero"
       aria-label="Hero section"
     >
-      <div className="container mx-auto p-6 sm:py-10  md:p-12 lg:py-16 flex flex-col md:flex-row items-center gap-8">
+      <div className="container mx-auto p-6 sm:py-10  md:p-12 lg:py-16 flex flex-col md:flex-row items-center gap-12">
         {/* Text Content */}
         <div className="w-full md:w-1/2">
-          <Badge variant="secondary">Tagline</Badge>
-
-          <h2 className="mt-4 scroll-m-20 text-4xl font-extrabold tracking-tight text-balance">
-            Medium length hero heading goes here
-          </h2>
-
-          <p className="mt-4 text-lg text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-          </p>
+          <header>
+            <Badge variant="secondary">Tagline</Badge>
+            <h2 className="mt-4 scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+              Medium length hero heading goes here
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </header>
 
           <div className="mt-8 flex gap-4 flex-wrap justify-between">
             <div className="flex gap-2 items-center">
@@ -37,15 +37,15 @@ export default function FeatureThree() {
               <h3 className="text-lg font-semibold tracking-tight">LOGO</h3>
             </div>
             <div className="flex gap-2 items-center">
-              <Blocks className="size-6" strokeWidth={3} />
+              <Box className="size-6" strokeWidth={3} />
               <h3 className="text-lg font-semibold tracking-tight">LOGO</h3>
             </div>
             <div className="flex gap-2 items-center">
-              <Blocks className="size-6" strokeWidth={3} />
+              <Diamond className="size-6" strokeWidth={3} />
               <h3 className="text-lg font-semibold tracking-tight">LOGO</h3>
             </div>
             <div className="flex gap-2 items-center">
-              <Blocks className="size-6" strokeWidth={3} />
+              <Box className="size-6" strokeWidth={3} />
               <h3 className="text-lg font-semibold tracking-tight">LOGO</h3>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function FeatureThree() {
             </Button>
             <Button className="group" variant="ghost" size="lg">
               Learn more
-              <ArrowRight className="group-hover:ml-2 transition-all" />
+              <ArrowRight className="group-hover:ml-2 transition-all" aria-hidden="true" />
             </Button>
           </div>
         </div>

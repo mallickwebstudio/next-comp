@@ -2,14 +2,14 @@ import { ComponentData } from "@/types";
 
 export const data: ComponentData = [
   {
-    slug: "section",
-    href: "section",
-    name: "Components",
+    slug: "sections",
+    href: "sections",
+    name: "Sections",
     category: [
       {
-        slug: "navbar",
-        href: "navbar",
-        name: "Navbar",
+        slug: "navbars",
+        href: "navbars",
+        name: "Navbars",
         block: [
           {
             slug: "navbar-one",
@@ -99,28 +99,28 @@ export const data: ComponentData = [
             slug: "footer-one",
             id: "footer-one",
             name: "Footer One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/footer/footer-one.png",
             path: "@/ui/components/footer/footer-one"
           },
           {
             slug: "footer-two",
             id: "footer-two",
             name: "Footer Two",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/footer/footer-two.png",
             path: "@/ui/components/footer/footer-two"
           },
           {
             slug: "footer-three",
             id: "footer-three",
             name: "Footer Three",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/footer/footer-three.png",
             path: "@/ui/components/footer/footer-three"
           },
           {
             slug: "footer-four",
             id: "footer-four",
-            name: "Footer Tour",
-            thumbnail: "/images/common/navbar.jpg",
+            name: "Footer Four",
+            thumbnail: "/images/ui/footer/footer-four.png",
             path: "@/ui/components/footer/footer-four"
           },
         ]
@@ -169,28 +169,28 @@ export const data: ComponentData = [
             slug: "cta-one",
             id: "cta-one",
             name: "CTA One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/cta/cta-one.png",
             path: "@/ui/components/cta/cta-one"
           },
           {
             slug: "cta-two",
             id: "cta-two",
             name: "CTA Two",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/cta/cta-two.png",
             path: "@/ui/components/cta/cta-two"
           },
           {
             slug: "cta-three",
             id: "cta-three",
             name: "CTA Three",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/cta/cta-three.png",
             path: "@/ui/components/cta/cta-three"
           },
           {
             slug: "cta-four",
             id: "cta-four",
             name: "CTA Four",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/cta/cta-four.png",
             path: "@/ui/components/cta/cta-four"
           },
         ]
@@ -232,28 +232,28 @@ export const data: ComponentData = [
             slug: "faq-one",
             id: "faq-one",
             name: "FAQ One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/faq/faq-one.png",
             path: "@/ui/components/faq/faq-one"
           },
           {
             slug: "faq-two",
             id: "faq-two",
             name: "FAQ Two",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/faq/faq-two.png",
             path: "@/ui/components/faq/faq-two"
           },
           {
             slug: "faq-three",
             id: "faq-three",
             name: "FAQ Three",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/faq/faq-three.png",
             path: "@/ui/components/faq/faq-three"
           },
           {
             slug: "faq-four",
             id: "faq-four",
             name: "FAQ Four",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/faq/faq-four.png",
             path: "@/ui/components/faq/faq-four"
           },
         ]
@@ -267,28 +267,28 @@ export const data: ComponentData = [
             slug: "testimonial-one",
             id: "testimonial-one",
             name: "Testimonial One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/testimonial/testimonial-one.png",
             path: "@/ui/components/testimonial/testimonial-one"
           },
           {
             slug: "testimonial-two",
             id: "testimonial-two",
             name: "Testimonial Two",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/testimonial/testimonial-two.png",
             path: "@/ui/components/testimonial/testimonial-two"
           },
           {
             slug: "testimonial-three",
             id: "testimonial-three",
             name: "Testimonial Three",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/testimonial/testimonial-three.png",
             path: "@/ui/components/testimonial/testimonial-three"
           },
           {
             slug: "testimonial-four",
             id: "testimonial-four",
             name: "Testimonial Four",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/testimonial/testimonial-four.png",
             path: "@/ui/components/testimonial/testimonial-four"
           },
         ]
@@ -841,4 +841,4 @@ export const data: ComponentData = [
       },
     ]
   },
-];
+]

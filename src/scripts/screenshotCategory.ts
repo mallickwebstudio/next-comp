@@ -2,9 +2,9 @@ import { chromium } from "playwright";
 import { data } from "@/lib/database";
 import fs from "fs";
 import path from "path";
-import kebabCase from "lodash.kebabcase"; // or your own kebab-case helper
+import kebabCase from "lodash.kebabcase";
 
-const categories = process.argv.slice(2); // support multiple args: ["navbar", "hero", "feature"]
+const categories = process.argv.slice(2);
 
 (async () => {
   if (categories.length === 0) {
@@ -27,7 +27,7 @@ const categories = process.argv.slice(2); // support multiple args: ["navbar", "
   const page = await browser.newPage();
 
   for (const block of blocks) {
-    const url = `http://localhost:3000/preview-frame/${block.slug}?theme=dark`;
+    const url = `http://localhost:3000/preview/frame/${block.slug}?theme=dark`;
 
     const outputPath = path.resolve(
       __dirname,
@@ -41,8 +41,14 @@ const categories = process.argv.slice(2); // support multiple args: ["navbar", "
     await page.goto(url, { waitUntil: "networkidle" });
     await page.waitForTimeout(800); // wait for animations/fonts if any
 
-    await page.screenshot({ path: fullOutputPath });
-    console.log(`✅ Saved ${fileName}`);
+    const blockContainer = await page.$("#preview-wrapper");
+
+    if (blockContainer) {
+      await blockContainer.screenshot({ path: fullOutputPath });
+      console.log(`✅ Cropped screenshot saved: ${fileName}`);
+    } else {
+      console.warn(`⚠️ Could not find block container for ${block.slug}`);
+    }
   }
 
   await browser.close();

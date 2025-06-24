@@ -120,30 +120,50 @@
   body {
     @apply bg-background text-foreground;
   }
+
+
+  /* Custom scrollbar styling. Thanks @pranathiperii. */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 5px;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
 }
 
 @layer base {
-  .h1{
+  .h1 {
     @apply scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance;
   }
-  
-  .h2{
+
+  .h2 {
     @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
   }
 
-  .h3{
+  .h3 {
     @apply scroll-m-20 text-2xl font-semibold tracking-tight;
   }
 
-  .h4{
+  .h4 {
     @apply scroll-m-20 text-xl font-semibold tracking-tight;
   }
 
-  .h5{
+  .h5 {
     @apply scroll-m-12 text-lg font-semibold;
   }
 
-  .h6{
+  .h6 {
     @apply scroll-m-6 text-base font-semibold;
   }
 }
