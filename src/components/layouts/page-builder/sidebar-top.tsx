@@ -1,23 +1,33 @@
 'use client';
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { data } from '@/lib/database';
 import { CirclePlus } from 'lucide-react';
 import { usePageBuilder } from '@/hooks/page-builder-provider';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import { siteConfig } from '@/lib/metadata';
+import { getAllBlocks } from '@/lib/utils';
 
 export default function SidebarTop() {
-    const allBlocks = data.flatMap((section) =>
-        section.category.flatMap((category) =>
-            category.block.map((block) => ({ ...block }))
-        )
-    );
+    const allBlocks = getAllBlocks();
 
     const { addBlock } = usePageBuilder();
     const [open, setOpen] = useState(false);
-    const [hoveredThumbnail, setHoveredThumbnail] = useState<string | null>(null);
+    const [hoveredBlock, setHoveredBlock] = useState<null | { thumbnail: string; slug: string }>(null);
+
+    const { theme } = useTheme();
+
+    // Dynamically resolve thumbnail path based on theme
+    const getImageSrc = (thumbnail: string, slug: string) => {
+        if (theme === 'dark') {
+            const darkSlug = `dark-${slug}`;
+            return thumbnail.replace(slug, darkSlug);
+        }
+        return thumbnail;
+    };
 
     return (
         <div className="relative flex flex-col gap-2">
@@ -32,7 +42,7 @@ export default function SidebarTop() {
                     <Command className="relative left-0 w-64 max-h-56">
                         <CommandInput placeholder="Search block..." />
                         <CommandEmpty>No block found.</CommandEmpty>
-                        <CommandGroup className='overflow-y-scroll'>
+                        <CommandGroup className="overflow-y-scroll">
                             {allBlocks.map((block) => (
                                 <CommandItem
                                     key={block.id}
@@ -40,8 +50,8 @@ export default function SidebarTop() {
                                         addBlock(block.id);
                                         setOpen(false);
                                     }}
-                                    onMouseEnter={() => setHoveredThumbnail(block.thumbnail)}
-                                    onMouseLeave={() => setHoveredThumbnail(null)}
+                                    onMouseEnter={() => setHoveredBlock({ thumbnail: block.thumbnail, slug: block.slug })}
+                                    onMouseLeave={() => setHoveredBlock(null)}
                                 >
                                     {block.name}
                                 </CommandItem>
@@ -50,14 +60,14 @@ export default function SidebarTop() {
                     </Command>
 
                     {/* Thumbnail Preview */}
-                    {hoveredThumbnail && (
+                    {hoveredBlock && (
                         <div className="hidden sm:block p-2 pb-0 bg-secondary h-56 border-l">
                             <Image
                                 className="h-full w-full aspect-video bg-card/70 object-contain object-top overflow-hidden"
-                                src={hoveredThumbnail}
-                                width={640}
-                                height={360}
-                                alt="Preview"
+                                src={getImageSrc(hoveredBlock.thumbnail, hoveredBlock.slug)}
+                                width={320}
+                                height={180}
+                                alt={siteConfig.name + " " + hoveredBlock.slug + " Image"}
                             />
                         </div>
                     )}

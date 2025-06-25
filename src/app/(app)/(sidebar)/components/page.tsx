@@ -17,8 +17,8 @@ export default function page() {
                 <div className="relative size-full z-0 bg-card/70 select-none touch-none pointer-events-none">
                   {/* <Image
                       className="w-full object-cover"
-                      width={480}
-                      height={270}
+                      width={320}
+                      height={180}
                       src={block.thumbnail}
                       alt={siteConfig.name + " " + block.name + " Image"}
                     /> */}

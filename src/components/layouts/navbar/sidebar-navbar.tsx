@@ -92,7 +92,7 @@ export default function Navbar() {
                 </div>
             </header>
 
-            <header className="fixed md:hidden bottom-0 left-0 right-0 px-4 flex h-16 bg-background shrink-0 items-center justify-between gap-2 border-t z-50">
+            <header className="md:hidden fixed bottom-0 left-0 right-0 px-4 flex h-16 bg-background shrink-0 items-center justify-between gap-2 border-t z-50">
                 <ModeToggle />
 
                 <Link className={buttonVariants({ variant: "ghost" })} href="/page-builder">Page Builder</Link>

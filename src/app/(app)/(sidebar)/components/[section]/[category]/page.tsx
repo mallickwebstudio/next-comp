@@ -17,12 +17,12 @@ export default function CategoryPage({ params
   return (
     <>
       <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-balance">
-          {categoryData.name}
+        {categoryData.name}
       </h1>
-      
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+
+      <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {categoryData.block.map(block => (
-            <PreviewTab data={block} key={block.id + "CagtegoryPage"}/>
+          <PreviewTab data={block} key={block.id + "CagtegoryPage"} />
         ))}
       </div>
     </>

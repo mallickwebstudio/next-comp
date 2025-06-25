@@ -46,7 +46,7 @@ function SortableBlock({ instanceId, blockId }: { instanceId: string; blockId: s
                 <GripVertical className="size-5 text-muted-foreground group-hover/grip:text-foreground" />
             </div>
             <div className="relative h-8 px-2 bg-secondary flex items-center rounded-md overflow-hidden flex-1">
-                <div className="text-sm text-muted-foreground text-nowrap overflow-hidden text-ellipsis">
+                <div className="text-sm text-muted-foreground text-nowrap overflow-hidden text-ellipsis select-none pointer-events-none">
                     {block?.name}
                 </div>
                 <div

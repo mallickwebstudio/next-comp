@@ -15,315 +15,315 @@ export const data: ComponentData = [
             slug: "navbar-one",
             id: "navbar-one",
             name: "Navbar One",
-            thumbnail: "/images/ui/navbar/navbar-one.png",
-            path: "@/ui/components/navbar/navbar-one"
+            thumbnail: "/images/ui/navbars/navbar-one.png",
+            path: "src/ui/components/navbars/navbar-one.tsx"
           },
           {
             slug: "navbar-two",
             id: "navbar-two",
             name: "Navbar Two",
-            thumbnail: "/images/ui/navbar/navbar-two.png",
-            path: "@/ui/components/navbar/navbar-two"
+            thumbnail: "/images/ui/navbars/navbar-two.png",
+            path: "src/ui/components/navbars/navbar-two.tsx"
           },
           {
             slug: "navbar-three",
             id: "navbar-three",
             name: "Navbar Three",
-            thumbnail: "/images/ui/navbar/navbar-three.png",
-            path: "@/ui/components/navbar/navbar-three"
+            thumbnail: "/images/ui/navbars/navbar-three.png",
+            path: "src/ui/components/navbars/navbar-three.tsx"
           },
           {
             slug: "navbar-four",
             id: "navbar-four",
             name: "Navbar Four",
-            thumbnail: "/images/ui/navbar/navbar-four.png",
-            path: "@/ui/components/navbar/navbar-four"
+            thumbnail: "/images/ui/navbars/navbar-four.png",
+            path: "src/ui/components/navbars/navbar-four.tsx"
           },
         ]
       },
       {
-        slug: "hero",
-        href: "hero",
-        name: "Hero",
+        slug: "heros",
+        href: "heros",
+        name: "Heros",
         block: [
           {
             slug: "hero-one",
             id: "hero-one",
             name: "Hero One",
-            thumbnail: "/images/ui/hero/hero-one.png",
-            path: "@/ui/components/hero/hero-one"
+            thumbnail: "/images/ui/heros/hero-one.png",
+            path: "src/ui/components/heros/hero-one.tsx"
           },
           {
             slug: "hero-two",
             id: "hero-two",
             name: "Hero Two",
-            thumbnail: "/images/ui/hero/hero-two.png",
-            path: "@/ui/components/hero/hero-two"
+            thumbnail: "/images/ui/heros/hero-two.png",
+            path: "src/ui/components/heros/hero-two.tsx"
           },
           {
             slug: "hero-three",
             id: "hero-three",
             name: "Hero Three",
-            thumbnail: "/images/ui/hero/hero-three.png",
-            path: "@/ui/components/hero/hero-three"
+            thumbnail: "/images/ui/heros/hero-three.png",
+            path: "src/ui/components/heros/hero-three.tsx"
           },
           {
             slug: "hero-four",
             id: "hero-four",
             name: "Hero Four",
-            thumbnail: "/images/ui/hero/hero-four.png",
-            path: "@/ui/components/hero/hero-four"
+            thumbnail: "/images/ui/heros/hero-four.png",
+            path: "src/ui/components/heros/hero-four.tsx"
           },
         ]
       },
       {
-        slug: "header",
-        href: "header",
-        name: "Header",
+        slug: "headers",
+        href: "headers",
+        name: "Headers",
         block: [
           {
             slug: "header-one",
             id: "header-one",
             name: "Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/header/header-one"
+            path: "src/ui/components/headers/header-one.tsx"
           },
         ]
       },
       {
-        slug: "footer",
-        href: "footer",
-        name: "Footer",
+        slug: "footers",
+        href: "footers",
+        name: "Footers",
         block: [
           {
             slug: "footer-one",
             id: "footer-one",
             name: "Footer One",
-            thumbnail: "/images/ui/footer/footer-one.png",
-            path: "@/ui/components/footer/footer-one"
+            thumbnail: "/images/ui/footers/footer-one.png",
+            path: "src/ui/components/footers/footer-one.tsx"
           },
           {
             slug: "footer-two",
             id: "footer-two",
             name: "Footer Two",
-            thumbnail: "/images/ui/footer/footer-two.png",
-            path: "@/ui/components/footer/footer-two"
+            thumbnail: "/images/ui/footers/footer-two.png",
+            path: "src/ui/components/footers/footer-two.tsx"
           },
           {
             slug: "footer-three",
             id: "footer-three",
             name: "Footer Three",
-            thumbnail: "/images/ui/footer/footer-three.png",
-            path: "@/ui/components/footer/footer-three"
+            thumbnail: "/images/ui/footers/footer-three.png",
+            path: "src/ui/components/footers/footer-three.tsx"
           },
           {
             slug: "footer-four",
             id: "footer-four",
             name: "Footer Four",
-            thumbnail: "/images/ui/footer/footer-four.png",
-            path: "@/ui/components/footer/footer-four"
+            thumbnail: "/images/ui/footers/footer-four.png",
+            path: "src/ui/components/footers/footer-four.tsx"
           },
         ]
       },
       {
-        slug: "feature",
-        href: "feature",
-        name: "Feature",
+        slug: "features",
+        href: "features",
+        name: "Features",
         block: [
           {
             slug: "feature-one",
             id: "feature-one",
             name: "Feature One",
-            thumbnail: "/images/ui/feature/feature-one.png",
-            path: "@/ui/components/feature/feature-one"
+            thumbnail: "/images/ui/features/feature-one.png",
+            path: "src/ui/components/features/feature-one.tsx"
           },
           {
             slug: "feature-two",
             id: "feature-two",
             name: "Feature two",
-            thumbnail: "/images/ui/feature/feature-two.png",
-            path: "@/ui/components/feature/feature-two"
+            thumbnail: "/images/ui/features/feature-two.png",
+            path: "src/ui/components/features/feature-two.tsx"
           },
           {
             slug: "feature-three",
             id: "feature-three",
             name: "Feature three",
-            thumbnail: "/images/ui/feature/feature-three.png",
-            path: "@/ui/components/feature/feature-three"
+            thumbnail: "/images/ui/features/feature-three.png",
+            path: "src/ui/components/features/feature-three.tsx"
           },
           {
             slug: "feature-four",
             id: "feature-four",
             name: "Feature four",
-            thumbnail: "/images/ui/feature/feature-four.png",
-            path: "@/ui/components/feature/feature-four"
+            thumbnail: "/images/ui/features/feature-four.png",
+            path: "src/ui/components/features/feature-four.tsx"
           },
         ]
       },
       {
-        slug: "cta",
-        href: "cta",
-        name: "CTA",
+        slug: "ctas",
+        href: "ctas",
+        name: "CTAs",
         block: [
           {
             slug: "cta-one",
             id: "cta-one",
             name: "CTA One",
-            thumbnail: "/images/ui/cta/cta-one.png",
-            path: "@/ui/components/cta/cta-one"
+            thumbnail: "/images/ui/ctas/cta-one.png",
+            path: "src/ui/components/ctas/cta-one.tsx"
           },
           {
             slug: "cta-two",
             id: "cta-two",
             name: "CTA Two",
-            thumbnail: "/images/ui/cta/cta-two.png",
-            path: "@/ui/components/cta/cta-two"
+            thumbnail: "/images/ui/ctas/cta-two.png",
+            path: "src/ui/components/ctas/cta-two.tsx"
           },
           {
             slug: "cta-three",
             id: "cta-three",
             name: "CTA Three",
-            thumbnail: "/images/ui/cta/cta-three.png",
-            path: "@/ui/components/cta/cta-three"
+            thumbnail: "/images/ui/ctas/cta-three.png",
+            path: "src/ui/components/ctas/cta-three.tsx"
           },
           {
             slug: "cta-four",
             id: "cta-four",
             name: "CTA Four",
-            thumbnail: "/images/ui/cta/cta-four.png",
-            path: "@/ui/components/cta/cta-four"
+            thumbnail: "/images/ui/ctas/cta-four.png",
+            path: "src/ui/components/ctas/cta-four.tsx"
           },
         ]
       },
       {
-        slug: "contact",
-        href: "contact",
-        name: "Contact",
+        slug: "contacts",
+        href: "contacts",
+        name: "Contacts",
         block: [
           {
             slug: "contact-one",
             id: "contact-one",
             name: "Contact One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/contact/contact-one"
+            path: "src/ui/components/contacts/contact-one.tsx"
           },
         ]
       },
       {
-        slug: "pricing",
-        href: "pricing",
-        name: "Pricing",
+        slug: "pricings",
+        href: "pricings",
+        name: "Pricings",
         block: [
           {
             slug: "pricing-one",
             id: "pricing-one",
             name: "Pricing One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/pricing/pricing-one"
+            path: "src/ui/components/pricings/pricing-one.tsx"
           },
         ]
       },
       {
-        slug: "faq",
-        href: "faq",
-        name: "FAQ",
+        slug: "faqs",
+        href: "faqs",
+        name: "FAQs",
         block: [
           {
             slug: "faq-one",
             id: "faq-one",
             name: "FAQ One",
-            thumbnail: "/images/ui/faq/faq-one.png",
-            path: "@/ui/components/faq/faq-one"
+            thumbnail: "/images/ui/faqs/faq-one.png",
+            path: "src/ui/components/faqs/faq-one.tsx"
           },
           {
             slug: "faq-two",
             id: "faq-two",
             name: "FAQ Two",
-            thumbnail: "/images/ui/faq/faq-two.png",
-            path: "@/ui/components/faq/faq-two"
+            thumbnail: "/images/ui/faqs/faq-two.png",
+            path: "src/ui/components/faqs/faq-two.tsx"
           },
           {
             slug: "faq-three",
             id: "faq-three",
             name: "FAQ Three",
-            thumbnail: "/images/ui/faq/faq-three.png",
-            path: "@/ui/components/faq/faq-three"
+            thumbnail: "/images/ui/faqs/faq-three.png",
+            path: "src/ui/components/faqs/faq-three.tsx"
           },
           {
             slug: "faq-four",
             id: "faq-four",
             name: "FAQ Four",
-            thumbnail: "/images/ui/faq/faq-four.png",
-            path: "@/ui/components/faq/faq-four"
+            thumbnail: "/images/ui/faqs/faq-four.png",
+            path: "src/ui/components/faqs/faq-four.tsx"
           },
         ]
       },
       {
-        slug: "testimonial",
-        href: "testimonial",
-        name: "Testimonial",
+        slug: "testimonials",
+        href: "testimonials",
+        name: "Testimonials",
         block: [
           {
             slug: "testimonial-one",
             id: "testimonial-one",
             name: "Testimonial One",
-            thumbnail: "/images/ui/testimonial/testimonial-one.png",
-            path: "@/ui/components/testimonial/testimonial-one"
+            thumbnail: "/images/ui/testimonials/testimonial-one.png",
+            path: "src/ui/components/testimonials/testimonial-one.tsx"
           },
           {
             slug: "testimonial-two",
             id: "testimonial-two",
             name: "Testimonial Two",
-            thumbnail: "/images/ui/testimonial/testimonial-two.png",
-            path: "@/ui/components/testimonial/testimonial-two"
+            thumbnail: "/images/ui/testimonials/testimonial-two.png",
+            path: "src/ui/components/testimonials/testimonial-two.tsx"
           },
           {
             slug: "testimonial-three",
             id: "testimonial-three",
             name: "Testimonial Three",
-            thumbnail: "/images/ui/testimonial/testimonial-three.png",
-            path: "@/ui/components/testimonial/testimonial-three"
+            thumbnail: "/images/ui/testimonials/testimonial-three.png",
+            path: "src/ui/components/testimonials/testimonial-three.tsx"
           },
           {
             slug: "testimonial-four",
             id: "testimonial-four",
             name: "Testimonial Four",
-            thumbnail: "/images/ui/testimonial/testimonial-four.png",
-            path: "@/ui/components/testimonial/testimonial-four"
+            thumbnail: "/images/ui/testimonials/testimonial-four.png",
+            path: "src/ui/components/testimonials/testimonial-four.tsx"
           },
         ]
       },
       {
-        slug: "logo",
-        href: "logo",
-        name: "Logo",
+        slug: "logos",
+        href: "logos",
+        name: "Logos",
         block: [
           {
             slug: "logo-one",
             id: "logo-one",
             name: "Logo One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/logo/logo-one"
+            path: "src/ui/components/logos/logo-one.tsx"
           },
         ]
       },
       {
-        slug: "team",
-        href: "team",
-        name: "Team",
+        slug: "teams",
+        href: "teams",
+        name: "Teams",
         block: [
           {
             slug: "team-one",
             id: "team-one",
             name: "Team One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/team/team-one"
+            path: "src/ui/components/teams/team-one.tsx"
           },
         ]
       },
       {
-        slug: "blog-header",
-        href: "blog-header",
+        slug: "blog-headers",
+        href: "blog-headers",
         name: "Blog Headers",
         block: [
           {
@@ -331,13 +331,13 @@ export const data: ComponentData = [
             id: "blog-header-one",
             name: "Blog Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/blog-header/blog-header-one"
+            path: "src/ui/components/blog-headers/blog-header-one.tsx"
           },
         ]
       },
       {
-        slug: "blog-section",
-        href: "blog-section",
+        slug: "blog-sections",
+        href: "blog-sections",
         name: "Blog Sections",
         block: [
           {
@@ -345,55 +345,55 @@ export const data: ComponentData = [
             id: "blog-section-one",
             name: "Blog Section One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/blog-section/blog-section-one"
+            path: "src/ui/components/blog-sections/blog-section-one.tsx"
           },
         ]
       },
       {
-        slug: "blog-post-header",
-        href: "blog-post-header",
-        name: "Blog Post Header",
+        slug: "blog-post-headers",
+        href: "blog-post-headers",
+        name: "Blog Post Headers",
         block: [
           {
             slug: "blog-post-header-one",
             id: "blog-post-header-one",
             name: "Blog Post Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/blog-post-header/blog-post-header-one"
+            path: "src/ui/components/blog-post-headers/blog-post-header-one.tsx"
           },
         ]
       },
       {
-        slug: "career",
-        href: "career",
-        name: "Career",
+        slug: "careers",
+        href: "careers",
+        name: "Careers",
         block: [
           {
             slug: "career-one",
             id: "career-one",
             name: "Career One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/career/career-one"
+            path: "src/ui/components/careers/career-one.tsx"
           },
         ]
       },
       {
-        slug: "gallery",
-        href: "gallery",
-        name: "Gallery",
+        slug: "gallerys",
+        href: "gallerys",
+        name: "Gallerys",
         block: [
           {
             slug: "gallery-one",
             id: "gallery-one",
             name: "Gallery One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/gallery/gallery-one"
+            path: "src/ui/components/gallerys/gallery-one.tsx"
           },
         ]
       },
       {
-        slug: "portfolio-header",
-        href: "portfolio-header",
+        slug: "portfolio-headers",
+        href: "portfolio-headers",
         name: "Portfolio Headers",
         block: [
           {
@@ -401,13 +401,13 @@ export const data: ComponentData = [
             id: "portfolio-header-one",
             name: "Portfolio Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/portfolio-header/portfolio-header-one"
+            path: "src/ui/components/portfolio-headers/portfolio-header-one.tsx"
           },
         ]
       },
       {
-        slug: "portfolio-section",
-        href: "portfolio-section",
+        slug: "portfolio-sections",
+        href: "portfolio-sections",
         name: "Portfolio Sections",
         block: [
           {
@@ -415,7 +415,7 @@ export const data: ComponentData = [
             id: "portfolio-section-one",
             name: "Portfolio Section One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/portfolio-section/portfolio-section-one"
+            path: "src/ui/components/portfolio-sections/portfolio-section-one.tsx"
           },
         ]
       },
@@ -429,13 +429,13 @@ export const data: ComponentData = [
             id: "banner-one",
             name: "Banner One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/banners/banner-one"
+            path: "src/ui/components/banners/banner-one.tsx"
           },
         ]
       },
       {
-        slug: "event-item-header",
-        href: "event-item-header",
+        slug: "event-item-headers",
+        href: "event-item-headerss",
         name: "Event Item Headers",
         block: [
           {
@@ -443,13 +443,13 @@ export const data: ComponentData = [
             id: "event-item-header-one",
             name: "Event Item Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/event-item-header/event-item-header-one"
+            path: "src/ui/components/event-item-headers/event-item-header-one.tsx"
           },
         ]
       },
       {
-        slug: "event-header",
-        href: "event-header",
+        slug: "event-headers",
+        href: "event-headers",
         name: "Event Headers",
         block: [
           {
@@ -457,13 +457,13 @@ export const data: ComponentData = [
             id: "event-header-one",
             name: "Event Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/event-header/event-header-one"
+            path: "src/ui/components/event-headers/event-header-one.tsx"
           },
         ]
       },
       {
-        slug: "event-section",
-        href: "event-section",
+        slug: "event-sections",
+        href: "event-sections",
         name: "Event Sections",
         block: [
           {
@@ -471,7 +471,7 @@ export const data: ComponentData = [
             id: "event-section-one",
             name: "Event Section One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/event-section/event-section-one"
+            path: "src/ui/components/event-sections/event-section-one.tsx"
           },
         ]
       },
@@ -485,7 +485,7 @@ export const data: ComponentData = [
             id: "multi-step-form-one",
             name: "Multi Step Form One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/multi-step-forms/multi-step-form-one"
+            path: "src/ui/components/multi-step-forms/multi-step-form-one.tsx"
           },
         ]
       },
@@ -499,13 +499,13 @@ export const data: ComponentData = [
             id: "stats-one",
             name: "Stats One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/stats/stats-one"
+            path: "src/ui/components/stats/stats-one.tsx"
           },
         ]
       },
       {
-        slug: "long-form-content",
-        href: "long-form-content",
+        slug: "long-form-contents",
+        href: "long-form-contents",
         name: "Long-Form Contents",
         block: [
           {
@@ -513,7 +513,7 @@ export const data: ComponentData = [
             id: "long-form-content-one",
             name: "Long Form Content One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/long-form-content/long-form-content-one"
+            path: "src/ui/components/long-form-contents/long-form-content-one.tsx"
           },
         ]
       },
@@ -527,13 +527,13 @@ export const data: ComponentData = [
             id: "loader-one",
             name: "Loader One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/loaders/loader-one"
+            path: "src/ui/components/loaders/loader-one.tsx"
           },
         ]
       },
       {
-        slug: "timeline",
-        href: "timeline",
+        slug: "timelines",
+        href: "timelines",
         name: "Timeline Sections",
         block: [
           {
@@ -541,7 +541,7 @@ export const data: ComponentData = [
             id: "timeline-one",
             name: "Timeline One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/timeline/timeline-one"
+            path: "src/ui/components/timelines/timeline-one.tsx"
           },
         ]
       },
@@ -555,21 +555,21 @@ export const data: ComponentData = [
             id: "link-page-one",
             name: "Link Page One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/link-pages/link-page-one"
+            path: "src/ui/components/link-pages/link-page-one.tsx"
           },
         ]
       },
       {
-        slug: "cookie-consent",
-        href: "cookie-consent",
-        name: "Cookie Consent",
+        slug: "cookie-consents",
+        href: "cookie-consents",
+        name: "Cookie Consents",
         block: [
           {
             slug: "cookie-consent-one",
             id: "cookie-consent-one",
             name: "Cookie Consent One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/cookie-consent/cookie-consent-one"
+            path: "src/ui/components/cookie-consents/cookie-consent-one.tsx"
           },
         ]
       },
@@ -581,16 +581,16 @@ export const data: ComponentData = [
     name: "Ecommerce",
     category: [
       {
-        slug: "product-list",
-        href: "product-list",
-        name: "Product List Sections",
+        slug: "product-lists",
+        href: "product-lists",
+        name: "Product Lists",
         block: [
           {
             slug: "product-list-one",
             id: "product-list-one",
             name: "Product List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/product-list/product-list-one"
+            path: "src/ui/components/product-lists/product-list-one.tsx"
           },
         ]
       },
@@ -604,7 +604,7 @@ export const data: ComponentData = [
             id: "product-header-one",
             name: "Product Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/product-headers/product-header-one"
+            path: "src/ui/components/product-headers/product-header-one.tsx"
           },
         ]
       },
@@ -618,7 +618,7 @@ export const data: ComponentData = [
             id: "category-filter-one",
             name: "Category Filter One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/category-filters/category-filter-one"
+            path: "src/ui/components/category-filters/category-filter-one.tsx"
           },
         ]
       },
@@ -639,7 +639,7 @@ export const data: ComponentData = [
             id: "shell-one",
             name: "Shell One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/application-shells/shell-one"
+            path: "src/ui/components/application-shells/shell-one.tsx"
           },
         ]
       },
@@ -653,7 +653,7 @@ export const data: ComponentData = [
             id: "sidebar-one",
             name: "Sidebar One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/sidebars/sidebar-one"
+            path: "src/ui/components/sidebars/sidebar-one.tsx"
           },
         ]
       },
@@ -667,7 +667,7 @@ export const data: ComponentData = [
             id: "topbar-one",
             name: "Topbar One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/topbars/topbar-one"
+            path: "src/ui/components/topbars/topbar-one.tsx"
           },
         ]
       },
@@ -681,7 +681,7 @@ export const data: ComponentData = [
             id: "page-header-one",
             name: "Page Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/page-headers/page-header-one"
+            path: "src/ui/components/page-headers/page-header-one.tsx"
           },
         ]
       },
@@ -695,7 +695,7 @@ export const data: ComponentData = [
             id: "section-header-one",
             name: "Section Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/section-headers/section-header-one"
+            path: "src/ui/components/section-headers/section-header-one.tsx"
           },
         ]
       },
@@ -709,21 +709,21 @@ export const data: ComponentData = [
             id: "card-header-one",
             name: "Card Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/card-headers/card-header-one"
+            path: "src/ui/components/card-headers/card-header-one.tsx"
           },
         ]
       },
       {
         slug: "sign-up-pages",
         href: "sign-up-pages",
-        name: "Sign Up and Log In Pages",
+        name: "Sign Up Pages",
         block: [
           {
             slug: "signup-page-one",
             id: "signup-page-one",
             name: "Sign Up Page One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/sign-up-pages/signup-page-one"
+            path: "src/ui/components/sign-up-pages/signup-page-one.tsx"
           },
         ]
       },
@@ -737,21 +737,21 @@ export const data: ComponentData = [
             id: "onboarding-form-one",
             name: "Onboarding Form One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/onboarding-forms/onboarding-form-one"
+            path: "src/ui/components/onboarding-forms/onboarding-form-one.tsx"
           },
         ]
       },
       {
-        slug: "signup-modals",
-        href: "signup-modals",
-        name: "Sign Up and Log In Modals",
+        slug: "sign-up-modals",
+        href: "sign-up-modals",
+        name: "Sign Up Modals",
         block: [
           {
             slug: "signup-modal-one",
             id: "signup-modal-one",
             name: "Sign Up Modal One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/signup-modals/signup-modal-one"
+            path: "src/ui/components/signup-modals/signup-modal-one.tsx"
           },
         ]
       },
@@ -765,7 +765,7 @@ export const data: ComponentData = [
             id: "table-one",
             name: "Table One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/tables/table-one"
+            path: "src/ui/components/tables/table-one.tsx"
           },
         ]
       },
@@ -779,7 +779,7 @@ export const data: ComponentData = [
             id: "stacked-list-one",
             name: "Stacked List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/stacked-lists/stacked-list-one"
+            path: "src/ui/components/stacked-lists/stacked-list-one.tsx"
           },
         ]
       },
@@ -793,7 +793,7 @@ export const data: ComponentData = [
             id: "grid-list-one",
             name: "Grid List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/grid-lists/grid-list-one"
+            path: "src/ui/components/grid-lists/grid-list-one.tsx"
           },
         ]
       },
@@ -807,7 +807,7 @@ export const data: ComponentData = [
             id: "stat-card-one",
             name: "Stat Card One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/stat-cards/stat-card-one"
+            path: "src/ui/components/stat-cards/stat-card-one.tsx"
           },
         ]
       },
@@ -821,7 +821,7 @@ export const data: ComponentData = [
             id: "form-one",
             name: "Form One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/forms/form-one"
+            path: "src/ui/components/forms/form-one.tsx"
           },
         ]
       },
@@ -835,7 +835,7 @@ export const data: ComponentData = [
             id: "description-list-one",
             name: "Description List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "@/ui/components/description-lists/description-list-one"
+            path: "src/ui/components/description-lists/description-list-one.tsx"
           },
         ]
       },
