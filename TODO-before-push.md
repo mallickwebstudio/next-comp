@@ -4,11 +4,11 @@ npm run generate:component:map
 <!-- Run to to take SS of categories updated -->
 npm run generate:category:screenshot -- category-one category-two category-three
 
-<!-- E.x npm run generate:category:screenshot -- navbars heros -->
+<!-- E.x npm run generate:category:screenshot -- navbar hero -->
 <!-- Add "dark" key to generate dark mode screenshot -->
-<!-- E.x npm run generate:category:screenshot -- navbars heros dark -->
+<!-- E.x npm run generate:category:screenshot -- navbar hero dark -->
 <!-- Category up-until created -->
-navbars heros features faqs testimonials ctas footers
+navbar hero feature faq testimonial cta footer
 
 
 <!-- COPY/PASTE to @/lib/database.ts -->

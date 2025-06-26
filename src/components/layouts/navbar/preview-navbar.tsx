@@ -23,7 +23,7 @@ export default function PreviewNavBar({
     const blockParams = searchParams.getAll("block");
 
     return (
-        <div className="h-16 flex items-center border-b">
+        <div className="h-16 bg-card flex items-center border-b">
             <div className="px-4 container mx-auto grid gap-4 grid-cols-2 md:grid-cols-3">
                 <div className="flex gap-4 items-center">
                     <Link className={buttonVariants({ variant: "outline" })} href="/components">
@@ -39,7 +39,7 @@ export default function PreviewNavBar({
                                     aria-expanded="false"
                                     aria-label="More navigation options"
                                 >
-                                    {blockParams.length} - Block{blockParams.length > 0 && "s"}
+                                    {blockParams.length} - Block{blockParams.length > 1 && "s"}
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="grid w-[190px] max-h-40 overflow-y-auto gap-3">

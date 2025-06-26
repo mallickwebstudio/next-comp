@@ -2,574 +2,630 @@ import { ComponentData } from "@/types";
 
 export const data: ComponentData = [
   {
-    slug: "sections",
-    href: "sections",
-    name: "Sections",
+    slug: "section",
+    href: "section",
+    name: "Section",
     category: [
       {
-        slug: "navbars",
-        href: "navbars",
-        name: "Navbars",
+        slug: "navbar",
+        href: "navbar",
+        name: "Navbar",
         block: [
           {
             slug: "navbar-one",
             id: "navbar-one",
             name: "Navbar One",
-            thumbnail: "/images/ui/navbars/navbar-one.png",
-            path: "src/ui/components/navbars/navbar-one.tsx"
+            thumbnail: "/images/ui/navbar/navbar-one.png",
+            path: "src/ui/section/navbar/navbar-one.tsx"
           },
           {
             slug: "navbar-two",
             id: "navbar-two",
             name: "Navbar Two",
-            thumbnail: "/images/ui/navbars/navbar-two.png",
-            path: "src/ui/components/navbars/navbar-two.tsx"
+            thumbnail: "/images/ui/navbar/navbar-two.png",
+            path: "src/ui/section/navbar/navbar-two.tsx"
           },
           {
             slug: "navbar-three",
             id: "navbar-three",
             name: "Navbar Three",
-            thumbnail: "/images/ui/navbars/navbar-three.png",
-            path: "src/ui/components/navbars/navbar-three.tsx"
+            thumbnail: "/images/ui/navbar/navbar-three.png",
+            path: "src/ui/section/navbar/navbar-three.tsx"
           },
           {
             slug: "navbar-four",
             id: "navbar-four",
             name: "Navbar Four",
-            thumbnail: "/images/ui/navbars/navbar-four.png",
-            path: "src/ui/components/navbars/navbar-four.tsx"
+            thumbnail: "/images/ui/navbar/navbar-four.png",
+            path: "src/ui/section/navbar/navbar-four.tsx"
           },
         ]
       },
       {
-        slug: "heros",
-        href: "heros",
-        name: "Heros",
+        slug: "hero",
+        href: "hero",
+        name: "Hero",
         block: [
           {
             slug: "hero-one",
             id: "hero-one",
             name: "Hero One",
-            thumbnail: "/images/ui/heros/hero-one.png",
-            path: "src/ui/components/heros/hero-one.tsx"
+            thumbnail: "/images/ui/hero/hero-one.png",
+            path: "src/ui/section/hero/hero-one.tsx"
+          },
+          {
+            slug: "hero-one-flip",
+            id: "hero-one-flip",
+            name: "Hero One-flip",
+            thumbnail: "/images/ui/hero/hero-one-flip.png",
+            path: "src/ui/section/hero/hero-one-flip.tsx"
           },
           {
             slug: "hero-two",
             id: "hero-two",
             name: "Hero Two",
-            thumbnail: "/images/ui/heros/hero-two.png",
-            path: "src/ui/components/heros/hero-two.tsx"
+            thumbnail: "/images/ui/hero/hero-two.png",
+            path: "src/ui/section/hero/hero-two.tsx"
+          },
+          {
+            slug: "hero-two-flip",
+            id: "hero-two-flip",
+            name: "Hero Two Flip",
+            thumbnail: "/images/ui/hero/hero-two-flip.png",
+            path: "src/ui/section/hero/hero-two-flip.tsx"
           },
           {
             slug: "hero-three",
             id: "hero-three",
             name: "Hero Three",
-            thumbnail: "/images/ui/heros/hero-three.png",
-            path: "src/ui/components/heros/hero-three.tsx"
+            thumbnail: "/images/ui/hero/hero-three.png",
+            path: "src/ui/section/hero/hero-three.tsx"
+          },
+          {
+            slug: "hero-three-flip",
+            id: "hero-three-flip",
+            name: "Hero Three Flip",
+            thumbnail: "/images/ui/hero/hero-three-flip.png",
+            path: "src/ui/section/hero/hero-three-flip.tsx"
           },
           {
             slug: "hero-four",
             id: "hero-four",
             name: "Hero Four",
-            thumbnail: "/images/ui/heros/hero-four.png",
-            path: "src/ui/components/heros/hero-four.tsx"
+            thumbnail: "/images/ui/hero/hero-four.png",
+            path: "src/ui/section/hero/hero-four.tsx"
+          },
+          {
+            slug: "hero-four-flip",
+            id: "hero-four-flip",
+            name: "Hero Four Flip",
+            thumbnail: "/images/ui/hero/hero-four-flip.png",
+            path: "src/ui/section/hero/hero-four-flip.tsx"
           },
         ]
       },
       {
-        slug: "headers",
-        href: "headers",
-        name: "Headers",
+        slug: "header",
+        href: "header",
+        name: "Header",
         block: [
           {
             slug: "header-one",
             id: "header-one",
             name: "Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/headers/header-one.tsx"
+            path: "src/ui/section/header/header-one.tsx"
           },
         ]
       },
       {
-        slug: "footers",
-        href: "footers",
-        name: "Footers",
+        slug: "footer",
+        href: "footer",
+        name: "Footer",
         block: [
           {
             slug: "footer-one",
             id: "footer-one",
             name: "Footer One",
-            thumbnail: "/images/ui/footers/footer-one.png",
-            path: "src/ui/components/footers/footer-one.tsx"
+            thumbnail: "/images/ui/footer/footer-one.png",
+            path: "src/ui/section/footer/footer-one.tsx"
           },
           {
             slug: "footer-two",
             id: "footer-two",
             name: "Footer Two",
-            thumbnail: "/images/ui/footers/footer-two.png",
-            path: "src/ui/components/footers/footer-two.tsx"
+            thumbnail: "/images/ui/footer/footer-two.png",
+            path: "src/ui/section/footer/footer-two.tsx"
           },
           {
             slug: "footer-three",
             id: "footer-three",
             name: "Footer Three",
-            thumbnail: "/images/ui/footers/footer-three.png",
-            path: "src/ui/components/footers/footer-three.tsx"
+            thumbnail: "/images/ui/footer/footer-three.png",
+            path: "src/ui/section/footer/footer-three.tsx"
           },
           {
             slug: "footer-four",
             id: "footer-four",
             name: "Footer Four",
-            thumbnail: "/images/ui/footers/footer-four.png",
-            path: "src/ui/components/footers/footer-four.tsx"
+            thumbnail: "/images/ui/footer/footer-four.png",
+            path: "src/ui/section/footer/footer-four.tsx"
           },
         ]
       },
       {
-        slug: "features",
-        href: "features",
-        name: "Features",
+        slug: "feature",
+        href: "feature",
+        name: "Feature",
         block: [
           {
             slug: "feature-one",
             id: "feature-one",
             name: "Feature One",
-            thumbnail: "/images/ui/features/feature-one.png",
-            path: "src/ui/components/features/feature-one.tsx"
+            thumbnail: "/images/ui/feature/feature-one.png",
+            path: "src/ui/section/feature/feature-one.tsx"
+          },
+          {
+            slug: "feature-one-flip",
+            id: "feature-one-flip",
+            name: "Feature One Flip",
+            thumbnail: "/images/ui/feature/feature-one-flip.png",
+            path: "src/ui/section/feature/feature-one-flip.tsx"
           },
           {
             slug: "feature-two",
             id: "feature-two",
-            name: "Feature two",
-            thumbnail: "/images/ui/features/feature-two.png",
-            path: "src/ui/components/features/feature-two.tsx"
+            name: "Feature Two",
+            thumbnail: "/images/ui/feature/feature-two.png",
+            path: "src/ui/section/feature/feature-two.tsx"
+          },
+          {
+            slug: "feature-two-flip",
+            id: "feature-two-flip",
+            name: "Feature Two Flip",
+            thumbnail: "/images/ui/feature/feature-two-flip.png",
+            path: "src/ui/section/feature/feature-two-flip.tsx"
           },
           {
             slug: "feature-three",
             id: "feature-three",
-            name: "Feature three",
-            thumbnail: "/images/ui/features/feature-three.png",
-            path: "src/ui/components/features/feature-three.tsx"
+            name: "Feature Three",
+            thumbnail: "/images/ui/feature/feature-three.png",
+            path: "src/ui/section/feature/feature-three.tsx"
+          },
+          {
+            slug: "feature-three-flip",
+            id: "feature-three-flip",
+            name: "Feature Three Flip",
+            thumbnail: "/images/ui/feature/feature-three-flip.png",
+            path: "src/ui/section/feature/feature-three-flip.tsx"
           },
           {
             slug: "feature-four",
             id: "feature-four",
-            name: "Feature four",
-            thumbnail: "/images/ui/features/feature-four.png",
-            path: "src/ui/components/features/feature-four.tsx"
+            name: "Feature Four",
+            thumbnail: "/images/ui/feature/feature-four.png",
+            path: "src/ui/section/feature/feature-four.tsx"
+          },
+          {
+            slug: "feature-four-flip",
+            id: "feature-four-flip",
+            name: "Feature Four Flip",
+            thumbnail: "/images/ui/feature/feature-four-flip.png",
+            path: "src/ui/section/feature/feature-four-flip.tsx"
           },
         ]
       },
       {
-        slug: "ctas",
-        href: "ctas",
-        name: "CTAs",
+        slug: "cta",
+        href: "cta",
+        name: "CTA",
         block: [
           {
             slug: "cta-one",
             id: "cta-one",
             name: "CTA One",
-            thumbnail: "/images/ui/ctas/cta-one.png",
-            path: "src/ui/components/ctas/cta-one.tsx"
+            thumbnail: "/images/ui/cta/cta-one.png",
+            path: "src/ui/section/cta/cta-one.tsx"
           },
           {
             slug: "cta-two",
             id: "cta-two",
             name: "CTA Two",
-            thumbnail: "/images/ui/ctas/cta-two.png",
-            path: "src/ui/components/ctas/cta-two.tsx"
+            thumbnail: "/images/ui/cta/cta-two.png",
+            path: "src/ui/section/cta/cta-two.tsx"
           },
           {
             slug: "cta-three",
             id: "cta-three",
             name: "CTA Three",
-            thumbnail: "/images/ui/ctas/cta-three.png",
-            path: "src/ui/components/ctas/cta-three.tsx"
+            thumbnail: "/images/ui/cta/cta-three.png",
+            path: "src/ui/section/cta/cta-three.tsx"
           },
           {
             slug: "cta-four",
             id: "cta-four",
             name: "CTA Four",
-            thumbnail: "/images/ui/ctas/cta-four.png",
-            path: "src/ui/components/ctas/cta-four.tsx"
+            thumbnail: "/images/ui/cta/cta-four.png",
+            path: "src/ui/section/cta/cta-four.tsx"
           },
         ]
       },
       {
-        slug: "contacts",
-        href: "contacts",
-        name: "Contacts",
+        slug: "contact",
+        href: "contact",
+        name: "Contact",
         block: [
           {
             slug: "contact-one",
             id: "contact-one",
             name: "Contact One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/contacts/contact-one.tsx"
+            path: "src/ui/section/contact/contact-one.tsx"
           },
         ]
       },
       {
-        slug: "pricings",
-        href: "pricings",
-        name: "Pricings",
+        slug: "pricing",
+        href: "pricing",
+        name: "Pricing",
         block: [
           {
             slug: "pricing-one",
             id: "pricing-one",
             name: "Pricing One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/pricings/pricing-one.tsx"
+            path: "src/ui/section/pricing/pricing-one.tsx"
           },
         ]
       },
       {
-        slug: "faqs",
-        href: "faqs",
-        name: "FAQs",
+        slug: "faq",
+        href: "faq",
+        name: "FAQ",
         block: [
           {
             slug: "faq-one",
             id: "faq-one",
             name: "FAQ One",
-            thumbnail: "/images/ui/faqs/faq-one.png",
-            path: "src/ui/components/faqs/faq-one.tsx"
+            thumbnail: "/images/ui/faq/faq-one.png",
+            path: "src/ui/section/faq/faq-one.tsx"
           },
           {
             slug: "faq-two",
             id: "faq-two",
             name: "FAQ Two",
-            thumbnail: "/images/ui/faqs/faq-two.png",
-            path: "src/ui/components/faqs/faq-two.tsx"
+            thumbnail: "/images/ui/faq/faq-two.png",
+            path: "src/ui/section/faq/faq-two.tsx"
           },
           {
             slug: "faq-three",
             id: "faq-three",
             name: "FAQ Three",
-            thumbnail: "/images/ui/faqs/faq-three.png",
-            path: "src/ui/components/faqs/faq-three.tsx"
+            thumbnail: "/images/ui/faq/faq-three.png",
+            path: "src/ui/section/faq/faq-three.tsx"
           },
           {
             slug: "faq-four",
             id: "faq-four",
             name: "FAQ Four",
-            thumbnail: "/images/ui/faqs/faq-four.png",
-            path: "src/ui/components/faqs/faq-four.tsx"
+            thumbnail: "/images/ui/faq/faq-four.png",
+            path: "src/ui/section/faq/faq-four.tsx"
           },
         ]
       },
       {
-        slug: "testimonials",
-        href: "testimonials",
-        name: "Testimonials",
+        slug: "testimonial",
+        href: "testimonial",
+        name: "Testimonial",
         block: [
           {
             slug: "testimonial-one",
             id: "testimonial-one",
             name: "Testimonial One",
-            thumbnail: "/images/ui/testimonials/testimonial-one.png",
-            path: "src/ui/components/testimonials/testimonial-one.tsx"
+            thumbnail: "/images/ui/testimonial/testimonial-one.png",
+            path: "src/ui/section/testimonial/testimonial-one.tsx"
           },
           {
             slug: "testimonial-two",
             id: "testimonial-two",
             name: "Testimonial Two",
-            thumbnail: "/images/ui/testimonials/testimonial-two.png",
-            path: "src/ui/components/testimonials/testimonial-two.tsx"
+            thumbnail: "/images/ui/testimonial/testimonial-two.png",
+            path: "src/ui/section/testimonial/testimonial-two.tsx"
           },
           {
             slug: "testimonial-three",
             id: "testimonial-three",
             name: "Testimonial Three",
-            thumbnail: "/images/ui/testimonials/testimonial-three.png",
-            path: "src/ui/components/testimonials/testimonial-three.tsx"
+            thumbnail: "/images/ui/testimonial/testimonial-three.png",
+            path: "src/ui/section/testimonial/testimonial-three.tsx"
           },
           {
             slug: "testimonial-four",
             id: "testimonial-four",
             name: "Testimonial Four",
-            thumbnail: "/images/ui/testimonials/testimonial-four.png",
-            path: "src/ui/components/testimonials/testimonial-four.tsx"
+            thumbnail: "/images/ui/testimonial/testimonial-four.png",
+            path: "src/ui/section/testimonial/testimonial-four.tsx"
           },
         ]
       },
       {
-        slug: "logos",
-        href: "logos",
-        name: "Logos",
+        slug: "logo",
+        href: "logo",
+        name: "Logo",
         block: [
           {
             slug: "logo-one",
             id: "logo-one",
             name: "Logo One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/logos/logo-one.tsx"
+            path: "src/ui/section/logo/logo-one.tsx"
           },
         ]
       },
       {
-        slug: "teams",
-        href: "teams",
-        name: "Teams",
+        slug: "team",
+        href: "team",
+        name: "Team",
         block: [
           {
             slug: "team-one",
             id: "team-one",
             name: "Team One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/teams/team-one.tsx"
+            path: "src/ui/section/team/team-one.tsx"
           },
         ]
       },
       {
-        slug: "blog-headers",
-        href: "blog-headers",
-        name: "Blog Headers",
+        slug: "blog-header",
+        href: "blog-header",
+        name: "Blog Header",
         block: [
           {
             slug: "blog-header-one",
             id: "blog-header-one",
             name: "Blog Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/blog-headers/blog-header-one.tsx"
+            path: "src/ui/section/blog-header/blog-header-one.tsx"
           },
         ]
       },
       {
-        slug: "blog-sections",
-        href: "blog-sections",
-        name: "Blog Sections",
+        slug: "blog-section",
+        href: "blog-section",
+        name: "Blog Section",
         block: [
           {
             slug: "blog-section-one",
             id: "blog-section-one",
             name: "Blog Section One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/blog-sections/blog-section-one.tsx"
+            path: "src/ui/section/blog-section/blog-section-one.tsx"
           },
         ]
       },
       {
-        slug: "blog-post-headers",
-        href: "blog-post-headers",
-        name: "Blog Post Headers",
+        slug: "blog-post-header",
+        href: "blog-post-header",
+        name: "Blog Post Header",
         block: [
           {
             slug: "blog-post-header-one",
             id: "blog-post-header-one",
             name: "Blog Post Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/blog-post-headers/blog-post-header-one.tsx"
+            path: "src/ui/section/blog-post-header/blog-post-header-one.tsx"
           },
         ]
       },
       {
-        slug: "careers",
-        href: "careers",
-        name: "Careers",
+        slug: "career",
+        href: "career",
+        name: "Career",
         block: [
           {
             slug: "career-one",
             id: "career-one",
             name: "Career One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/careers/career-one.tsx"
+            path: "src/ui/section/career/career-one.tsx"
           },
         ]
       },
       {
-        slug: "gallerys",
-        href: "gallerys",
-        name: "Gallerys",
+        slug: "gallery",
+        href: "gallery",
+        name: "Gallery",
         block: [
           {
             slug: "gallery-one",
             id: "gallery-one",
             name: "Gallery One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/gallerys/gallery-one.tsx"
+            path: "src/ui/section/gallery/gallery-one.tsx"
           },
         ]
       },
       {
-        slug: "portfolio-headers",
-        href: "portfolio-headers",
-        name: "Portfolio Headers",
+        slug: "portfolio-header",
+        href: "portfolio-header",
+        name: "Portfolio Header",
         block: [
           {
             slug: "portfolio-header-one",
             id: "portfolio-header-one",
             name: "Portfolio Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/portfolio-headers/portfolio-header-one.tsx"
+            path: "src/ui/section/portfolio-header/portfolio-header-one.tsx"
           },
         ]
       },
       {
-        slug: "portfolio-sections",
-        href: "portfolio-sections",
-        name: "Portfolio Sections",
+        slug: "portfolio-section",
+        href: "portfolio-section",
+        name: "Portfolio Section",
         block: [
           {
             slug: "portfolio-section-one",
             id: "portfolio-section-one",
             name: "Portfolio Section One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/portfolio-sections/portfolio-section-one.tsx"
+            path: "src/ui/section/portfolio-section/portfolio-section-one.tsx"
           },
         ]
       },
       {
-        slug: "banners",
-        href: "banners",
-        name: "Banners",
+        slug: "banner",
+        href: "banner",
+        name: "Banner",
         block: [
           {
             slug: "banner-one",
             id: "banner-one",
             name: "Banner One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/banners/banner-one.tsx"
+            path: "src/ui/section/banner/banner-one.tsx"
           },
         ]
       },
       {
-        slug: "event-item-headers",
-        href: "event-item-headerss",
-        name: "Event Item Headers",
+        slug: "event-item-header",
+        href: "event-item-header",
+        name: "Event Item Header",
         block: [
           {
             slug: "event-item-header-one",
             id: "event-item-header-one",
             name: "Event Item Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/event-item-headers/event-item-header-one.tsx"
+            path: "src/ui/section/event-item-header/event-item-header-one.tsx"
           },
         ]
       },
       {
-        slug: "event-headers",
-        href: "event-headers",
-        name: "Event Headers",
+        slug: "event-header",
+        href: "event-header",
+        name: "Event Header",
         block: [
           {
             slug: "event-header-one",
             id: "event-header-one",
             name: "Event Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/event-headers/event-header-one.tsx"
+            path: "src/ui/section/event-header/event-header-one.tsx"
           },
         ]
       },
       {
-        slug: "event-sections",
-        href: "event-sections",
-        name: "Event Sections",
+        slug: "event-section",
+        href: "event-section",
+        name: "Event Section",
         block: [
           {
             slug: "event-section-one",
             id: "event-section-one",
             name: "Event Section One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/event-sections/event-section-one.tsx"
+            path: "src/ui/section/event-section/event-section-one.tsx"
           },
         ]
       },
       {
-        slug: "multi-step-forms",
-        href: "multi-step-forms",
-        name: "Multi Step Forms",
+        slug: "multi-step-form",
+        href: "multi-step-form",
+        name: "Multi Step Form",
         block: [
           {
             slug: "multi-step-form-one",
             id: "multi-step-form-one",
             name: "Multi Step Form One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/multi-step-forms/multi-step-form-one.tsx"
+            path: "src/ui/section/multi-step-form/multi-step-form-one.tsx"
           },
         ]
       },
       {
-        slug: "stats",
-        href: "stats",
-        name: "Stats Sections",
+        slug: "stat",
+        href: "stat",
+        name: "Stat",
         block: [
           {
-            slug: "stats-one",
-            id: "stats-one",
-            name: "Stats One",
+            slug: "stat-one",
+            id: "stat-one",
+            name: "Stat One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/stats/stats-one.tsx"
+            path: "src/ui/section/stat/stat-one.tsx"
           },
         ]
       },
       {
-        slug: "long-form-contents",
-        href: "long-form-contents",
-        name: "Long-Form Contents",
+        slug: "long-form-content",
+        href: "long-form-content",
+        name: "Long-Form Content",
         block: [
           {
             slug: "long-form-content-one",
             id: "long-form-content-one",
             name: "Long Form Content One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/long-form-contents/long-form-content-one.tsx"
+            path: "src/ui/section/long-form-content/long-form-content-one.tsx"
           },
         ]
       },
       {
-        slug: "loaders",
-        href: "loaders",
-        name: "Loaders",
+        slug: "loader",
+        href: "loader",
+        name: "Loader",
         block: [
           {
             slug: "loader-one",
             id: "loader-one",
             name: "Loader One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/loaders/loader-one.tsx"
+            path: "src/ui/section/loader/loader-one.tsx"
           },
         ]
       },
       {
-        slug: "timelines",
-        href: "timelines",
-        name: "Timeline Sections",
+        slug: "timeline",
+        href: "timeline",
+        name: "Timeline",
         block: [
           {
             slug: "timeline-one",
             id: "timeline-one",
             name: "Timeline One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/timelines/timeline-one.tsx"
+            path: "src/ui/section/timeline/timeline-one.tsx"
           },
         ]
       },
       {
-        slug: "link-pages",
-        href: "link-pages",
-        name: "Link Pages",
+        slug: "link-page",
+        href: "link-page",
+        name: "Link Page",
         block: [
           {
             slug: "link-page-one",
             id: "link-page-one",
             name: "Link Page One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/link-pages/link-page-one.tsx"
+            path: "src/ui/section/link-page/link-page-one.tsx"
           },
         ]
       },
       {
-        slug: "cookie-consents",
-        href: "cookie-consents",
-        name: "Cookie Consents",
+        slug: "cookie-consent",
+        href: "cookie-consent",
+        name: "Cookie Consent",
         block: [
           {
             slug: "cookie-consent-one",
             id: "cookie-consent-one",
             name: "Cookie Consent One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/cookie-consents/cookie-consent-one.tsx"
+            path: "src/ui/section/cookie-consent/cookie-consent-one.tsx"
           },
         ]
       },
@@ -581,44 +637,44 @@ export const data: ComponentData = [
     name: "Ecommerce",
     category: [
       {
-        slug: "product-lists",
-        href: "product-lists",
-        name: "Product Lists",
+        slug: "product-list",
+        href: "product-list",
+        name: "Product List",
         block: [
           {
             slug: "product-list-one",
             id: "product-list-one",
             name: "Product List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/product-lists/product-list-one.tsx"
+            path: "src/ui/section/product-list/product-list-one.tsx"
           },
         ]
       },
       {
-        slug: "product-headers",
-        href: "product-headers",
-        name: "Product Headers",
+        slug: "product-header",
+        href: "product-header",
+        name: "Product Header",
         block: [
           {
             slug: "product-header-one",
             id: "product-header-one",
             name: "Product Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/product-headers/product-header-one.tsx"
+            path: "src/ui/section/product-header/product-header-one.tsx"
           },
         ]
       },
       {
-        slug: "category-filters",
-        href: "category-filters",
-        name: "Category Filters",
+        slug: "category-filter",
+        href: "category-filter",
+        name: "Category Filter",
         block: [
           {
             slug: "category-filter-one",
             id: "category-filter-one",
             name: "Category Filter One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/category-filters/category-filter-one.tsx"
+            path: "src/ui/section/category-filter/category-filter-one.tsx"
           },
         ]
       },
@@ -630,170 +686,170 @@ export const data: ComponentData = [
     name: "Dashboard",
     category: [
       {
-        slug: "application-shells",
-        href: "application-shells",
-        name: "Application Shells",
+        slug: "application-shell",
+        href: "application-shell",
+        name: "Application Shell",
         block: [
           {
             slug: "shell-one",
             id: "shell-one",
             name: "Shell One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/application-shells/shell-one.tsx"
+            path: "src/ui/section/application-shell/shell-one.tsx"
           },
         ]
       },
       {
-        slug: "sidebars",
-        href: "sidebars",
-        name: "Sidebars",
+        slug: "sidebar",
+        href: "sidebar",
+        name: "Sidebar",
         block: [
           {
             slug: "sidebar-one",
             id: "sidebar-one",
             name: "Sidebar One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/sidebars/sidebar-one.tsx"
+            path: "src/ui/section/sidebar/sidebar-one.tsx"
           },
         ]
       },
       {
-        slug: "topbars",
-        href: "topbars",
-        name: "Topbars",
+        slug: "topbar",
+        href: "topbar",
+        name: "Topbar",
         block: [
           {
             slug: "topbar-one",
             id: "topbar-one",
             name: "Topbar One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/topbars/topbar-one.tsx"
+            path: "src/ui/section/topbar/topbar-one.tsx"
           },
         ]
       },
       {
-        slug: "page-headers",
-        href: "page-headers",
-        name: "Page Headers",
+        slug: "page-header",
+        href: "page-header",
+        name: "Page Header",
         block: [
           {
             slug: "page-header-one",
             id: "page-header-one",
             name: "Page Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/page-headers/page-header-one.tsx"
+            path: "src/ui/section/page-header/page-header-one.tsx"
           },
         ]
       },
       {
-        slug: "section-headers",
-        href: "section-headers",
-        name: "Section Headers",
+        slug: "section-header",
+        href: "section-header",
+        name: "Section Header",
         block: [
           {
             slug: "section-header-one",
             id: "section-header-one",
             name: "Section Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/section-headers/section-header-one.tsx"
+            path: "src/ui/section/section-header/section-header-one.tsx"
           },
         ]
       },
       {
-        slug: "card-headers",
-        href: "card-headers",
-        name: "Card Headers",
+        slug: "card-header",
+        href: "card-header",
+        name: "Card Header",
         block: [
           {
             slug: "card-header-one",
             id: "card-header-one",
             name: "Card Header One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/card-headers/card-header-one.tsx"
+            path: "src/ui/section/card-header/card-header-one.tsx"
           },
         ]
       },
       {
-        slug: "sign-up-pages",
-        href: "sign-up-pages",
-        name: "Sign Up Pages",
+        slug: "sign-up-page",
+        href: "sign-up-page",
+        name: "Sign Up Page",
         block: [
           {
-            slug: "signup-page-one",
-            id: "signup-page-one",
+            slug: "sign-up-page-one",
+            id: "sign-up-page-one",
             name: "Sign Up Page One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/sign-up-pages/signup-page-one.tsx"
+            path: "src/ui/section/sign-up-page/sign-up-page-one.tsx"
           },
         ]
       },
       {
-        slug: "onboarding-forms",
-        href: "onboarding-forms",
-        name: "Onboarding Forms",
+        slug: "onboarding-form",
+        href: "onboarding-form",
+        name: "Onboarding Form",
         block: [
           {
             slug: "onboarding-form-one",
             id: "onboarding-form-one",
             name: "Onboarding Form One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/onboarding-forms/onboarding-form-one.tsx"
+            path: "src/ui/section/onboarding-form/onboarding-form-one.tsx"
           },
         ]
       },
       {
-        slug: "sign-up-modals",
-        href: "sign-up-modals",
-        name: "Sign Up Modals",
+        slug: "sign-up-modal",
+        href: "sign-up-modal",
+        name: "Sign Up Modal",
         block: [
           {
-            slug: "signup-modal-one",
-            id: "signup-modal-one",
+            slug: "sign-up-modal-one",
+            id: "sign-up-modal-one",
             name: "Sign Up Modal One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/signup-modals/signup-modal-one.tsx"
+            path: "src/ui/section/signup-modal/sign-up-modal-one.tsx"
           },
         ]
       },
       {
-        slug: "tables",
-        href: "tables",
-        name: "Tables",
+        slug: "table",
+        href: "table",
+        name: "Table",
         block: [
           {
             slug: "table-one",
             id: "table-one",
             name: "Table One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/tables/table-one.tsx"
+            path: "src/ui/section/table/table-one.tsx"
           },
         ]
       },
       {
-        slug: "stacked-lists",
-        href: "stacked-lists",
-        name: "Stacked Lists",
+        slug: "stacked-list",
+        href: "stacked-list",
+        name: "Stacked List",
         block: [
           {
             slug: "stacked-list-one",
             id: "stacked-list-one",
             name: "Stacked List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/stacked-lists/stacked-list-one.tsx"
+            path: "src/ui/section/stacked-list/stacked-list-one.tsx"
           },
         ]
       },
       {
-        slug: "grid-lists",
-        href: "grid-lists",
-        name: "Grid Lists",
+        slug: "grid-list",
+        href: "grid-list",
+        name: "Grid List",
         block: [
           {
             slug: "grid-list-one",
             id: "grid-list-one",
             name: "Grid List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/grid-lists/grid-list-one.tsx"
+            path: "src/ui/section/grid-list/grid-list-one.tsx"
           },
         ]
       },
@@ -807,35 +863,35 @@ export const data: ComponentData = [
             id: "stat-card-one",
             name: "Stat Card One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/stat-cards/stat-card-one.tsx"
+            path: "src/ui/section/stat-cards/stat-card-one.tsx"
           },
         ]
       },
       {
-        slug: "forms",
-        href: "forms",
-        name: "Forms",
+        slug: "form",
+        href: "form",
+        name: "Form",
         block: [
           {
             slug: "form-one",
             id: "form-one",
             name: "Form One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/forms/form-one.tsx"
+            path: "src/ui/section/form/form-one.tsx"
           },
         ]
       },
       {
-        slug: "description-lists",
-        href: "description-lists",
-        name: "Description Lists",
+        slug: "description-list",
+        href: "description-list",
+        name: "Description List",
         block: [
           {
             slug: "description-list-one",
             id: "description-list-one",
             name: "Description List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/components/description-lists/description-list-one.tsx"
+            path: "src/ui/section/description-list/description-list-one.tsx"
           },
         ]
       },

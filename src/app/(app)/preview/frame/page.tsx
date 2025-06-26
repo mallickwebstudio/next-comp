@@ -29,7 +29,7 @@ function PreviewFrameContent() {
   return (
     <div
       className={cn(
-        "min-h-screen bg-secondary text-foreground antialiased",
+        "min-h-screen bg-card text-foreground antialiased",
         theme === "dark" && "dark"
       )}
     >

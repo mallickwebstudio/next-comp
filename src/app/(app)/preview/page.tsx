@@ -42,7 +42,7 @@ function PreviewPageContent() {
             />
 
             {/* Preview container */}
-            <div className="flex min-h-[calc(100dvh_-_64px)] justify-center flex-1">
+            <div className="bg-card flex min-h-[calc(100dvh_-_64px)] justify-center flex-1">
                 <div
                     data-view-mode={viewMode}
                     className={cn(

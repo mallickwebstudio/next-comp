@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const COMPONENT_DIR = path.join(process.cwd(), "src", "ui", "components");
+const COMPONENT_DIR = path.join(process.cwd(), "src", "ui", "section");
 const OUTPUT_FILE = path.join(process.cwd(), "src", "lib", "component-map.ts");
 
 function walk(dir: string): string[] {

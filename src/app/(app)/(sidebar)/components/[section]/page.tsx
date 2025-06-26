@@ -1,6 +1,9 @@
 "use client"
+import { buttonVariants } from "@/components/ui/button";
 import { data } from "@/lib/database";
 import { siteConfig } from "@/lib/metadata";
+import { cn } from "@/lib/utils";
+import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,9 +23,15 @@ export default function SectionOverview({
 
   return (
     <>
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-balance">
-        {sectionData.name} Blocks
-      </h1>
+      <div className="flex items-center">
+        <ChevronRight className="size-4" />
+        <Link
+          className={cn(buttonVariants({ variant: "link", size: "sm" }))}
+          href={`/components/${sectionSlug}`}
+        >
+          {sectionData.name}
+        </Link>
+      </div>
 
       <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {sectionData.category.map(category => {

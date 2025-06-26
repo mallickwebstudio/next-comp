@@ -2,11 +2,13 @@
 // import { AddSite } from "@/components/dialog/add-site"
 import { ModeToggle } from "@/components/other/mode-toggle"
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar"
-import KeepslinkLogo from "@/components/other/svg"
+// import KeepslinkLogo from "@/components/other/svg"
 import Link from "next/link"
 import { CommandDialog, CommandEmpty, CommandInput, CommandList } from "@/components/ui/command"
 import { useEffect, useState } from "react"
 import { Button, buttonVariants } from "@/components/ui/button"
+import Image from "next/image"
+import { siteConfig } from "@/lib/metadata"
 
 export function CommandMenu() {
     const [open, setOpen] = useState(false)
@@ -79,8 +81,14 @@ export default function Navbar() {
                             : "w-0 -ml-2 overflow-hidden transition-all"
                         : "w-8 ml-0"} />
                     <Link className="flex items-center text-primary ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 rounded-md" href="/">
-                        <KeepslinkLogo className="size-10" />
-                        <span className="h-fit block text-base font-semibold leading-4">Keeps Link</span>
+                        <Image
+                            className="h-8 w-fit"
+                            src="/logo.svg"
+                            width={20}
+                            height={10}
+                            alt={siteConfig.name}
+                        />
+                        <span className="sr-only">{siteConfig.name}</span>
                     </Link>
                 </div>
 
