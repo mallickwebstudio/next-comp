@@ -8,7 +8,7 @@ npm run generate:category:screenshot -- category-one category-two category-three
 <!-- Add "dark" key to generate dark mode screenshot -->
 <!-- E.x npm run generate:category:screenshot -- navbar hero dark -->
 <!-- Category up-until created -->
-navbar hero feature faq testimonial cta footer
+navbar hero feature faq testimonial cta footer header pricing
 
 
 <!-- COPY/PASTE to @/lib/database.ts -->

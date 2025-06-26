@@ -47,7 +47,7 @@ export default function FaqFour() {
         <div className="mx-auto md:max-w-xl md:w-2/3">
           {/* Text Content */}
           <header className="text-center">
-            <h2 className="scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+            <h2 className="scroll-m-20 text-3xl md:text-4xl  font-bold tracking-tight text-balance">
               FAQs
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">

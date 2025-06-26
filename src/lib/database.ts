@@ -113,8 +113,29 @@ export const data: ComponentData = [
             slug: "header-one",
             id: "header-one",
             name: "Header One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/header/header-one.png",
             path: "src/ui/section/header/header-one.tsx"
+          },
+          {
+            slug: "header-two",
+            id: "header-two",
+            name: "Header Two",
+            thumbnail: "/images/ui/header/header-two.png",
+            path: "src/ui/section/header/header-two.tsx"
+          },
+          {
+            slug: "header-three",
+            id: "header-three",
+            name: "Header Three",
+            thumbnail: "/images/ui/header/header-three.png",
+            path: "src/ui/section/header/header-three.tsx"
+          },
+          {
+            slug: "header-four",
+            id: "header-four",
+            name: "Header Four",
+            thumbnail: "/images/ui/header/header-four.png",
+            path: "src/ui/section/header/header-four.tsx"
           },
         ]
       },
@@ -274,8 +295,29 @@ export const data: ComponentData = [
             slug: "pricing-one",
             id: "pricing-one",
             name: "Pricing One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/pricing/pricing-one.png",
             path: "src/ui/section/pricing/pricing-one.tsx"
+          },
+          {
+            slug: "pricing-two",
+            id: "pricing-two",
+            name: "Pricing Two",
+            thumbnail: "/images/ui/pricing/pricing-two.png",
+            path: "src/ui/section/pricing/pricing-two.tsx"
+          },
+          {
+            slug: "pricing-three",
+            id: "pricing-three",
+            name: "Pricing Three",
+            thumbnail: "/images/ui/pricing/pricing-three.png",
+            path: "src/ui/section/pricing/pricing-three.tsx"
+          },
+          {
+            slug: "pricing-four",
+            id: "pricing-four",
+            name: "Pricing Four",
+            thumbnail: "/images/ui/pricing/pricing-four.png",
+            path: "src/ui/section/pricing/pricing-four.tsx"
           },
         ]
       },
@@ -358,8 +400,29 @@ export const data: ComponentData = [
             slug: "logo-one",
             id: "logo-one",
             name: "Logo One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/logo/logo-one.png",
             path: "src/ui/section/logo/logo-one.tsx"
+          },
+          {
+            slug: "logo-two",
+            id: "logo-two",
+            name: "Logo Two",
+            thumbnail: "/images/ui/logo/logo-two.png",
+            path: "src/ui/section/logo/logo-two.tsx"
+          },
+          {
+            slug: "logo-three",
+            id: "logo-three",
+            name: "Logo Three",
+            thumbnail: "/images/ui/logo/logo-three.png",
+            path: "src/ui/section/logo/logo-three.tsx"
+          },
+          {
+            slug: "logo-four",
+            id: "logo-four",
+            name: "Logo Four",
+            thumbnail: "/images/ui/logo/logo-four.png",
+            path: "src/ui/section/logo/logo-four.tsx"
           },
         ]
       },
@@ -372,8 +435,29 @@ export const data: ComponentData = [
             slug: "team-one",
             id: "team-one",
             name: "Team One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/team/team-one.png",
             path: "src/ui/section/team/team-one.tsx"
+          },
+          {
+            slug: "team-two",
+            id: "team-two",
+            name: "Team Two",
+            thumbnail: "/images/ui/team/team-two.png",
+            path: "src/ui/section/team/team-two.tsx"
+          },
+          {
+            slug: "team-three",
+            id: "team-three",
+            name: "Team Three",
+            thumbnail: "/images/ui/team/team-three.png",
+            path: "src/ui/section/team/team-three.tsx"
+          },
+          {
+            slug: "team-four",
+            id: "team-four",
+            name: "Team Four",
+            thumbnail: "/images/ui/team/team-four.png",
+            path: "src/ui/section/team/team-four.tsx"
           },
         ]
       },

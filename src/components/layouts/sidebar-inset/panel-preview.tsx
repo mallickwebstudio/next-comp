@@ -23,7 +23,7 @@ export default function PanelPreview({
 
     return (
         <div className="relative p-4 pb-0 size-full bg-secondary">
-            <div className="relative size-full z-0 bg-card/70 select-none touch-none pointer-events-none">
+            <div className="relative size-full z-0 bg-card/70 border border-b-0 select-none touch-none pointer-events-none">
                 <Image
                     className="w-full object-cover"
                     width={320}

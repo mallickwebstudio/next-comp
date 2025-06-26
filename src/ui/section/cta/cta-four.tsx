@@ -12,7 +12,7 @@ export default function CtaFour() {
         {/* Text Content */}
         <div className="mx-auto text-center md:max-w-2xl">
           <header>
-            <h1 className="scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+            <h1 className="scroll-m-20 text-3xl md:text-4xl font-bold tracking-tight text-balance">
               Medium length hero heading goes here
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">

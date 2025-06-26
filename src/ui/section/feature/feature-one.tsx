@@ -15,7 +15,7 @@ export default function FeatureOne() {
                 <div className="w-full md:w-1/2">
                     <header>
                         <Badge variant="secondary">Tagline</Badge>
-                        <h2 className="mt-4 scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+                        <h2 className="mt-4 scroll-m-20 text-3xl md:text-4xl  font-bold tracking-tight text-balance">
                             Medium length hero heading goes here
                         </h2>
                         <p className="mt-4 text-lg text-muted-foreground">

@@ -12,7 +12,7 @@ export default function CtaThree() {
         {/* Text Content */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <header>
-            <h1 className="scroll-m-20 text-background dark:text-foreground text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+            <h1 className="scroll-m-20 text-background dark:text-foreground text-3xl md:text-4xl font-bold tracking-tight text-balance">
               Medium length hero heading goes here
             </h1>
             <p className="mt-4 text-lg text-muted/70 dark:text-muted-foreground">

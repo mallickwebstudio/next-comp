@@ -9,7 +9,9 @@ const selectedCategorySlugs = [
   "faq",
   "testimonial",
   "cta",
-  "footer"
+  "footer",
+  "header",
+  "pricing",
 ]; // set this to your desired category slugs
 
 export default function RegenerateData() {

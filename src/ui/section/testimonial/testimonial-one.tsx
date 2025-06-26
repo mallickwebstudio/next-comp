@@ -37,8 +37,8 @@ export default function TestimonialOne() {
     >
       <div className="container mx-auto p-6 sm:py-10 md:p-12 lg:py-16">
         {/* Text Content */}
-        <header className="mx-auto md:max-w-xl md:w-2/3 text-center">
-          <h2 className="scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+        <header className="mx-auto md:max-w-2xl md:w-2/3 text-center">
+          <h2 className="scroll-m-20 text-3xl md:text-4xl  font-bold tracking-tight text-balance">
             Customer testimonials
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">

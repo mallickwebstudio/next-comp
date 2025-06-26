@@ -53,7 +53,7 @@ export default function FaqThree() {
           {/* Text Content */}
           <div>
             <header>
-              <h2 className="scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight text-balance">
+              <h2 className="scroll-m-20 text-3xl md:text-4xl  font-bold tracking-tight text-balance">
                 FAQs
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">

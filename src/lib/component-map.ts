@@ -22,6 +22,10 @@ export const componentMap = {
   "@/ui/section/footer/footer-one": () => import("@/ui/section/footer/footer-one"),
   "@/ui/section/footer/footer-three": () => import("@/ui/section/footer/footer-three"),
   "@/ui/section/footer/footer-two": () => import("@/ui/section/footer/footer-two"),
+  "@/ui/section/header/header-four": () => import("@/ui/section/header/header-four"),
+  "@/ui/section/header/header-one": () => import("@/ui/section/header/header-one"),
+  "@/ui/section/header/header-three": () => import("@/ui/section/header/header-three"),
+  "@/ui/section/header/header-two": () => import("@/ui/section/header/header-two"),
   "@/ui/section/hero/hero-four": () => import("@/ui/section/hero/hero-four"),
   "@/ui/section/hero/hero-four-flip": () => import("@/ui/section/hero/hero-four-flip"),
   "@/ui/section/hero/hero-one": () => import("@/ui/section/hero/hero-one"),
@@ -30,10 +34,22 @@ export const componentMap = {
   "@/ui/section/hero/hero-three-flip": () => import("@/ui/section/hero/hero-three-flip"),
   "@/ui/section/hero/hero-two": () => import("@/ui/section/hero/hero-two"),
   "@/ui/section/hero/hero-two-flip": () => import("@/ui/section/hero/hero-two-flip"),
+  "@/ui/section/logo/logo-four": () => import("@/ui/section/logo/logo-four"),
+  "@/ui/section/logo/logo-one": () => import("@/ui/section/logo/logo-one"),
+  "@/ui/section/logo/logo-three": () => import("@/ui/section/logo/logo-three"),
+  "@/ui/section/logo/logo-two": () => import("@/ui/section/logo/logo-two"),
   "@/ui/section/navbar/navbar-four": () => import("@/ui/section/navbar/navbar-four"),
   "@/ui/section/navbar/navbar-one": () => import("@/ui/section/navbar/navbar-one"),
   "@/ui/section/navbar/navbar-three": () => import("@/ui/section/navbar/navbar-three"),
   "@/ui/section/navbar/navbar-two": () => import("@/ui/section/navbar/navbar-two"),
+  "@/ui/section/pricing/pricing-four": () => import("@/ui/section/pricing/pricing-four"),
+  "@/ui/section/pricing/pricing-one": () => import("@/ui/section/pricing/pricing-one"),
+  "@/ui/section/pricing/pricing-three": () => import("@/ui/section/pricing/pricing-three"),
+  "@/ui/section/pricing/pricing-two": () => import("@/ui/section/pricing/pricing-two"),
+  "@/ui/section/team/team-four": () => import("@/ui/section/team/team-four"),
+  "@/ui/section/team/team-one": () => import("@/ui/section/team/team-one"),
+  "@/ui/section/team/team-three": () => import("@/ui/section/team/team-three"),
+  "@/ui/section/team/team-two": () => import("@/ui/section/team/team-two"),
   "@/ui/section/testimonial/testimonial-four": () => import("@/ui/section/testimonial/testimonial-four"),
   "@/ui/section/testimonial/testimonial-one": () => import("@/ui/section/testimonial/testimonial-one"),
   "@/ui/section/testimonial/testimonial-three": () => import("@/ui/section/testimonial/testimonial-three"),
@@ -61,6 +77,10 @@ export type ComponentPath =
   | "@/ui/section/footer/footer-one"
   | "@/ui/section/footer/footer-three"
   | "@/ui/section/footer/footer-two"
+  | "@/ui/section/header/header-four"
+  | "@/ui/section/header/header-one"
+  | "@/ui/section/header/header-three"
+  | "@/ui/section/header/header-two"
   | "@/ui/section/hero/hero-four"
   | "@/ui/section/hero/hero-four-flip"
   | "@/ui/section/hero/hero-one"
@@ -69,10 +89,22 @@ export type ComponentPath =
   | "@/ui/section/hero/hero-three-flip"
   | "@/ui/section/hero/hero-two"
   | "@/ui/section/hero/hero-two-flip"
+  | "@/ui/section/logo/logo-four"
+  | "@/ui/section/logo/logo-one"
+  | "@/ui/section/logo/logo-three"
+  | "@/ui/section/logo/logo-two"
   | "@/ui/section/navbar/navbar-four"
   | "@/ui/section/navbar/navbar-one"
   | "@/ui/section/navbar/navbar-three"
   | "@/ui/section/navbar/navbar-two"
+  | "@/ui/section/pricing/pricing-four"
+  | "@/ui/section/pricing/pricing-one"
+  | "@/ui/section/pricing/pricing-three"
+  | "@/ui/section/pricing/pricing-two"
+  | "@/ui/section/team/team-four"
+  | "@/ui/section/team/team-one"
+  | "@/ui/section/team/team-three"
+  | "@/ui/section/team/team-two"
   | "@/ui/section/testimonial/testimonial-four"
   | "@/ui/section/testimonial/testimonial-one"
   | "@/ui/section/testimonial/testimonial-three"
