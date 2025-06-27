@@ -16,7 +16,7 @@ export default function PreviewTab({
 }: {
     data: Block;
 }) {
-    const { slug, name, thumbnail, path } = data;
+    const { slug, name, thumbnail } = data;
 
     return (
         <div className="p-2 bg-card rounded-md">
@@ -26,7 +26,7 @@ export default function PreviewTab({
                 </TabsContent>
 
                 <TabsContent className={tabsContentClass} value="tsx">
-                    <PanelCode filePath={path} extention="tsx" fileName={slug} />
+                    <PanelCode fileSlug={slug} />
                 </TabsContent>
 
                 <div className="flex items-end">

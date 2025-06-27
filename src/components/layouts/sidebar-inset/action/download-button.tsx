@@ -7,11 +7,9 @@ import { useState } from "react";
 export default function DownloadButton({
     text,
     fileName,
-    extention
 }: {
     text: string;
     fileName: string;
-    extention: string;
 }) {
     const [isDownloaded, setIsDownloaded] = useState(false);
 
@@ -20,7 +18,7 @@ export default function DownloadButton({
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = `${fileName}.${extention}`;
+        link.download = `${fileName}.tsx`;
         link.click();
         setIsDownloaded(true);
         setTimeout(() => setIsDownloaded(false), 2000);

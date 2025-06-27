@@ -1,50 +1,62 @@
 import fs from "fs";
 import path from "path";
 
-const COMPONENT_DIR = path.join(process.cwd(), "src", "ui", "section");
+const COMPONENT_DIR = path.join(process.cwd(), "src", "ui");
 const OUTPUT_FILE = path.join(process.cwd(), "src", "lib", "component-map.ts");
 
+// Recursively walk directories and return list of .tsx/.jsx files
 function walk(dir: string): string[] {
   return fs.readdirSync(dir).flatMap((file) => {
     const fullPath = path.join(dir, file);
-    return fs.statSync(fullPath).isDirectory()
-      ? walk(fullPath)
-      : /\.(jsx|tsx)$/.test(fullPath)
-        ? [fullPath]
-        : [];
+    if (fs.statSync(fullPath).isDirectory()) return walk(fullPath);
+    return /\.(tsx|jsx)$/.test(fullPath) ? [fullPath] : [];
   });
+}
+
+// Generate slug from filename (e.g., "team-two.tsx" => "team-two")
+function getSlug(filePath: string): string {
+  return path.basename(filePath).replace(/\.(tsx|jsx)$/, "");
+}
+
+// Convert absolute file path to alias import path (e.g., "@/ui/section/team/team-two")
+function toImportPath(filePath: string): string {
+  const relative = path.relative(path.join(process.cwd(), "src"), filePath);
+  return "@/".concat(relative.replace(/\.(tsx|jsx)$/, "").replace(/\\/g, "/"));
 }
 
 const files = walk(COMPONENT_DIR);
 
-// Generate map entries
-const mapEntries = files.map((file) => {
-  const relativePathFromSrc = path.relative(path.join(process.cwd(), "src"), file);
-  const noExtension = relativePathFromSrc.replace(/\.(tsx|jsx)$/, "");
-  const importPath = "@/".concat(noExtension.replace(/\\/g, "/")); // Normalize Windows paths
+// Build entries
+const entries = files.map((file) => {
+  const slug = getSlug(file);
+  const importPath = toImportPath(file);
   return {
-    key: importPath,
-    value: `() => import("${importPath}")`,
+    slug,
+    importPath,
   };
 });
 
-// Sort alphabetically
-mapEntries.sort((a, b) => a.key.localeCompare(b.key));
+// Sort by slug alphabetically
+entries.sort((a, b) => a.slug.localeCompare(b.slug));
 
-// Build the output string
-const mapObject = mapEntries.map((entry) => `  "${entry.key}": ${entry.value}`).join(",\n");
+// Generate object content
+const mapContent = entries.map(
+  ({ slug, importPath }) => `  "${slug}": () => import("${importPath}")`
+).join(",\n");
 
-const keyUnion = mapEntries.map((entry) => `  | "${entry.key}"`).join("\n");
+// Generate union type of slugs
+const typeUnion = entries.map(({ slug }) => `  | "${slug}"`).join("\n");
 
+// Final output
 const output = `// ⚠️ AUTO-GENERATED FILE — DO NOT EDIT MANUALLY
 // Run \`npm run generate:components\` to regenerate
 
 export const componentMap = {
-${mapObject}
+${mapContent}
 } as const;
 
-export type ComponentPath =
-${keyUnion};
+export type ComponentSlug =
+${typeUnion};
 `;
 
 fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });

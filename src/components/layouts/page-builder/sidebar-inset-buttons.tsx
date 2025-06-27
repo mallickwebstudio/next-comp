@@ -1,7 +1,7 @@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { usePageBuilder } from "@/hooks/page-builder-provider";
 import { getBlockById } from "@/lib/utils";
-import { getFileByPath } from "@/scripts/get-file-by-path";
+import { getFileBySlug } from "@/scripts/get-file-by-slug";
 import JSZip from "jszip";
 import { Download, Eye, Loader } from "lucide-react";
 import { useState } from "react";
@@ -94,7 +94,7 @@ export default function SidebarInsetButtons() {
             // 1. Get code for each block
             for (const block of usedBlocks) {
                 if (!block) continue;
-                const code = await getFileByPath(block.path);
+                const code = await getFileBySlug(block.slug);
 
                 if (code) {
                     zip.file(`${block.slug}.tsx`, code);

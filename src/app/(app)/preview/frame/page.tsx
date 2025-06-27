@@ -2,10 +2,12 @@
 
 import { useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
-import { componentMap, ComponentPath } from "@/lib/component-map";
+import { componentMap, ComponentSlug } from "@/lib/component-map";
 import { cn, getBlockBySlug } from "@/lib/utils";
 import { Suspense, useEffect, useMemo } from "react";
-
+function isValidSlug(slug: string): slug is ComponentSlug {
+  return slug in componentMap;
+}
 function PreviewFrameContent() {
   const searchParams = useSearchParams();
 
@@ -35,9 +37,17 @@ function PreviewFrameContent() {
     >
 
       {blocks.map((block) => {
-        const path = block!.path.replace("src", "@").replace(".tsx", "") as ComponentPath;
+        const slug = block!.slug;
 
-        const PreviewComponent = dynamic(componentMap[path], {
+        if (!isValidSlug(slug)) {
+          return (
+            <div key={block!.id} className="p-4 text-red-500">
+              Invalid slug: {slug}
+            </div>
+          );
+        }
+
+        const PreviewComponent = dynamic(componentMap[slug], {
           ssr: false,
           loading: () => <div className="text-center p-8">Loading {block!.name}...</div>,
         });

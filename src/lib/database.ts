@@ -730,7 +730,7 @@ export const data: ComponentData = [
             id: "product-list-one",
             name: "Product List One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/section/product-list/product-list-one.tsx"
+            path: "src/ui/ecommerce/product-list/product-list-one.tsx"
           },
         ]
       },
@@ -779,7 +779,7 @@ export const data: ComponentData = [
             id: "shell-one",
             name: "Shell One",
             thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/section/application-shell/shell-one.tsx"
+            path: "src/ui/dashboard/application-shell/shell-one.tsx"
           },
         ]
       },

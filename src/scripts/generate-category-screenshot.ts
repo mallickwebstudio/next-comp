@@ -4,11 +4,6 @@ import fs from "fs";
 import path from "path";
 import kebabCase from "lodash.kebabcase";
 
-// const args = process.argv.slice(2);
-// const categories = args.filter((arg) => arg !== "dark");
-// const darkMode = args.includes("dark");
-// const theme = darkMode ? "dark" : undefined;
-
 const args = process.argv.slice(2);
 const blockSlug = args.find((arg) => arg.startsWith("block="))?.split("=")[1];
 const categories = args.filter((arg) => !arg.startsWith("block=") && arg !== "dark");
@@ -21,16 +16,6 @@ const theme = darkMode ? "dark" : undefined;
     console.error("Please specify at least one category slug (e.g., navbar hero feature) or a block slug (e.g., block=hero-one)");
     process.exit(1);
   }
-  // const blocks = data.flatMap(section =>
-  //   section.category
-  //     .filter(category => categories.includes(category.slug))
-  //     .flatMap(category =>
-  //       category.block.map(block => ({
-  //         ...block,
-  //         categorySlug: category.slug,
-  //       }))
-  //     )
-  // );
 
   const blocks = data.flatMap(section =>
     section.category.flatMap(category =>

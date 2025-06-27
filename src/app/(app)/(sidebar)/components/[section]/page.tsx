@@ -33,7 +33,7 @@ export default function SectionOverview({
         </Link>
       </div>
 
-      <section className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {sectionData.category.map(category => {
           const block = category.block?.[0];
           if (!block) return null;

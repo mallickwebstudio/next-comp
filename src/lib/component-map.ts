@@ -2,110 +2,110 @@
 // Run `npm run generate:components` to regenerate
 
 export const componentMap = {
-  "@/ui/section/cta/cta-four": () => import("@/ui/section/cta/cta-four"),
-  "@/ui/section/cta/cta-one": () => import("@/ui/section/cta/cta-one"),
-  "@/ui/section/cta/cta-three": () => import("@/ui/section/cta/cta-three"),
-  "@/ui/section/cta/cta-two": () => import("@/ui/section/cta/cta-two"),
-  "@/ui/section/faq/faq-four": () => import("@/ui/section/faq/faq-four"),
-  "@/ui/section/faq/faq-one": () => import("@/ui/section/faq/faq-one"),
-  "@/ui/section/faq/faq-three": () => import("@/ui/section/faq/faq-three"),
-  "@/ui/section/faq/faq-two": () => import("@/ui/section/faq/faq-two"),
-  "@/ui/section/feature/feature-four": () => import("@/ui/section/feature/feature-four"),
-  "@/ui/section/feature/feature-four-flip": () => import("@/ui/section/feature/feature-four-flip"),
-  "@/ui/section/feature/feature-one": () => import("@/ui/section/feature/feature-one"),
-  "@/ui/section/feature/feature-one-flip": () => import("@/ui/section/feature/feature-one-flip"),
-  "@/ui/section/feature/feature-three": () => import("@/ui/section/feature/feature-three"),
-  "@/ui/section/feature/feature-three-flip": () => import("@/ui/section/feature/feature-three-flip"),
-  "@/ui/section/feature/feature-two": () => import("@/ui/section/feature/feature-two"),
-  "@/ui/section/feature/feature-two-flip": () => import("@/ui/section/feature/feature-two-flip"),
-  "@/ui/section/footer/footer-four": () => import("@/ui/section/footer/footer-four"),
-  "@/ui/section/footer/footer-one": () => import("@/ui/section/footer/footer-one"),
-  "@/ui/section/footer/footer-three": () => import("@/ui/section/footer/footer-three"),
-  "@/ui/section/footer/footer-two": () => import("@/ui/section/footer/footer-two"),
-  "@/ui/section/header/header-four": () => import("@/ui/section/header/header-four"),
-  "@/ui/section/header/header-one": () => import("@/ui/section/header/header-one"),
-  "@/ui/section/header/header-three": () => import("@/ui/section/header/header-three"),
-  "@/ui/section/header/header-two": () => import("@/ui/section/header/header-two"),
-  "@/ui/section/hero/hero-four": () => import("@/ui/section/hero/hero-four"),
-  "@/ui/section/hero/hero-four-flip": () => import("@/ui/section/hero/hero-four-flip"),
-  "@/ui/section/hero/hero-one": () => import("@/ui/section/hero/hero-one"),
-  "@/ui/section/hero/hero-one-flip": () => import("@/ui/section/hero/hero-one-flip"),
-  "@/ui/section/hero/hero-three": () => import("@/ui/section/hero/hero-three"),
-  "@/ui/section/hero/hero-three-flip": () => import("@/ui/section/hero/hero-three-flip"),
-  "@/ui/section/hero/hero-two": () => import("@/ui/section/hero/hero-two"),
-  "@/ui/section/hero/hero-two-flip": () => import("@/ui/section/hero/hero-two-flip"),
-  "@/ui/section/logo/logo-four": () => import("@/ui/section/logo/logo-four"),
-  "@/ui/section/logo/logo-one": () => import("@/ui/section/logo/logo-one"),
-  "@/ui/section/logo/logo-three": () => import("@/ui/section/logo/logo-three"),
-  "@/ui/section/logo/logo-two": () => import("@/ui/section/logo/logo-two"),
-  "@/ui/section/navbar/navbar-four": () => import("@/ui/section/navbar/navbar-four"),
-  "@/ui/section/navbar/navbar-one": () => import("@/ui/section/navbar/navbar-one"),
-  "@/ui/section/navbar/navbar-three": () => import("@/ui/section/navbar/navbar-three"),
-  "@/ui/section/navbar/navbar-two": () => import("@/ui/section/navbar/navbar-two"),
-  "@/ui/section/pricing/pricing-four": () => import("@/ui/section/pricing/pricing-four"),
-  "@/ui/section/pricing/pricing-one": () => import("@/ui/section/pricing/pricing-one"),
-  "@/ui/section/pricing/pricing-three": () => import("@/ui/section/pricing/pricing-three"),
-  "@/ui/section/pricing/pricing-two": () => import("@/ui/section/pricing/pricing-two"),
-  "@/ui/section/team/team-four": () => import("@/ui/section/team/team-four"),
-  "@/ui/section/team/team-one": () => import("@/ui/section/team/team-one"),
-  "@/ui/section/team/team-three": () => import("@/ui/section/team/team-three"),
-  "@/ui/section/team/team-two": () => import("@/ui/section/team/team-two"),
-  "@/ui/section/testimonial/testimonial-four": () => import("@/ui/section/testimonial/testimonial-four"),
-  "@/ui/section/testimonial/testimonial-one": () => import("@/ui/section/testimonial/testimonial-one"),
-  "@/ui/section/testimonial/testimonial-three": () => import("@/ui/section/testimonial/testimonial-three"),
-  "@/ui/section/testimonial/testimonial-two": () => import("@/ui/section/testimonial/testimonial-two")
+  "cta-four": () => import("@/ui/section/cta/cta-four"),
+  "cta-one": () => import("@/ui/section/cta/cta-one"),
+  "cta-three": () => import("@/ui/section/cta/cta-three"),
+  "cta-two": () => import("@/ui/section/cta/cta-two"),
+  "faq-four": () => import("@/ui/section/faq/faq-four"),
+  "faq-one": () => import("@/ui/section/faq/faq-one"),
+  "faq-three": () => import("@/ui/section/faq/faq-three"),
+  "faq-two": () => import("@/ui/section/faq/faq-two"),
+  "feature-four": () => import("@/ui/section/feature/feature-four"),
+  "feature-four-flip": () => import("@/ui/section/feature/feature-four-flip"),
+  "feature-one": () => import("@/ui/section/feature/feature-one"),
+  "feature-one-flip": () => import("@/ui/section/feature/feature-one-flip"),
+  "feature-three": () => import("@/ui/section/feature/feature-three"),
+  "feature-three-flip": () => import("@/ui/section/feature/feature-three-flip"),
+  "feature-two": () => import("@/ui/section/feature/feature-two"),
+  "feature-two-flip": () => import("@/ui/section/feature/feature-two-flip"),
+  "footer-four": () => import("@/ui/section/footer/footer-four"),
+  "footer-one": () => import("@/ui/section/footer/footer-one"),
+  "footer-three": () => import("@/ui/section/footer/footer-three"),
+  "footer-two": () => import("@/ui/section/footer/footer-two"),
+  "header-four": () => import("@/ui/section/header/header-four"),
+  "header-one": () => import("@/ui/section/header/header-one"),
+  "header-three": () => import("@/ui/section/header/header-three"),
+  "header-two": () => import("@/ui/section/header/header-two"),
+  "hero-four": () => import("@/ui/section/hero/hero-four"),
+  "hero-four-flip": () => import("@/ui/section/hero/hero-four-flip"),
+  "hero-one": () => import("@/ui/section/hero/hero-one"),
+  "hero-one-flip": () => import("@/ui/section/hero/hero-one-flip"),
+  "hero-three": () => import("@/ui/section/hero/hero-three"),
+  "hero-three-flip": () => import("@/ui/section/hero/hero-three-flip"),
+  "hero-two": () => import("@/ui/section/hero/hero-two"),
+  "hero-two-flip": () => import("@/ui/section/hero/hero-two-flip"),
+  "logo-four": () => import("@/ui/section/logo/logo-four"),
+  "logo-one": () => import("@/ui/section/logo/logo-one"),
+  "logo-three": () => import("@/ui/section/logo/logo-three"),
+  "logo-two": () => import("@/ui/section/logo/logo-two"),
+  "navbar-four": () => import("@/ui/section/navbar/navbar-four"),
+  "navbar-one": () => import("@/ui/section/navbar/navbar-one"),
+  "navbar-three": () => import("@/ui/section/navbar/navbar-three"),
+  "navbar-two": () => import("@/ui/section/navbar/navbar-two"),
+  "pricing-four": () => import("@/ui/section/pricing/pricing-four"),
+  "pricing-one": () => import("@/ui/section/pricing/pricing-one"),
+  "pricing-three": () => import("@/ui/section/pricing/pricing-three"),
+  "pricing-two": () => import("@/ui/section/pricing/pricing-two"),
+  "team-four": () => import("@/ui/section/team/team-four"),
+  "team-one": () => import("@/ui/section/team/team-one"),
+  "team-three": () => import("@/ui/section/team/team-three"),
+  "team-two": () => import("@/ui/section/team/team-two"),
+  "testimonial-four": () => import("@/ui/section/testimonial/testimonial-four"),
+  "testimonial-one": () => import("@/ui/section/testimonial/testimonial-one"),
+  "testimonial-three": () => import("@/ui/section/testimonial/testimonial-three"),
+  "testimonial-two": () => import("@/ui/section/testimonial/testimonial-two")
 } as const;
 
-export type ComponentPath =
-  | "@/ui/section/cta/cta-four"
-  | "@/ui/section/cta/cta-one"
-  | "@/ui/section/cta/cta-three"
-  | "@/ui/section/cta/cta-two"
-  | "@/ui/section/faq/faq-four"
-  | "@/ui/section/faq/faq-one"
-  | "@/ui/section/faq/faq-three"
-  | "@/ui/section/faq/faq-two"
-  | "@/ui/section/feature/feature-four"
-  | "@/ui/section/feature/feature-four-flip"
-  | "@/ui/section/feature/feature-one"
-  | "@/ui/section/feature/feature-one-flip"
-  | "@/ui/section/feature/feature-three"
-  | "@/ui/section/feature/feature-three-flip"
-  | "@/ui/section/feature/feature-two"
-  | "@/ui/section/feature/feature-two-flip"
-  | "@/ui/section/footer/footer-four"
-  | "@/ui/section/footer/footer-one"
-  | "@/ui/section/footer/footer-three"
-  | "@/ui/section/footer/footer-two"
-  | "@/ui/section/header/header-four"
-  | "@/ui/section/header/header-one"
-  | "@/ui/section/header/header-three"
-  | "@/ui/section/header/header-two"
-  | "@/ui/section/hero/hero-four"
-  | "@/ui/section/hero/hero-four-flip"
-  | "@/ui/section/hero/hero-one"
-  | "@/ui/section/hero/hero-one-flip"
-  | "@/ui/section/hero/hero-three"
-  | "@/ui/section/hero/hero-three-flip"
-  | "@/ui/section/hero/hero-two"
-  | "@/ui/section/hero/hero-two-flip"
-  | "@/ui/section/logo/logo-four"
-  | "@/ui/section/logo/logo-one"
-  | "@/ui/section/logo/logo-three"
-  | "@/ui/section/logo/logo-two"
-  | "@/ui/section/navbar/navbar-four"
-  | "@/ui/section/navbar/navbar-one"
-  | "@/ui/section/navbar/navbar-three"
-  | "@/ui/section/navbar/navbar-two"
-  | "@/ui/section/pricing/pricing-four"
-  | "@/ui/section/pricing/pricing-one"
-  | "@/ui/section/pricing/pricing-three"
-  | "@/ui/section/pricing/pricing-two"
-  | "@/ui/section/team/team-four"
-  | "@/ui/section/team/team-one"
-  | "@/ui/section/team/team-three"
-  | "@/ui/section/team/team-two"
-  | "@/ui/section/testimonial/testimonial-four"
-  | "@/ui/section/testimonial/testimonial-one"
-  | "@/ui/section/testimonial/testimonial-three"
-  | "@/ui/section/testimonial/testimonial-two";
+export type ComponentSlug =
+  | "cta-four"
+  | "cta-one"
+  | "cta-three"
+  | "cta-two"
+  | "faq-four"
+  | "faq-one"
+  | "faq-three"
+  | "faq-two"
+  | "feature-four"
+  | "feature-four-flip"
+  | "feature-one"
+  | "feature-one-flip"
+  | "feature-three"
+  | "feature-three-flip"
+  | "feature-two"
+  | "feature-two-flip"
+  | "footer-four"
+  | "footer-one"
+  | "footer-three"
+  | "footer-two"
+  | "header-four"
+  | "header-one"
+  | "header-three"
+  | "header-two"
+  | "hero-four"
+  | "hero-four-flip"
+  | "hero-one"
+  | "hero-one-flip"
+  | "hero-three"
+  | "hero-three-flip"
+  | "hero-two"
+  | "hero-two-flip"
+  | "logo-four"
+  | "logo-one"
+  | "logo-three"
+  | "logo-two"
+  | "navbar-four"
+  | "navbar-one"
+  | "navbar-three"
+  | "navbar-two"
+  | "pricing-four"
+  | "pricing-one"
+  | "pricing-three"
+  | "pricing-two"
+  | "team-four"
+  | "team-one"
+  | "team-three"
+  | "team-two"
+  | "testimonial-four"
+  | "testimonial-one"
+  | "testimonial-three"
+  | "testimonial-two";

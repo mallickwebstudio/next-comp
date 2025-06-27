@@ -24,6 +24,7 @@ export default function BlockPage({ params
 
     return (
         <>
+            {/* Navigation */}
             <div className="flex items-center">
                 <Link
                     className={cn(buttonVariants({ variant: "link", size: "sm" }), "hidden md:flex")}
@@ -52,7 +53,6 @@ export default function BlockPage({ params
             </div>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* <PreviewTab data={blockData} /> */}
                 <div className="relative p-4 pb-0  bg-secondary w-full aspect-video border rounded-md">
                     <div className="relative size-full z-0 bg-card/70 select-none touch-none pointer-events-none">
                         <Image
@@ -65,7 +65,7 @@ export default function BlockPage({ params
                     </div>
                 </div>
                 <div className="w-full aspect-video border rounded-md">
-                    <PanelCode filePath={blockData.path} extention="tsx" fileName={blockData.slug} />
+                    <PanelCode fileSlug={blockData.slug} />
                 </div>
             </div>
 
