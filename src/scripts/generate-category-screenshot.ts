@@ -39,7 +39,6 @@ const theme = darkMode ? "dark" : undefined;
   for (const block of blocks) {
     const url = `http://localhost:3000/preview/frame?block=${block.slug}${theme ? `&theme=${theme}` : ""}`;
 
-
     const outputPath = path.resolve(
       __dirname,
       `../../public/images/ui/${block.categorySlug}`

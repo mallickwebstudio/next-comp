@@ -46,7 +46,7 @@ function PreviewPageContent() {
                 <div
                     data-view-mode={viewMode}
                     className={cn(
-                        "relative w-full transition-all",
+                        "relative w-full transition-all ease-linear duration-500",
                         viewMode === "mobile" && "max-w-[375px] border-x",
                         viewMode === "desktop" && "max-w-full"
                     )}
@@ -54,7 +54,7 @@ function PreviewPageContent() {
                     <iframe
                         src={`/preview/frame?${iframeQuery.toString()}`}
                         className={cn(
-                            "w-full h-full border-none transition-all",
+                            "mx-auto w-full h-full border-none transition-all ease-linear duration-500",
                             viewMode === "mobile" && "max-w-[375px]",
                             viewMode === "desktop" && "max-w-full"
                         )}

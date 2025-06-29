@@ -19,6 +19,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 // import { cn } from "@/lib/utils"
 import { ComponentData } from "@/types"
+import { cn } from "@/lib/utils"
 
 export function SidebarNav({
   data
@@ -56,28 +57,29 @@ export function SidebarNav({
 
                 <SidebarMenuButton asChild tooltip={item.name}>
                   <Link
-                    href={`/components/${item.href}`}
                     className={isActive ? "text-primary font-semibold bg-secondary/40" : ""}
+                    href={`/components/${item.href}`}
                   >
-                    <span>{item.name}</span>
+                    <span>{item.name} <span className="text-xs text-muted-foreground">({item.category.length})</span></span>
                   </Link>
                 </SidebarMenuButton>
 
                 {item.category?.length ? (
                   <CollapsibleContent>
-                    <SidebarMenuSub>
+                    <SidebarMenuSub className="pr-0 mr-1" >
                       {item.category.map((subItem) => {
                         const subPath = `/components/${item.href}/${subItem.href}`;
                         const isSubActive = path === subPath;
 
                         return (
                           <SidebarMenuSubItem key={subItem.name}>
-                            <SidebarMenuSubButton asChild>
+                            <SidebarMenuSubButton className={isSubActive ? "bg-secondary/40" : ""} asChild>
                               <Link
+                                className="flex items-center justify-between gap-2"
                                 href={subPath}
-                                className={isSubActive ? "text-primary font-medium" : ""}
                               >
-                                <span>{subItem.name}</span>
+                                <span className="text-balance line-clamp-1">{subItem.name}</span>
+                                <span className="text-muted-foreground text-xs shrink-0">{subItem.block.length}</span>
                               </Link>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>

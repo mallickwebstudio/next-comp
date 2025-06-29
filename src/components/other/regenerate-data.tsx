@@ -12,6 +12,16 @@ const selectedCategorySlugs = [
   "footer",
   "header",
   "pricing",
+  "logo",
+  "team",
+  "career",
+  "gallery",
+  "contact",
+  "blog-header",
+  "blog-post-header",
+  "blog-section",
+  "portfolio-header",
+  "portfolio-section"
 ]; // set this to your desired category slugs
 
 export default function RegenerateData() {

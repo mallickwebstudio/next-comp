@@ -2,6 +2,26 @@
 // Run `npm run generate:components` to regenerate
 
 export const componentMap = {
+  "blog-header-four": () => import("@/ui/section/blog-header/blog-header-four"),
+  "blog-header-one": () => import("@/ui/section/blog-header/blog-header-one"),
+  "blog-header-three": () => import("@/ui/section/blog-header/blog-header-three"),
+  "blog-header-two": () => import("@/ui/section/blog-header/blog-header-two"),
+  "blog-post-header-four": () => import("@/ui/section/blog-post-header/blog-post-header-four"),
+  "blog-post-header-one": () => import("@/ui/section/blog-post-header/blog-post-header-one"),
+  "blog-post-header-three": () => import("@/ui/section/blog-post-header/blog-post-header-three"),
+  "blog-post-header-two": () => import("@/ui/section/blog-post-header/blog-post-header-two"),
+  "blog-section-four": () => import("@/ui/section/blog-section/blog-section-four"),
+  "blog-section-one": () => import("@/ui/section/blog-section/blog-section-one"),
+  "blog-section-three": () => import("@/ui/section/blog-section/blog-section-three"),
+  "blog-section-two": () => import("@/ui/section/blog-section/blog-section-two"),
+  "career-four": () => import("@/ui/section/career/career-four"),
+  "career-one": () => import("@/ui/section/career/career-one"),
+  "career-three": () => import("@/ui/section/career/career-three"),
+  "career-two": () => import("@/ui/section/career/career-two"),
+  "contact-four": () => import("@/ui/section/contact/contact-four"),
+  "contact-one": () => import("@/ui/section/contact/contact-one"),
+  "contact-three": () => import("@/ui/section/contact/contact-three"),
+  "contact-two": () => import("@/ui/section/contact/contact-two"),
   "cta-four": () => import("@/ui/section/cta/cta-four"),
   "cta-one": () => import("@/ui/section/cta/cta-one"),
   "cta-three": () => import("@/ui/section/cta/cta-three"),
@@ -22,6 +42,10 @@ export const componentMap = {
   "footer-one": () => import("@/ui/section/footer/footer-one"),
   "footer-three": () => import("@/ui/section/footer/footer-three"),
   "footer-two": () => import("@/ui/section/footer/footer-two"),
+  "gallery-four": () => import("@/ui/section/gallery/gallery-four"),
+  "gallery-one": () => import("@/ui/section/gallery/gallery-one"),
+  "gallery-three": () => import("@/ui/section/gallery/gallery-three"),
+  "gallery-two": () => import("@/ui/section/gallery/gallery-two"),
   "header-four": () => import("@/ui/section/header/header-four"),
   "header-one": () => import("@/ui/section/header/header-one"),
   "header-three": () => import("@/ui/section/header/header-three"),
@@ -42,6 +66,14 @@ export const componentMap = {
   "navbar-one": () => import("@/ui/section/navbar/navbar-one"),
   "navbar-three": () => import("@/ui/section/navbar/navbar-three"),
   "navbar-two": () => import("@/ui/section/navbar/navbar-two"),
+  "portfolio-header-four": () => import("@/ui/section/portfolio-header/portfolio-header-four"),
+  "portfolio-header-one": () => import("@/ui/section/portfolio-header/portfolio-header-one"),
+  "portfolio-header-three": () => import("@/ui/section/portfolio-header/portfolio-header-three"),
+  "portfolio-header-two": () => import("@/ui/section/portfolio-header/portfolio-header-two"),
+  "portfolio-section-four": () => import("@/ui/section/portfolio-section/portfolio-section-four"),
+  "portfolio-section-one": () => import("@/ui/section/portfolio-section/portfolio-section-one"),
+  "portfolio-section-three": () => import("@/ui/section/portfolio-section/portfolio-section-three"),
+  "portfolio-section-two": () => import("@/ui/section/portfolio-section/portfolio-section-two"),
   "pricing-four": () => import("@/ui/section/pricing/pricing-four"),
   "pricing-one": () => import("@/ui/section/pricing/pricing-one"),
   "pricing-three": () => import("@/ui/section/pricing/pricing-three"),
@@ -57,6 +89,26 @@ export const componentMap = {
 } as const;
 
 export type ComponentSlug =
+  | "blog-header-four"
+  | "blog-header-one"
+  | "blog-header-three"
+  | "blog-header-two"
+  | "blog-post-header-four"
+  | "blog-post-header-one"
+  | "blog-post-header-three"
+  | "blog-post-header-two"
+  | "blog-section-four"
+  | "blog-section-one"
+  | "blog-section-three"
+  | "blog-section-two"
+  | "career-four"
+  | "career-one"
+  | "career-three"
+  | "career-two"
+  | "contact-four"
+  | "contact-one"
+  | "contact-three"
+  | "contact-two"
   | "cta-four"
   | "cta-one"
   | "cta-three"
@@ -77,6 +129,10 @@ export type ComponentSlug =
   | "footer-one"
   | "footer-three"
   | "footer-two"
+  | "gallery-four"
+  | "gallery-one"
+  | "gallery-three"
+  | "gallery-two"
   | "header-four"
   | "header-one"
   | "header-three"
@@ -97,6 +153,14 @@ export type ComponentSlug =
   | "navbar-one"
   | "navbar-three"
   | "navbar-two"
+  | "portfolio-header-four"
+  | "portfolio-header-one"
+  | "portfolio-header-three"
+  | "portfolio-header-two"
+  | "portfolio-section-four"
+  | "portfolio-section-one"
+  | "portfolio-section-three"
+  | "portfolio-section-two"
   | "pricing-four"
   | "pricing-one"
   | "pricing-three"

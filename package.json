@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "generate:category:screenshot": "tsx src/scripts/generator-category-screenshot.ts",
+    "generate:category:screenshot": "tsx src/scripts/generate-category-screenshot.ts",
     "generate:public:code": "tsx src/scripts/generate-public-code.ts",
     "generate:component:map": "npx tsx src/scripts/generate-component-map.ts",
     "dev": "next dev --turbopack",

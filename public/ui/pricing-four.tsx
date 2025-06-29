@@ -62,9 +62,9 @@ export default function PricingFour() {
                 {/* Text Content */}
                 <header className="text-center flex flex-col items-center justify-center">
                     <Badge variant="secondary">Tagline</Badge>
-                    <h1 className="mt-4 md:max-w-2xl text-4xl  font-bold tracking-tight text-balance">
+                    <h2 className="mt-4 md:max-w-2xl text-4xl  font-bold tracking-tight text-balance">
                         Pricing plan
-                    </h1>
+                    </h2>
                     <p className="mt-4 md:max-w-2xl text-lg text-muted-foreground">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>

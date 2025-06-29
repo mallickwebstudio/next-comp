@@ -281,8 +281,29 @@ export const data: ComponentData = [
             slug: "contact-one",
             id: "contact-one",
             name: "Contact One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/contact/contact-one.png",
             path: "src/ui/section/contact/contact-one.tsx"
+          },
+          {
+            slug: "contact-two",
+            id: "contact-two",
+            name: "Contact Two",
+            thumbnail: "/images/ui/contact/contact-two.png",
+            path: "src/ui/section/contact/contact-two.tsx"
+          },
+          {
+            slug: "contact-three",
+            id: "contact-three",
+            name: "Contact Three",
+            thumbnail: "/images/ui/contact/contact-three.png",
+            path: "src/ui/section/contact/contact-three.tsx"
+          },
+          {
+            slug: "contact-four",
+            id: "contact-four",
+            name: "Contact Four",
+            thumbnail: "/images/ui/contact/contact-four.png",
+            path: "src/ui/section/contact/contact-four.tsx"
           },
         ]
       },
@@ -470,22 +491,29 @@ export const data: ComponentData = [
             slug: "blog-header-one",
             id: "blog-header-one",
             name: "Blog Header One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/blog-header/blog-header-one.png",
             path: "src/ui/section/blog-header/blog-header-one.tsx"
           },
-        ]
-      },
-      {
-        slug: "blog-section",
-        href: "blog-section",
-        name: "Blog Section",
-        block: [
           {
-            slug: "blog-section-one",
-            id: "blog-section-one",
-            name: "Blog Section One",
-            thumbnail: "/images/common/navbar.jpg",
-            path: "src/ui/section/blog-section/blog-section-one.tsx"
+            slug: "blog-header-two",
+            id: "blog-header-two",
+            name: "Blog Header Two",
+            thumbnail: "/images/ui/blog-header/blog-header-two.png",
+            path: "src/ui/section/blog-header/blog-header-two.tsx"
+          },
+          {
+            slug: "blog-header-three",
+            id: "blog-header-three",
+            name: "Blog Header Three",
+            thumbnail: "/images/ui/blog-header/blog-header-three.png",
+            path: "src/ui/section/blog-header/blog-header-three.tsx"
+          },
+          {
+            slug: "blog-header-four",
+            id: "blog-header-four",
+            name: "Blog Header Four",
+            thumbnail: "/images/ui/blog-header/blog-header-four.png",
+            path: "src/ui/section/blog-header/blog-header-four.tsx"
           },
         ]
       },
@@ -498,8 +526,64 @@ export const data: ComponentData = [
             slug: "blog-post-header-one",
             id: "blog-post-header-one",
             name: "Blog Post Header One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/blog-post-header/blog-post-header-one.png",
             path: "src/ui/section/blog-post-header/blog-post-header-one.tsx"
+          },
+          {
+            slug: "blog-post-header-two",
+            id: "blog-post-header-two",
+            name: "Blog Post Header Two",
+            thumbnail: "/images/ui/blog-post-header/blog-post-header-two.png",
+            path: "src/ui/section/blog-post-header/blog-post-header-two.tsx"
+          },
+          {
+            slug: "blog-post-header-three",
+            id: "blog-post-header-three",
+            name: "Blog Post Header Three",
+            thumbnail: "/images/ui/blog-post-header/blog-post-header-three.png",
+            path: "src/ui/section/blog-post-header/blog-post-header-three.tsx"
+          },
+          {
+            slug: "blog-post-header-four",
+            id: "blog-post-header-four",
+            name: "Blog Post Header Four",
+            thumbnail: "/images/ui/blog-post-header/blog-post-header-four.png",
+            path: "src/ui/section/blog-post-header/blog-post-header-four.tsx"
+          },
+        ]
+      },
+      {
+        slug: "blog-section",
+        href: "blog-section",
+        name: "Blog Section",
+        block: [
+          {
+            slug: "blog-section-one",
+            id: "blog-section-one",
+            name: "Blog Section One",
+            thumbnail: "/images/ui/blog-section/blog-section-one.png",
+            path: "src/ui/section/blog-section/blog-section-one.tsx"
+          },
+          {
+            slug: "blog-section-two",
+            id: "blog-section-two",
+            name: "Blog Section Two",
+            thumbnail: "/images/ui/blog-section/blog-section-two.png",
+            path: "src/ui/section/blog-section/blog-section-two.tsx"
+          },
+          {
+            slug: "blog-section-three",
+            id: "blog-section-three",
+            name: "Blog Section Three",
+            thumbnail: "/images/ui/blog-section/blog-section-three.png",
+            path: "src/ui/section/blog-section/blog-section-three.tsx"
+          },
+          {
+            slug: "blog-section-four",
+            id: "blog-section-four",
+            name: "Blog Section Four",
+            thumbnail: "/images/ui/blog-section/blog-section-four.png",
+            path: "src/ui/section/blog-section/blog-section-four.tsx"
           },
         ]
       },
@@ -512,8 +596,29 @@ export const data: ComponentData = [
             slug: "career-one",
             id: "career-one",
             name: "Career One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/career/career-one.png",
             path: "src/ui/section/career/career-one.tsx"
+          },
+          {
+            slug: "career-two",
+            id: "career-two",
+            name: "Career Two",
+            thumbnail: "/images/ui/career/career-two.png",
+            path: "src/ui/section/career/career-two.tsx"
+          },
+          {
+            slug: "career-three",
+            id: "career-three",
+            name: "Career Three",
+            thumbnail: "/images/ui/career/career-three.png",
+            path: "src/ui/section/career/career-three.tsx"
+          },
+          {
+            slug: "career-four",
+            id: "career-four",
+            name: "Career Four",
+            thumbnail: "/images/ui/career/career-four.png",
+            path: "src/ui/section/career/career-four.tsx"
           },
         ]
       },
@@ -526,8 +631,29 @@ export const data: ComponentData = [
             slug: "gallery-one",
             id: "gallery-one",
             name: "Gallery One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/gallery/gallery-one.png",
             path: "src/ui/section/gallery/gallery-one.tsx"
+          },
+          {
+            slug: "gallery-two",
+            id: "gallery-two",
+            name: "Gallery Two",
+            thumbnail: "/images/ui/gallery/gallery-two.png",
+            path: "src/ui/section/gallery/gallery-two.tsx"
+          },
+          {
+            slug: "gallery-three",
+            id: "gallery-three",
+            name: "Gallery Three",
+            thumbnail: "/images/ui/gallery/gallery-three.png",
+            path: "src/ui/section/gallery/gallery-three.tsx"
+          },
+          {
+            slug: "gallery-four",
+            id: "gallery-four",
+            name: "Gallery Four",
+            thumbnail: "/images/ui/gallery/gallery-four.png",
+            path: "src/ui/section/gallery/gallery-four.tsx"
           },
         ]
       },
@@ -540,8 +666,29 @@ export const data: ComponentData = [
             slug: "portfolio-header-one",
             id: "portfolio-header-one",
             name: "Portfolio Header One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/portfolio-header/portfolio-header-one.png",
             path: "src/ui/section/portfolio-header/portfolio-header-one.tsx"
+          },
+          {
+            slug: "portfolio-header-two",
+            id: "portfolio-header-two",
+            name: "Portfolio Header Two",
+            thumbnail: "/images/ui/portfolio-header/portfolio-header-two.png",
+            path: "src/ui/section/portfolio-header/portfolio-header-two.tsx"
+          },
+          {
+            slug: "portfolio-header-three",
+            id: "portfolio-header-three",
+            name: "Portfolio Header Three",
+            thumbnail: "/images/ui/portfolio-header/portfolio-header-three.png",
+            path: "src/ui/section/portfolio-header/portfolio-header-three.tsx"
+          },
+          {
+            slug: "portfolio-header-four",
+            id: "portfolio-header-four",
+            name: "Portfolio Header Four",
+            thumbnail: "/images/ui/portfolio-header/portfolio-header-four.png",
+            path: "src/ui/section/portfolio-header/portfolio-header-four.tsx"
           },
         ]
       },
@@ -554,8 +701,29 @@ export const data: ComponentData = [
             slug: "portfolio-section-one",
             id: "portfolio-section-one",
             name: "Portfolio Section One",
-            thumbnail: "/images/common/navbar.jpg",
+            thumbnail: "/images/ui/portfolio-section/portfolio-section-one.png",
             path: "src/ui/section/portfolio-section/portfolio-section-one.tsx"
+          },
+          {
+            slug: "portfolio-section-two",
+            id: "portfolio-section-two",
+            name: "Portfolio Section Two",
+            thumbnail: "/images/ui/portfolio-section/portfolio-section-two.png",
+            path: "src/ui/section/portfolio-section/portfolio-section-two.tsx"
+          },
+          {
+            slug: "portfolio-section-three",
+            id: "portfolio-section-three",
+            name: "Portfolio Section Three",
+            thumbnail: "/images/ui/portfolio-section/portfolio-section-three.png",
+            path: "src/ui/section/portfolio-section/portfolio-section-three.tsx"
+          },
+          {
+            slug: "portfolio-section-four",
+            id: "portfolio-section-four",
+            name: "Portfolio Section Four",
+            thumbnail: "/images/ui/portfolio-section/portfolio-section-four.png",
+            path: "src/ui/section/portfolio-section/portfolio-section-four.tsx"
           },
         ]
       },
