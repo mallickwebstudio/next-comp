@@ -26,6 +26,18 @@ export const componentMap = {
   "cta-one": () => import("@/ui/section/cta/cta-one"),
   "cta-three": () => import("@/ui/section/cta/cta-three"),
   "cta-two": () => import("@/ui/section/cta/cta-two"),
+  "event-header-four": () => import("@/ui/section/event-header/event-header-four"),
+  "event-header-one": () => import("@/ui/section/event-header/event-header-one"),
+  "event-header-three": () => import("@/ui/section/event-header/event-header-three"),
+  "event-header-two": () => import("@/ui/section/event-header/event-header-two"),
+  "event-item-header-four": () => import("@/ui/section/event-item-header/event-item-header-four"),
+  "event-item-header-one": () => import("@/ui/section/event-item-header/event-item-header-one"),
+  "event-item-header-three": () => import("@/ui/section/event-item-header/event-item-header-three"),
+  "event-item-header-two": () => import("@/ui/section/event-item-header/event-item-header-two"),
+  "event-section-four": () => import("@/ui/section/event-section/event-section-four"),
+  "event-section-one": () => import("@/ui/section/event-section/event-section-one"),
+  "event-section-three": () => import("@/ui/section/event-section/event-section-three"),
+  "event-section-two": () => import("@/ui/section/event-section/event-section-two"),
   "faq-four": () => import("@/ui/section/faq/faq-four"),
   "faq-one": () => import("@/ui/section/faq/faq-one"),
   "faq-three": () => import("@/ui/section/faq/faq-three"),
@@ -113,6 +125,18 @@ export type ComponentSlug =
   | "cta-one"
   | "cta-three"
   | "cta-two"
+  | "event-header-four"
+  | "event-header-one"
+  | "event-header-three"
+  | "event-header-two"
+  | "event-item-header-four"
+  | "event-item-header-one"
+  | "event-item-header-three"
+  | "event-item-header-two"
+  | "event-section-four"
+  | "event-section-one"
+  | "event-section-three"
+  | "event-section-two"
   | "faq-four"
   | "faq-one"
   | "faq-three"

@@ -19,7 +19,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 // import { cn } from "@/lib/utils"
 import { ComponentData } from "@/types"
-import { cn } from "@/lib/utils"
 
 export function SidebarNav({
   data
@@ -44,11 +43,11 @@ export function SidebarNav({
           const isActive = path === `/components/${item.href}` || path.startsWith(`/components/${item.href}/`);
 
           return (
-            <Collapsible key={item.name} defaultOpen={isActive} asChild>
+            <Collapsible key={item.name} defaultOpen={isActive || data[0].name === item.name} asChild>
               <SidebarMenuItem>
                 {item.category?.length ? (
                   <CollapsibleTrigger asChild>
-                    <SidebarMenuAction className="data-[state=open]:rotate-90">
+                    <SidebarMenuAction className="data-[state=open]:rotate-90 disabled:text-muted-foreground">
                       <ChevronRight />
                       <span className="sr-only">Toggle</span>
                     </SidebarMenuAction>
@@ -60,7 +59,10 @@ export function SidebarNav({
                     className={isActive ? "text-primary font-semibold bg-secondary/40" : ""}
                     href={`/components/${item.href}`}
                   >
-                    <span>{item.name} <span className="text-xs text-muted-foreground">({item.category.length})</span></span>
+                    <span>
+                      {item.name}
+                      <span className="text-xs text-muted-foreground">({item.category.length})</span>
+                    </span>
                   </Link>
                 </SidebarMenuButton>
 

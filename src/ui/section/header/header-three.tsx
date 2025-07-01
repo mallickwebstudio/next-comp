@@ -32,7 +32,7 @@ export default function HeaderThree() {
                             aria-label="Your email"
                             required
                         />
-                        <Button type="submit" size="lg">
+                        <Button className="cursor-pointer" type="submit" size="lg">
                             Subscribe
                         </Button>
                     </form>

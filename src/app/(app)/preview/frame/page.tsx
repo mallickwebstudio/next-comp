@@ -27,7 +27,6 @@ function PreviewFrameContent() {
   const blocks = useMemo(() => {
     return blockSlugs.map((slug) => getBlockBySlug(slug)).filter(Boolean);
   }, [blockSlugs]);
-
   return (
     <div
       className={cn(

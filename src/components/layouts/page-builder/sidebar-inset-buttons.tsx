@@ -1,7 +1,7 @@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { usePageBuilder } from "@/hooks/page-builder-provider";
 import { getBlockById } from "@/lib/utils";
-import { getFileBySlug } from "@/scripts/get-file-by-slug";
+import { getFileBySlug } from "@/lib/get-file-by-slug";
 import JSZip from "jszip";
 import { Download, Eye, Loader } from "lucide-react";
 import { useState } from "react";

@@ -8,7 +8,7 @@ import rehypeStringify from "rehype-stringify";
 import rehypePrettyCode from "rehype-pretty-code";
 import CopyButton from "./action/copy-button";
 import DownloadButton from "./action/download-button";
-import { getFileBySlug } from "@/scripts/get-file-by-slug";
+import { getFileBySlug } from "@/lib/get-file-by-slug";
 import { BadgeInfo, Loader } from "lucide-react";
 
 export default function PanelCode({
