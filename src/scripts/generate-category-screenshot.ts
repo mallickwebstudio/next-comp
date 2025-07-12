@@ -11,27 +11,27 @@ const theme = darkMode ? "dark" : undefined;
 
 // Extract category slugs (ignoring block= and dark)
 const categoryArgs = args.filter(
-  (arg) => !arg.startsWith("block=") && arg !== "dark"
+  (arg) => !arg.startsWith("block=") && arg !== "dark",
 );
 
 // 🧠 If no categories are passed and no block is passed, default to ALL categories
 const allCategoriesSelected = categoryArgs.length === 0 && !blockSlug;
 
 (async () => {
-  const blocks = data.flatMap((section) =>
-    section.category.flatMap((category) =>
-      category.block
+  const blocks = data.flatMap((category) =>
+    category.sections.flatMap((section) =>
+      section.blocks
         .filter((block) => {
           const categoryMatch =
-            allCategoriesSelected || categoryArgs.includes(category.slug);
+            allCategoriesSelected || categoryArgs.includes(section.slug);
           const blockMatch = !blockSlug || block.slug === blockSlug;
           return categoryMatch && blockMatch;
         })
         .map((block) => ({
           ...block,
-          categorySlug: category.slug,
-        }))
-    )
+          sectionSlug: section.slug,
+        })),
+    ),
   );
 
   if (blocks.length === 0) {
@@ -49,7 +49,7 @@ const allCategoriesSelected = categoryArgs.length === 0 && !blockSlug;
 
     const outputPath = path.resolve(
       __dirname,
-      `../../public/images/ui/${block.categorySlug}`
+      `../../public/images/ui/${block.sectionSlug}`,
     );
     const fileName = `${darkMode ? "dark-" : ""}${kebabCase(block.slug)}.png`;
     const fullOutputPath = path.join(outputPath, fileName);

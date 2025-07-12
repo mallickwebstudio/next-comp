@@ -65,7 +65,7 @@ export default function PanelCode({
   }
 
   return (
-    <div className="relative size-full" data-code-preview>
+    <div className="relative size-full">
       <div className="absolute flex gap-2 top-3 right-3 z-10">
         <CopyButton text={fileContent} />
         <DownloadButton text={fileContent} fileName={fileSlug} />

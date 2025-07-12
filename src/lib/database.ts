@@ -1,5 +1,5 @@
 // AUTO-GENERATED FILE — DO NOT EDIT
-// RUN "npm run generate-database" TO AUTO-GENERATED FILE
+// RUN "npm run generate-database" TO AUTO-GENERATE FILE
 
 import { ComponentData } from "@/types";
 
@@ -8,12 +8,12 @@ export const data: ComponentData = [
     "slug": "section",
     "href": "section",
     "name": "Section",
-    "category": [
+    "sections": [
       {
         "slug": "navbar",
         "href": "navbar",
         "name": "Navbar",
-        "block": [
+        "blocks": [
           {
             "slug": "navbar-one",
             "id": "navbar-one",
@@ -48,7 +48,7 @@ export const data: ComponentData = [
         "slug": "hero",
         "href": "hero",
         "name": "Hero",
-        "block": [
+        "blocks": [
           {
             "slug": "hero-one-flip",
             "id": "hero-one-flip",
@@ -111,7 +111,7 @@ export const data: ComponentData = [
         "slug": "header",
         "href": "header",
         "name": "Header",
-        "block": [
+        "blocks": [
           {
             "slug": "header-one",
             "id": "header-one",
@@ -146,7 +146,7 @@ export const data: ComponentData = [
         "slug": "footer",
         "href": "footer",
         "name": "Footer",
-        "block": [
+        "blocks": [
           {
             "slug": "footer-one",
             "id": "footer-one",
@@ -181,7 +181,7 @@ export const data: ComponentData = [
         "slug": "feature",
         "href": "feature",
         "name": "Feature",
-        "block": [
+        "blocks": [
           {
             "slug": "feature-one-flip",
             "id": "feature-one-flip",
@@ -244,7 +244,7 @@ export const data: ComponentData = [
         "slug": "blog-header",
         "href": "blog-header",
         "name": "Blog Header",
-        "block": [
+        "blocks": [
           {
             "slug": "blog-header-one",
             "id": "blog-header-one",
@@ -279,7 +279,7 @@ export const data: ComponentData = [
         "slug": "blog-post-header",
         "href": "blog-post-header",
         "name": "Blog Post Header",
-        "block": [
+        "blocks": [
           {
             "slug": "blog-post-header-one",
             "id": "blog-post-header-one",
@@ -314,7 +314,7 @@ export const data: ComponentData = [
         "slug": "blog-section",
         "href": "blog-section",
         "name": "Blog Section",
-        "block": [
+        "blocks": [
           {
             "slug": "blog-section-one",
             "id": "blog-section-one",
@@ -349,7 +349,7 @@ export const data: ComponentData = [
         "slug": "career",
         "href": "career",
         "name": "Career",
-        "block": [
+        "blocks": [
           {
             "slug": "career-one",
             "id": "career-one",
@@ -384,7 +384,7 @@ export const data: ComponentData = [
         "slug": "contact",
         "href": "contact",
         "name": "Contact",
-        "block": [
+        "blocks": [
           {
             "slug": "contact-one",
             "id": "contact-one",
@@ -419,7 +419,7 @@ export const data: ComponentData = [
         "slug": "cta",
         "href": "cta",
         "name": "Cta",
-        "block": [
+        "blocks": [
           {
             "slug": "cta-one",
             "id": "cta-one",
@@ -454,7 +454,7 @@ export const data: ComponentData = [
         "slug": "event-header",
         "href": "event-header",
         "name": "Event Header",
-        "block": [
+        "blocks": [
           {
             "slug": "event-header-one",
             "id": "event-header-one",
@@ -489,7 +489,7 @@ export const data: ComponentData = [
         "slug": "event-item-header",
         "href": "event-item-header",
         "name": "Event Item Header",
-        "block": [
+        "blocks": [
           {
             "slug": "event-item-header-one",
             "id": "event-item-header-one",
@@ -524,7 +524,7 @@ export const data: ComponentData = [
         "slug": "event-section",
         "href": "event-section",
         "name": "Event Section",
-        "block": [
+        "blocks": [
           {
             "slug": "event-section-one",
             "id": "event-section-one",
@@ -559,7 +559,7 @@ export const data: ComponentData = [
         "slug": "faq",
         "href": "faq",
         "name": "Faq",
-        "block": [
+        "blocks": [
           {
             "slug": "faq-one",
             "id": "faq-one",
@@ -594,7 +594,7 @@ export const data: ComponentData = [
         "slug": "gallery",
         "href": "gallery",
         "name": "Gallery",
-        "block": [
+        "blocks": [
           {
             "slug": "gallery-one",
             "id": "gallery-one",
@@ -629,7 +629,7 @@ export const data: ComponentData = [
         "slug": "logo",
         "href": "logo",
         "name": "Logo",
-        "block": [
+        "blocks": [
           {
             "slug": "logo-one",
             "id": "logo-one",
@@ -664,7 +664,7 @@ export const data: ComponentData = [
         "slug": "portfolio-header",
         "href": "portfolio-header",
         "name": "Portfolio Header",
-        "block": [
+        "blocks": [
           {
             "slug": "portfolio-header-one",
             "id": "portfolio-header-one",
@@ -699,7 +699,7 @@ export const data: ComponentData = [
         "slug": "portfolio-section",
         "href": "portfolio-section",
         "name": "Portfolio Section",
-        "block": [
+        "blocks": [
           {
             "slug": "portfolio-section-one",
             "id": "portfolio-section-one",
@@ -734,7 +734,7 @@ export const data: ComponentData = [
         "slug": "pricing",
         "href": "pricing",
         "name": "Pricing",
-        "block": [
+        "blocks": [
           {
             "slug": "pricing-one",
             "id": "pricing-one",
@@ -769,7 +769,7 @@ export const data: ComponentData = [
         "slug": "team",
         "href": "team",
         "name": "Team",
-        "block": [
+        "blocks": [
           {
             "slug": "team-one",
             "id": "team-one",
@@ -804,7 +804,7 @@ export const data: ComponentData = [
         "slug": "testimonial",
         "href": "testimonial",
         "name": "Testimonial",
-        "block": [
+        "blocks": [
           {
             "slug": "testimonial-one",
             "id": "testimonial-one",
@@ -839,49 +839,209 @@ export const data: ComponentData = [
         "slug": "timeline-section",
         "href": "timeline-section",
         "name": "Timeline Section",
-        "block": []
+        "blocks": [
+          {
+            "slug": "timeline-section-one",
+            "id": "timeline-section-one",
+            "name": "Timeline Section One",
+            "thumbnail": "/images/ui/timeline-section/timeline-section-one.png",
+            "path": "/src/ui/section/timeline-section/timeline-section-one.tsx"
+          },
+          {
+            "slug": "timeline-section-two",
+            "id": "timeline-section-two",
+            "name": "Timeline Section Two",
+            "thumbnail": "/images/ui/timeline-section/timeline-section-two.png",
+            "path": "/src/ui/section/timeline-section/timeline-section-two.tsx"
+          },
+          {
+            "slug": "timeline-section-three",
+            "id": "timeline-section-three",
+            "name": "Timeline Section Three",
+            "thumbnail": "/images/ui/timeline-section/timeline-section-three.png",
+            "path": "/src/ui/section/timeline-section/timeline-section-three.tsx"
+          },
+          {
+            "slug": "timeline-section-four",
+            "id": "timeline-section-four",
+            "name": "Timeline Section Four",
+            "thumbnail": "/images/ui/timeline-section/timeline-section-four.png",
+            "path": "/src/ui/section/timeline-section/timeline-section-four.tsx"
+          }
+        ]
       },
       {
         "slug": "banner",
         "href": "banner",
         "name": "Banner",
-        "block": []
+        "blocks": [
+          {
+            "slug": "banner-one",
+            "id": "banner-one",
+            "name": "Banner One",
+            "thumbnail": "/images/ui/banner/banner-one.png",
+            "path": "/src/ui/section/banner/banner-one.tsx"
+          },
+          {
+            "slug": "banner-two",
+            "id": "banner-two",
+            "name": "Banner Two",
+            "thumbnail": "/images/ui/banner/banner-two.png",
+            "path": "/src/ui/section/banner/banner-two.tsx"
+          },
+          {
+            "slug": "banner-three",
+            "id": "banner-three",
+            "name": "Banner Three",
+            "thumbnail": "/images/ui/banner/banner-three.png",
+            "path": "/src/ui/section/banner/banner-three.tsx"
+          },
+          {
+            "slug": "banner-four",
+            "id": "banner-four",
+            "name": "Banner Four",
+            "thumbnail": "/images/ui/banner/banner-four.png",
+            "path": "/src/ui/section/banner/banner-four.tsx"
+          }
+        ]
       },
       {
         "slug": "cookie-consent",
         "href": "cookie-consent",
         "name": "Cookie Consent",
-        "block": []
+        "blocks": [
+          {
+            "slug": "cookie-consent-one",
+            "id": "cookie-consent-one",
+            "name": "Cookie Consent One",
+            "thumbnail": "/images/ui/cookie-consent/cookie-consent-one.png",
+            "path": "/src/ui/section/cookie-consent/cookie-consent-one.tsx"
+          },
+          {
+            "slug": "cookie-consent-two",
+            "id": "cookie-consent-two",
+            "name": "Cookie Consent Two",
+            "thumbnail": "/images/ui/cookie-consent/cookie-consent-two.png",
+            "path": "/src/ui/section/cookie-consent/cookie-consent-two.tsx"
+          }
+        ]
       },
       {
         "slug": "link-page",
         "href": "link-page",
         "name": "Link Page",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "loaders",
         "href": "loaders",
         "name": "Loaders",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "long-form-content",
         "href": "long-form-content",
         "name": "Long Form Content",
-        "block": []
+        "blocks": [
+          {
+            "slug": "long-form-content-four",
+            "id": "long-form-content-four",
+            "name": "Long Form Content Four",
+            "thumbnail": "/images/ui/long-form-content/long-form-content-four.png",
+            "path": "/src/ui/section/long-form-content/long-form-content-four.tsx"
+          },
+          {
+            "slug": "long-form-content-one",
+            "id": "long-form-content-one",
+            "name": "Long Form Content One",
+            "thumbnail": "/images/ui/long-form-content/long-form-content-one.png",
+            "path": "/src/ui/section/long-form-content/long-form-content-one.tsx"
+          },
+          {
+            "slug": "long-form-content-three",
+            "id": "long-form-content-three",
+            "name": "Long Form Content Three",
+            "thumbnail": "/images/ui/long-form-content/long-form-content-three.png",
+            "path": "/src/ui/section/long-form-content/long-form-content-three.tsx"
+          },
+          {
+            "slug": "long-form-content-two",
+            "id": "long-form-content-two",
+            "name": "Long Form Content Two",
+            "thumbnail": "/images/ui/long-form-content/long-form-content-two.png",
+            "path": "/src/ui/section/long-form-content/long-form-content-two.tsx"
+          }
+        ]
       },
       {
         "slug": "multi-step-form",
         "href": "multi-step-form",
         "name": "Multi Step Form",
-        "block": []
+        "blocks": [
+          {
+            "slug": "multi-step-form-one",
+            "id": "multi-step-form-one",
+            "name": "Multi Step Form One",
+            "thumbnail": "/images/ui/multi-step-form/multi-step-form-one.png",
+            "path": "/src/ui/section/multi-step-form/multi-step-form-one.tsx"
+          },
+          {
+            "slug": "multi-step-form-two",
+            "id": "multi-step-form-two",
+            "name": "Multi Step Form Two",
+            "thumbnail": "/images/ui/multi-step-form/multi-step-form-two.png",
+            "path": "/src/ui/section/multi-step-form/multi-step-form-two.tsx"
+          },
+          {
+            "slug": "multi-step-form-three",
+            "id": "multi-step-form-three",
+            "name": "Multi Step Form Three",
+            "thumbnail": "/images/ui/multi-step-form/multi-step-form-three.png",
+            "path": "/src/ui/section/multi-step-form/multi-step-form-three.tsx"
+          },
+          {
+            "slug": "multi-step-form-four",
+            "id": "multi-step-form-four",
+            "name": "Multi Step Form Four",
+            "thumbnail": "/images/ui/multi-step-form/multi-step-form-four.png",
+            "path": "/src/ui/section/multi-step-form/multi-step-form-four.tsx"
+          }
+        ]
       },
       {
         "slug": "stats-section",
         "href": "stats-section",
         "name": "Stats Section",
-        "block": []
+        "blocks": [
+          {
+            "slug": "stats-section-one",
+            "id": "stats-section-one",
+            "name": "Stats Section One",
+            "thumbnail": "/images/ui/stats-section/stats-section-one.png",
+            "path": "/src/ui/section/stats-section/stats-section-one.tsx"
+          },
+          {
+            "slug": "stats-section-two",
+            "id": "stats-section-two",
+            "name": "Stats Section Two",
+            "thumbnail": "/images/ui/stats-section/stats-section-two.png",
+            "path": "/src/ui/section/stats-section/stats-section-two.tsx"
+          },
+          {
+            "slug": "stats-section-three",
+            "id": "stats-section-three",
+            "name": "Stats Section Three",
+            "thumbnail": "/images/ui/stats-section/stats-section-three.png",
+            "path": "/src/ui/section/stats-section/stats-section-three.tsx"
+          },
+          {
+            "slug": "stats-section-four",
+            "id": "stats-section-four",
+            "name": "Stats Section Four",
+            "thumbnail": "/images/ui/stats-section/stats-section-four.png",
+            "path": "/src/ui/section/stats-section/stats-section-four.tsx"
+          }
+        ]
       }
     ]
   },
@@ -889,24 +1049,24 @@ export const data: ComponentData = [
     "slug": "ecommerce",
     "href": "ecommerce",
     "name": "Ecommerce",
-    "category": [
+    "sections": [
       {
         "slug": "category-filter",
         "href": "category-filter",
         "name": "Category Filter",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "product-header",
         "href": "product-header",
         "name": "Product Header",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "product-list-section",
         "href": "product-list-section",
         "name": "Product List Section",
-        "block": []
+        "blocks": []
       }
     ]
   },
@@ -914,96 +1074,96 @@ export const data: ComponentData = [
     "slug": "dashboard",
     "href": "dashboard",
     "name": "Dashboard",
-    "category": [
+    "sections": [
       {
         "slug": "application-shell",
         "href": "application-shell",
         "name": "Application Shell",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "card-header",
         "href": "card-header",
         "name": "Card Header",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "description-list",
         "href": "description-list",
         "name": "Description List",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "form",
         "href": "form",
         "name": "Form",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "grid-list",
         "href": "grid-list",
         "name": "Grid List",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "onboarding-form",
         "href": "onboarding-form",
         "name": "Onboarding Form",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "page-header",
         "href": "page-header",
         "name": "Page Header",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "section-header",
         "href": "section-header",
         "name": "Section Header",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "sidebar",
         "href": "sidebar",
         "name": "Sidebar",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "sign-up-and-log-in-modal",
         "href": "sign-up-and-log-in-modal",
         "name": "Sign Up And Log In Modal",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "sign-up-and-log-in-page",
         "href": "sign-up-and-log-in-page",
         "name": "Sign Up And Log In Page",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "stacked-list",
         "href": "stacked-list",
         "name": "Stacked List",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "stat-card",
         "href": "stat-card",
         "name": "Stat Card",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "table",
         "href": "table",
         "name": "Table",
-        "block": []
+        "blocks": []
       },
       {
         "slug": "topbar",
         "href": "topbar",
         "name": "Topbar",
-        "block": []
+        "blocks": []
       }
     ]
   }

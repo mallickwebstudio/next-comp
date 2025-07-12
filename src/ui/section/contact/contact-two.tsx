@@ -76,7 +76,7 @@ export default function ContactTwo() {
                 </SelectContent>
               </Select>
             </div>
-            <div className="">
+            <div>
               <Label>Which best describes you?</Label>
               <RadioGroup className="mt-2 gird grid-cols-2" defaultValue="comfortable">
                 <div className="flex items-center gap-3">

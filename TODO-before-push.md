@@ -53,3 +53,7 @@ navbar hero feature faq testimonial cta footer header pricing logo team career g
 
 2. npm run generate-public-code -- navbar hero
     -> Generate/Update code of navbar and hero category form @/ui/... to public/ui/
+
+<!-- SCRIPT USAGE of generate/update - database -->
+1. npm run generate-database
+    -> Generate/Update code form @/ui/... to @/lib/database.ts

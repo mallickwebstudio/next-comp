@@ -7,19 +7,19 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getAllBlocks() {
-  return data.flatMap(section => section.category.flatMap(category =>
-    category.block.map(block => ({ ...block }))
+  return data.flatMap(category => category.sections.flatMap(section =>
+    section.blocks.map(block => ({ ...block }))
   ));
 }
 
 export function getBlockById(id: string) {
-  return data.flatMap(section => section.category.flatMap(category =>
-    category.block
+  return data.flatMap(category => category.sections.flatMap(section =>
+    section.blocks
   )).find(block => block.id === id);
 }
 
 export function getBlockBySlug(slug: string) {
-  return data.flatMap(section => section.category.flatMap(category =>
-    category.block
+  return data.flatMap(category => category.sections.flatMap(section =>
+    section.blocks
   )).find(block => block.slug === slug);
 }

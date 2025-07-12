@@ -10,11 +10,10 @@ export default function SidebarInset({ className }: { className?: string }) {
     const { theme } = useTheme();
 
     return (
-        <div className={cn("p-4 h-full space-y-4", className)}>
-
+        <main className={cn("p-4 h-[calc(100dvh_-_64px)] flex flex-col space-y-4", className)}>
             {blocks.length > 0 && <SidebarInsetButtons />}
 
-            <div className="h-[calc(100dvh_-_144px)] bg-card/70 overflow-y-scroll rounded-md border">
+            <div className="bg-card/70 overflow-y-scroll rounded-md border flex-1">
                 {blocks.length > 0 ? (
                     blocks.map(({ blockId, instanceId }) => {
                         const block = getBlockById(blockId);
@@ -51,6 +50,6 @@ export default function SidebarInset({ className }: { className?: string }) {
                     </div>
                 )}
             </div>
-        </div>
+        </main>
     );
 }

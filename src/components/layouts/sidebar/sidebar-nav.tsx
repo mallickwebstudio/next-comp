@@ -45,31 +45,29 @@ export function SidebarNav({
           return (
             <Collapsible key={item.name} defaultOpen={isActive || data[0].name === item.name} asChild>
               <SidebarMenuItem>
-                {item.category?.length ? (
-                  <CollapsibleTrigger asChild>
-                    <SidebarMenuAction className="data-[state=open]:rotate-90 disabled:text-muted-foreground">
-                      <ChevronRight />
-                      <span className="sr-only">Toggle</span>
-                    </SidebarMenuAction>
-                  </CollapsibleTrigger>
-                ) : null}
+                <CollapsibleTrigger asChild>
+                  <SidebarMenuAction className="data-[state=open]:rotate-90 disabled:text-muted-foreground">
+                    <ChevronRight />
+                    <span className="sr-only">Toggle</span>
+                  </SidebarMenuAction>
+                </CollapsibleTrigger>
 
                 <SidebarMenuButton asChild tooltip={item.name}>
                   <Link
-                    className={isActive ? "text-primary font-semibold bg-secondary/40" : ""}
+                    className={isActive ? "text-primary bg-secondary/40" : ""}
                     href={`/components/${item.href}`}
                   >
                     <span>
                       {item.name}
-                      <span className="text-xs text-muted-foreground">({item.category.length})</span>
+                      <span className="text-xs text-muted-foreground">({item.sections.length})</span>
                     </span>
                   </Link>
                 </SidebarMenuButton>
 
-                {item.category?.length ? (
+                {item.sections?.length ? (
                   <CollapsibleContent>
                     <SidebarMenuSub className="pr-0 mr-1" >
-                      {item.category.map((subItem) => {
+                      {item.sections.map((subItem) => {
                         const subPath = `/components/${item.href}/${subItem.href}`;
                         const isSubActive = path === subPath;
 
@@ -81,7 +79,7 @@ export function SidebarNav({
                                 href={subPath}
                               >
                                 <span className="text-balance line-clamp-1">{subItem.name}</span>
-                                <span className="text-muted-foreground text-xs shrink-0">{subItem.block.length}</span>
+                                <span className="text-muted-foreground text-xs shrink-0">{subItem.blocks.length}</span>
                               </Link>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>

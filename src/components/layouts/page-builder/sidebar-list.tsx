@@ -10,9 +10,9 @@ import { CSS } from '@dnd-kit/utilities';
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers';
 
 function getBlockById(id: string) {
-    return data.flatMap(section =>
-        section.category.flatMap(category =>
-            category.block
+    return data.flatMap(cat =>
+        cat.sections.flatMap(sec =>
+            sec.blocks
         )
     ).find(block => block.id === id);
 }

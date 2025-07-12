@@ -5,7 +5,7 @@ import chalk from "chalk";
 
 // Get command-line args
 const args = process.argv.slice(2);
-const selectedCategories = args; // like: ["navbar", "hero"]
+const selectedSections = args; // like: ["navbar", "hero"]
 
 const PUBLIC_DIR = path.resolve("public/ui");
 
@@ -24,20 +24,23 @@ function copyFileToPublic(filePath: string) {
   console.log(chalk.green("✔"), `Copied ${fileName}`);
 }
 
-function shouldIncludeCategory(categorySlug: string) {
-  if (selectedCategories.length === 0) return true;
-  return selectedCategories.includes(categorySlug);
+function shouldIncludeSection(categorySlug: string) {
+  if (selectedSections.length === 0) return true;
+  return selectedSections.includes(categorySlug);
 }
 
 async function main() {
   let copied = 0;
 
   for (const group of data) {
-    for (const category of group.category) {
-      if (!shouldIncludeCategory(category.slug)) continue;
+    for (const section of group.sections) {
+      if (!shouldIncludeSection(section.slug)) continue;
 
-      for (const block of category.block) {
-        const srcPath = path.resolve(block.path);
+      for (const block of section.blocks) {
+        const srcPath = path.resolve(
+          process.cwd(),
+          block.path.replace(/^\/+/, ""),
+        );
 
         if (!fs.existsSync(srcPath)) {
           console.warn(chalk.yellow("⚠"), `File not found: ${srcPath}`);

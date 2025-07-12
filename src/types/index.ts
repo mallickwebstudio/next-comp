@@ -7,18 +7,18 @@ export type Block = {
   path: string;
 };
 
-export type Category = {
+export type Section = {
   slug: string;
   href: string;
   name: string;
-  block: Block[];
+  blocks: Block[];
 };
 
-export type ComponentGroup = {
+export type Category = {
   slug: string;
   href: string; 
   name: string;
-  category: Category[];
+  sections: Section[];
 };
 
-export type ComponentData = ComponentGroup[];
+export type ComponentData = Category[];
