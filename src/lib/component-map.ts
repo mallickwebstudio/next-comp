@@ -22,6 +22,10 @@ export const componentMap = {
   "career-one": () => import("@/ui/section/career/career-one"),
   "career-three": () => import("@/ui/section/career/career-three"),
   "career-two": () => import("@/ui/section/career/career-two"),
+  "category-filter-four": () => import("@/ui/ecommerce/category-filter/category-filter-four"),
+  "category-filter-one": () => import("@/ui/ecommerce/category-filter/category-filter-one"),
+  "category-filter-three": () => import("@/ui/ecommerce/category-filter/category-filter-three"),
+  "category-filter-two": () => import("@/ui/ecommerce/category-filter/category-filter-two"),
   "contact-four": () => import("@/ui/section/contact/contact-four"),
   "contact-one": () => import("@/ui/section/contact/contact-one"),
   "contact-three": () => import("@/ui/section/contact/contact-three"),
@@ -104,6 +108,14 @@ export const componentMap = {
   "pricing-one": () => import("@/ui/section/pricing/pricing-one"),
   "pricing-three": () => import("@/ui/section/pricing/pricing-three"),
   "pricing-two": () => import("@/ui/section/pricing/pricing-two"),
+  "product-header-four": () => import("@/ui/ecommerce/product-header/product-header-four"),
+  "product-header-one": () => import("@/ui/ecommerce/product-header/product-header-one"),
+  "product-header-three": () => import("@/ui/ecommerce/product-header/product-header-three"),
+  "product-header-two": () => import("@/ui/ecommerce/product-header/product-header-two"),
+  "product-list-section-four": () => import("@/ui/ecommerce/product-list-section/product-list-section-four"),
+  "product-list-section-one": () => import("@/ui/ecommerce/product-list-section/product-list-section-one"),
+  "product-list-section-three": () => import("@/ui/ecommerce/product-list-section/product-list-section-three"),
+  "product-list-section-two": () => import("@/ui/ecommerce/product-list-section/product-list-section-two"),
   "stats-section-four": () => import("@/ui/section/stats-section/stats-section-four"),
   "stats-section-one": () => import("@/ui/section/stats-section/stats-section-one"),
   "stats-section-three": () => import("@/ui/section/stats-section/stats-section-three"),
@@ -143,6 +155,10 @@ export type ComponentSlug =
   | "career-one"
   | "career-three"
   | "career-two"
+  | "category-filter-four"
+  | "category-filter-one"
+  | "category-filter-three"
+  | "category-filter-two"
   | "contact-four"
   | "contact-one"
   | "contact-three"
@@ -225,6 +241,14 @@ export type ComponentSlug =
   | "pricing-one"
   | "pricing-three"
   | "pricing-two"
+  | "product-header-four"
+  | "product-header-one"
+  | "product-header-three"
+  | "product-header-two"
+  | "product-list-section-four"
+  | "product-list-section-one"
+  | "product-list-section-three"
+  | "product-list-section-two"
   | "stats-section-four"
   | "stats-section-one"
   | "stats-section-three"

@@ -1054,19 +1054,106 @@ export const data: ComponentData = [
         "slug": "category-filter",
         "href": "category-filter",
         "name": "Category Filter",
-        "blocks": []
+        "blocks": [
+          {
+            "slug": "category-filter-one",
+            "id": "category-filter-one",
+            "name": "Category Filter One",
+            "thumbnail": "/images/ui/category-filter/category-filter-one.png",
+            "path": "/src/ui/ecommerce/category-filter/category-filter-one.tsx"
+          },
+          {
+            "slug": "category-filter-two",
+            "id": "category-filter-two",
+            "name": "Category Filter Two",
+            "thumbnail": "/images/ui/category-filter/category-filter-two.png",
+            "path": "/src/ui/ecommerce/category-filter/category-filter-two.tsx"
+          },
+          {
+            "slug": "category-filter-three",
+            "id": "category-filter-three",
+            "name": "Category Filter Three",
+            "thumbnail": "/images/ui/category-filter/category-filter-three.png",
+            "path": "/src/ui/ecommerce/category-filter/category-filter-three.tsx"
+          },
+          {
+            "slug": "category-filter-four",
+            "id": "category-filter-four",
+            "name": "Category Filter Four",
+            "thumbnail": "/images/ui/category-filter/category-filter-four.png",
+            "path": "/src/ui/ecommerce/category-filter/category-filter-four.tsx"
+          }
+        ]
       },
       {
         "slug": "product-header",
         "href": "product-header",
         "name": "Product Header",
-        "blocks": []
+        "blocks": [
+          {
+            "slug": "product-header-one",
+            "id": "product-header-one",
+            "name": "Product Header One",
+            "thumbnail": "/images/ui/product-header/product-header-one.png",
+            "path": "/src/ui/ecommerce/product-header/product-header-one.tsx"
+          },
+          {
+            "slug": "product-header-two",
+            "id": "product-header-two",
+            "name": "Product Header Two",
+            "thumbnail": "/images/ui/product-header/product-header-two.png",
+            "path": "/src/ui/ecommerce/product-header/product-header-two.tsx"
+          },
+          {
+            "slug": "product-header-three",
+            "id": "product-header-three",
+            "name": "Product Header Three",
+            "thumbnail": "/images/ui/product-header/product-header-three.png",
+            "path": "/src/ui/ecommerce/product-header/product-header-three.tsx"
+          },
+          {
+            "slug": "product-header-four",
+            "id": "product-header-four",
+            "name": "Product Header Four",
+            "thumbnail": "/images/ui/product-header/product-header-four.png",
+            "path": "/src/ui/ecommerce/product-header/product-header-four.tsx"
+          }
+        ]
       },
       {
         "slug": "product-list-section",
         "href": "product-list-section",
         "name": "Product List Section",
-        "blocks": []
+        "blocks": [
+          {
+            "slug": "product-list-section-one",
+            "id": "product-list-section-one",
+            "name": "Product List Section One",
+            "thumbnail": "/images/ui/product-list-section/product-list-section-one.png",
+            "path": "/src/ui/ecommerce/product-list-section/product-list-section-one.tsx"
+          },
+          {
+            "slug": "product-list-section-two",
+            "id": "product-list-section-two",
+            "name": "Product List Section Two",
+            "thumbnail": "/images/ui/product-list-section/product-list-section-two.png",
+            "path": "/src/ui/ecommerce/product-list-section/product-list-section-two.tsx"
+          },
+          {
+            "slug": "product-list-section-three",
+            "id": "product-list-section-three",
+            "name": "Product List Section Three",
+            "thumbnail": "/images/ui/product-list-section/product-list-section-three.png",
+            "path": "/src/ui/ecommerce/product-list-section/product-list-section-three.tsx"
+          },
+          {
+            "slug": "product-list-section-four",
+            "id": "product-list-section-four",
+            "name": "Product List Section Four",
+            "thumbnail": "/images/ui/product-list-section/product-list-section-four.png",
+            "path": "/src/ui/ecommerce/product-list-section/product-list-section-four.tsx"
+          }
+        ]
       }
     ]
   },
