@@ -6,32 +6,54 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { use } from "react";
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
 
-// export async function generateStaticParams() {
-//     const params = [];
+export async function generateStaticParams() {
+    const params = [];
+    for (const category of data) {
+        for (const section of category.sections) {
+            for (const block of section.blocks) {
+                params.push({
+                    category: category.slug,
+                    section: section.slug,
+                    block: block.slug,
+                });
+            }
+        }
+    }
+    return params;
+}
 
-//     for (const category of data) {
-//         for (const section of category.sections) {
-//             for (const block of section.blocks) {
-//                 params.push({
-//                     category: category.slug,
-//                     section: section.slug,
-//                     block: block.slug,
-//                 });
-//             }
-//         }
-//     }
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string; section: string }>;
+}) {
+  const { category, section } = await params;
 
-//     return params;
-// }
+  const categoryData = data.find((c) => c.slug === category);
+  const sectionData = categoryData?.sections.find((s) => s.slug === section);
+  if (!categoryData || !sectionData) return { title: "Not Found" };
+
+  const title = `${sectionData.name} - ${categoryData.name} | ${siteConfig.title}`;
+  const description = `Discover ${sectionData.name} components in the ${categoryData.name} category.`;
+  const url = `${siteConfig.baseUrl}/components/${category}/${section}`;
+  const ogImage = siteConfig.ogImage;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url,
+      images: [ogImage],
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
+}
 
 export default function BlockPage({ params
 }: {
@@ -81,7 +103,7 @@ export default function BlockPage({ params
             </Breadcrumb>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="relative px-4 w-full bg-secondary aspect-square border rounded-md overflow-hidden">
+                <div className="relative px-4 w-full bg-secondary aspect-[4/3] border rounded-md overflow-hidden">
                     <div className="relative top-4 size-full bg-card/70 select-none touch-none pointer-events-none">
                         <Image
                             className="w-full object-contain"
@@ -92,7 +114,7 @@ export default function BlockPage({ params
                         />
                     </div>
                 </div>
-                <div className="w-full aspect-square border rounded-md">
+                <div className="w-full aspect-[4/3] border rounded-md">
                     <PanelCode fileSlug={blockData.slug} />
                 </div>
             </div>
