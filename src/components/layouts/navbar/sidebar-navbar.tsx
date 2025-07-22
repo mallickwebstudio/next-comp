@@ -1,8 +1,6 @@
 "use client"
-// import { AddSite } from "@/components/dialog/add-site"
 import { ModeToggle } from "@/components/other/mode-toggle"
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar"
-// import KeepslinkLogo from "@/components/other/svg"
 import Link from "next/link"
 import { CommandDialog, CommandEmpty, CommandInput, CommandList } from "@/components/ui/command"
 import { useEffect, useState } from "react"
@@ -73,7 +71,7 @@ export default function Navbar() {
 
     return (
         <>
-            <header className="hidden md:flex px-4 h-16 shrink-0 items-center justify-between gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 border-b">
+            <header className="sticky top-0 bg-background flex px-4 h-16 shrink-0 items-center justify-between gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 border-b z-50">
                 <div className="flex items-center gap-2 transition-all">
                     <SidebarTrigger className={open
                         ? isMobile
@@ -100,7 +98,7 @@ export default function Navbar() {
                 </div>
             </header>
 
-            <header className="md:hidden fixed bottom-0 left-0 right-0 px-4 flex h-16 bg-background shrink-0 items-center justify-between gap-2 border-t z-50">
+            {/* <header className="md:hidden fixed bottom-0 left-0 right-0 px-4 flex h-16 bg-background shrink-0 items-center justify-between gap-2 border-t z-50">
                 <ModeToggle />
 
                 <Link className={buttonVariants({ variant: "ghost" })} href="/page-builder">Page Builder</Link>
@@ -108,7 +106,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-2 transition-all">
                     <SidebarTrigger className={buttonVariants({ variant: "outline", size: "icon" })} />
                 </div>
-            </header>
+            </header> */}
         </>
     )
 }

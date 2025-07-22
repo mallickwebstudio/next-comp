@@ -2,10 +2,18 @@
 // Run `npm run generate:components` to regenerate
 
 export const componentMap = {
+  "auth-four": () => import("@/ui/section/auth/auth-four"),
+  "auth-one": () => import("@/ui/section/auth/auth-one"),
+  "auth-three": () => import("@/ui/section/auth/auth-three"),
+  "auth-two": () => import("@/ui/section/auth/auth-two"),
   "banner-four": () => import("@/ui/section/banner/banner-four"),
   "banner-one": () => import("@/ui/section/banner/banner-one"),
   "banner-three": () => import("@/ui/section/banner/banner-three"),
   "banner-two": () => import("@/ui/section/banner/banner-two"),
+  "blog-card-four": () => import("@/ui/card/blog-card/blog-card-four"),
+  "blog-card-one": () => import("@/ui/card/blog-card/blog-card-one"),
+  "blog-card-three": () => import("@/ui/card/blog-card/blog-card-three"),
+  "blog-card-two": () => import("@/ui/card/blog-card/blog-card-two"),
   "blog-header-four": () => import("@/ui/section/blog-header/blog-header-four"),
   "blog-header-one": () => import("@/ui/section/blog-header/blog-header-one"),
   "blog-header-three": () => import("@/ui/section/blog-header/blog-header-three"),
@@ -26,6 +34,8 @@ export const componentMap = {
   "category-filter-one": () => import("@/ui/ecommerce/category-filter/category-filter-one"),
   "category-filter-three": () => import("@/ui/ecommerce/category-filter/category-filter-three"),
   "category-filter-two": () => import("@/ui/ecommerce/category-filter/category-filter-two"),
+  "comparison-one": () => import("@/ui/section/comparison/comparison-one"),
+  "comparison-two": () => import("@/ui/section/comparison/comparison-two"),
   "contact-four": () => import("@/ui/section/contact/contact-four"),
   "contact-one": () => import("@/ui/section/contact/contact-one"),
   "contact-three": () => import("@/ui/section/contact/contact-three"),
@@ -36,6 +46,10 @@ export const componentMap = {
   "cta-one": () => import("@/ui/section/cta/cta-one"),
   "cta-three": () => import("@/ui/section/cta/cta-three"),
   "cta-two": () => import("@/ui/section/cta/cta-two"),
+  "event-card-four": () => import("@/ui/card/event-card/event-card-four"),
+  "event-card-one": () => import("@/ui/card/event-card/event-card-one"),
+  "event-card-three": () => import("@/ui/card/event-card/event-card-three"),
+  "event-card-two": () => import("@/ui/card/event-card/event-card-two"),
   "event-header-four": () => import("@/ui/section/event-header/event-header-four"),
   "event-header-one": () => import("@/ui/section/event-header/event-header-one"),
   "event-header-three": () => import("@/ui/section/event-header/event-header-three"),
@@ -80,6 +94,14 @@ export const componentMap = {
   "hero-three-flip": () => import("@/ui/section/hero/hero-three-flip"),
   "hero-two": () => import("@/ui/section/hero/hero-two"),
   "hero-two-flip": () => import("@/ui/section/hero/hero-two-flip"),
+  "link-page-four": () => import("@/ui/section/link-page/link-page-four"),
+  "link-page-one": () => import("@/ui/section/link-page/link-page-one"),
+  "link-page-three": () => import("@/ui/section/link-page/link-page-three"),
+  "link-page-two": () => import("@/ui/section/link-page/link-page-two"),
+  "loader-four": () => import("@/ui/section/loader/loader-four"),
+  "loader-one": () => import("@/ui/section/loader/loader-one"),
+  "loader-three": () => import("@/ui/section/loader/loader-three"),
+  "loader-two": () => import("@/ui/section/loader/loader-two"),
   "logo-four": () => import("@/ui/section/logo/logo-four"),
   "logo-one": () => import("@/ui/section/logo/logo-one"),
   "logo-three": () => import("@/ui/section/logo/logo-three"),
@@ -108,6 +130,10 @@ export const componentMap = {
   "pricing-one": () => import("@/ui/section/pricing/pricing-one"),
   "pricing-three": () => import("@/ui/section/pricing/pricing-three"),
   "pricing-two": () => import("@/ui/section/pricing/pricing-two"),
+  "product-card-four": () => import("@/ui/card/product-card/product-card-four"),
+  "product-card-one": () => import("@/ui/card/product-card/product-card-one"),
+  "product-card-three": () => import("@/ui/card/product-card/product-card-three"),
+  "product-card-two": () => import("@/ui/card/product-card/product-card-two"),
   "product-header-four": () => import("@/ui/ecommerce/product-header/product-header-four"),
   "product-header-one": () => import("@/ui/ecommerce/product-header/product-header-one"),
   "product-header-three": () => import("@/ui/ecommerce/product-header/product-header-three"),
@@ -116,14 +142,24 @@ export const componentMap = {
   "product-list-section-one": () => import("@/ui/ecommerce/product-list-section/product-list-section-one"),
   "product-list-section-three": () => import("@/ui/ecommerce/product-list-section/product-list-section-three"),
   "product-list-section-two": () => import("@/ui/ecommerce/product-list-section/product-list-section-two"),
+  "sidebar-four": () => import("@/ui/dashboard/sidebar/sidebar-four"),
+  "sidebar-one": () => import("@/ui/dashboard/sidebar/sidebar-one"),
+  "sidebar-three": () => import("@/ui/dashboard/sidebar/sidebar-three"),
+  "sidebar-two": () => import("@/ui/dashboard/sidebar/sidebar-two"),
   "stats-section-four": () => import("@/ui/section/stats-section/stats-section-four"),
   "stats-section-one": () => import("@/ui/section/stats-section/stats-section-one"),
   "stats-section-three": () => import("@/ui/section/stats-section/stats-section-three"),
   "stats-section-two": () => import("@/ui/section/stats-section/stats-section-two"),
+  "table-one": () => import("@/ui/section/table/table-one"),
+  "table-two": () => import("@/ui/section/table/table-two"),
   "team-four": () => import("@/ui/section/team/team-four"),
   "team-one": () => import("@/ui/section/team/team-one"),
   "team-three": () => import("@/ui/section/team/team-three"),
   "team-two": () => import("@/ui/section/team/team-two"),
+  "testimonial-card-four": () => import("@/ui/card/testimonial-card/testimonial-card-four"),
+  "testimonial-card-one": () => import("@/ui/card/testimonial-card/testimonial-card-one"),
+  "testimonial-card-three": () => import("@/ui/card/testimonial-card/testimonial-card-three"),
+  "testimonial-card-two": () => import("@/ui/card/testimonial-card/testimonial-card-two"),
   "testimonial-four": () => import("@/ui/section/testimonial/testimonial-four"),
   "testimonial-one": () => import("@/ui/section/testimonial/testimonial-one"),
   "testimonial-three": () => import("@/ui/section/testimonial/testimonial-three"),
@@ -135,10 +171,18 @@ export const componentMap = {
 } as const;
 
 export type ComponentSlug =
+  | "auth-four"
+  | "auth-one"
+  | "auth-three"
+  | "auth-two"
   | "banner-four"
   | "banner-one"
   | "banner-three"
   | "banner-two"
+  | "blog-card-four"
+  | "blog-card-one"
+  | "blog-card-three"
+  | "blog-card-two"
   | "blog-header-four"
   | "blog-header-one"
   | "blog-header-three"
@@ -159,6 +203,8 @@ export type ComponentSlug =
   | "category-filter-one"
   | "category-filter-three"
   | "category-filter-two"
+  | "comparison-one"
+  | "comparison-two"
   | "contact-four"
   | "contact-one"
   | "contact-three"
@@ -169,6 +215,10 @@ export type ComponentSlug =
   | "cta-one"
   | "cta-three"
   | "cta-two"
+  | "event-card-four"
+  | "event-card-one"
+  | "event-card-three"
+  | "event-card-two"
   | "event-header-four"
   | "event-header-one"
   | "event-header-three"
@@ -213,6 +263,14 @@ export type ComponentSlug =
   | "hero-three-flip"
   | "hero-two"
   | "hero-two-flip"
+  | "link-page-four"
+  | "link-page-one"
+  | "link-page-three"
+  | "link-page-two"
+  | "loader-four"
+  | "loader-one"
+  | "loader-three"
+  | "loader-two"
   | "logo-four"
   | "logo-one"
   | "logo-three"
@@ -241,6 +299,10 @@ export type ComponentSlug =
   | "pricing-one"
   | "pricing-three"
   | "pricing-two"
+  | "product-card-four"
+  | "product-card-one"
+  | "product-card-three"
+  | "product-card-two"
   | "product-header-four"
   | "product-header-one"
   | "product-header-three"
@@ -249,14 +311,24 @@ export type ComponentSlug =
   | "product-list-section-one"
   | "product-list-section-three"
   | "product-list-section-two"
+  | "sidebar-four"
+  | "sidebar-one"
+  | "sidebar-three"
+  | "sidebar-two"
   | "stats-section-four"
   | "stats-section-one"
   | "stats-section-three"
   | "stats-section-two"
+  | "table-one"
+  | "table-two"
   | "team-four"
   | "team-one"
   | "team-three"
   | "team-two"
+  | "testimonial-card-four"
+  | "testimonial-card-one"
+  | "testimonial-card-three"
+  | "testimonial-card-two"
   | "testimonial-four"
   | "testimonial-one"
   | "testimonial-three"

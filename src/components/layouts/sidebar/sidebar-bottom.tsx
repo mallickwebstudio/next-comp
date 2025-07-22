@@ -1,9 +1,5 @@
 "use client"
 import {
-  Triangle,
-} from "lucide-react"
-
-import {
   Avatar,
   AvatarFallback,
   AvatarImage,
@@ -19,9 +15,9 @@ export function SidebarBottom() {
 
   return (
     <div className="relative">
-      {/* <div className="absolute h-6 w-full bottom-full left-0 right-0 bg-gradient-to-t from-background to-transparent" /> */}
+      <div className="absolute left-0 right-0 bottom-[calc(100%_+_9px)] h-6 w-full bg-gradient-to-t from-sidebar to-transparent" />
       <SidebarMenu className="relative">
-        <SidebarMenuItem>
+        {/* <SidebarMenuItem>
           <SidebarMenuButton
             size="lg"
             variant="outline"
@@ -40,13 +36,12 @@ export function SidebarBottom() {
               <Triangle className="relative -bottom-1 size-6 animate-bounce group-hover/link:fill-white transition-all" />
             </Link>
           </SidebarMenuButton>
-        </SidebarMenuItem>
+        </SidebarMenuItem> */}
 
         <SidebarMenuItem>
           <SidebarMenuButton
             size="lg"
-            variant="outline"
-            className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+            variant="default"
             asChild
           >
             <Link href="https://ko-fi.com/mallickwebstudio" target="_blank">

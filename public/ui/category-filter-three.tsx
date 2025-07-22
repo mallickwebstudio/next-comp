@@ -184,7 +184,7 @@ export default function CategoryFilterThree() {
         <div className="relative mt-8 md:mt-12">
           {/* [ Filter products / Sidebar / Sheet ]  */}
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-            <SheetContent side="left">
+            <SheetContent side="right">
               <SheetHeader>
                 <SheetTitle>Filters</SheetTitle>
 

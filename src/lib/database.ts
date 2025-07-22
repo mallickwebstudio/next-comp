@@ -50,13 +50,6 @@ export const data: ComponentData = [
         "name": "Hero",
         "blocks": [
           {
-            "slug": "hero-one-flip",
-            "id": "hero-one-flip",
-            "name": "Hero One Flip",
-            "thumbnail": "/images/ui/hero/hero-one-flip.png",
-            "path": "/src/ui/section/hero/hero-one-flip.tsx"
-          },
-          {
             "slug": "hero-one",
             "id": "hero-one",
             "name": "Hero One",
@@ -64,11 +57,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/hero/hero-one.tsx"
           },
           {
-            "slug": "hero-two-flip",
-            "id": "hero-two-flip",
-            "name": "Hero Two Flip",
-            "thumbnail": "/images/ui/hero/hero-two-flip.png",
-            "path": "/src/ui/section/hero/hero-two-flip.tsx"
+            "slug": "hero-one-flip",
+            "id": "hero-one-flip",
+            "name": "Hero One Flip",
+            "thumbnail": "/images/ui/hero/hero-one-flip.png",
+            "path": "/src/ui/section/hero/hero-one-flip.tsx"
           },
           {
             "slug": "hero-two",
@@ -78,11 +71,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/hero/hero-two.tsx"
           },
           {
-            "slug": "hero-three-flip",
-            "id": "hero-three-flip",
-            "name": "Hero Three Flip",
-            "thumbnail": "/images/ui/hero/hero-three-flip.png",
-            "path": "/src/ui/section/hero/hero-three-flip.tsx"
+            "slug": "hero-two-flip",
+            "id": "hero-two-flip",
+            "name": "Hero Two Flip",
+            "thumbnail": "/images/ui/hero/hero-two-flip.png",
+            "path": "/src/ui/section/hero/hero-two-flip.tsx"
           },
           {
             "slug": "hero-three",
@@ -92,11 +85,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/hero/hero-three.tsx"
           },
           {
-            "slug": "hero-four-flip",
-            "id": "hero-four-flip",
-            "name": "Hero Four Flip",
-            "thumbnail": "/images/ui/hero/hero-four-flip.png",
-            "path": "/src/ui/section/hero/hero-four-flip.tsx"
+            "slug": "hero-three-flip",
+            "id": "hero-three-flip",
+            "name": "Hero Three Flip",
+            "thumbnail": "/images/ui/hero/hero-three-flip.png",
+            "path": "/src/ui/section/hero/hero-three-flip.tsx"
           },
           {
             "slug": "hero-four",
@@ -104,6 +97,13 @@ export const data: ComponentData = [
             "name": "Hero Four",
             "thumbnail": "/images/ui/hero/hero-four.png",
             "path": "/src/ui/section/hero/hero-four.tsx"
+          },
+          {
+            "slug": "hero-four-flip",
+            "id": "hero-four-flip",
+            "name": "Hero Four Flip",
+            "thumbnail": "/images/ui/hero/hero-four-flip.png",
+            "path": "/src/ui/section/hero/hero-four-flip.tsx"
           }
         ]
       },
@@ -183,13 +183,6 @@ export const data: ComponentData = [
         "name": "Feature",
         "blocks": [
           {
-            "slug": "feature-one-flip",
-            "id": "feature-one-flip",
-            "name": "Feature One Flip",
-            "thumbnail": "/images/ui/feature/feature-one-flip.png",
-            "path": "/src/ui/section/feature/feature-one-flip.tsx"
-          },
-          {
             "slug": "feature-one",
             "id": "feature-one",
             "name": "Feature One",
@@ -197,11 +190,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/feature/feature-one.tsx"
           },
           {
-            "slug": "feature-two-flip",
-            "id": "feature-two-flip",
-            "name": "Feature Two Flip",
-            "thumbnail": "/images/ui/feature/feature-two-flip.png",
-            "path": "/src/ui/section/feature/feature-two-flip.tsx"
+            "slug": "feature-one-flip",
+            "id": "feature-one-flip",
+            "name": "Feature One Flip",
+            "thumbnail": "/images/ui/feature/feature-one-flip.png",
+            "path": "/src/ui/section/feature/feature-one-flip.tsx"
           },
           {
             "slug": "feature-two",
@@ -211,11 +204,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/feature/feature-two.tsx"
           },
           {
-            "slug": "feature-three-flip",
-            "id": "feature-three-flip",
-            "name": "Feature Three Flip",
-            "thumbnail": "/images/ui/feature/feature-three-flip.png",
-            "path": "/src/ui/section/feature/feature-three-flip.tsx"
+            "slug": "feature-two-flip",
+            "id": "feature-two-flip",
+            "name": "Feature Two Flip",
+            "thumbnail": "/images/ui/feature/feature-two-flip.png",
+            "path": "/src/ui/section/feature/feature-two-flip.tsx"
           },
           {
             "slug": "feature-three",
@@ -225,11 +218,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/feature/feature-three.tsx"
           },
           {
-            "slug": "feature-four-flip",
-            "id": "feature-four-flip",
-            "name": "Feature Four Flip",
-            "thumbnail": "/images/ui/feature/feature-four-flip.png",
-            "path": "/src/ui/section/feature/feature-four-flip.tsx"
+            "slug": "feature-three-flip",
+            "id": "feature-three-flip",
+            "name": "Feature Three Flip",
+            "thumbnail": "/images/ui/feature/feature-three-flip.png",
+            "path": "/src/ui/section/feature/feature-three-flip.tsx"
           },
           {
             "slug": "feature-four",
@@ -237,6 +230,48 @@ export const data: ComponentData = [
             "name": "Feature Four",
             "thumbnail": "/images/ui/feature/feature-four.png",
             "path": "/src/ui/section/feature/feature-four.tsx"
+          },
+          {
+            "slug": "feature-four-flip",
+            "id": "feature-four-flip",
+            "name": "Feature Four Flip",
+            "thumbnail": "/images/ui/feature/feature-four-flip.png",
+            "path": "/src/ui/section/feature/feature-four-flip.tsx"
+          }
+        ]
+      },
+      {
+        "slug": "auth",
+        "href": "auth",
+        "name": "Auth",
+        "blocks": [
+          {
+            "slug": "auth-one",
+            "id": "auth-one",
+            "name": "Auth One",
+            "thumbnail": "/images/ui/auth/auth-one.png",
+            "path": "/src/ui/section/auth/auth-one.tsx"
+          },
+          {
+            "slug": "auth-two",
+            "id": "auth-two",
+            "name": "Auth Two",
+            "thumbnail": "/images/ui/auth/auth-two.png",
+            "path": "/src/ui/section/auth/auth-two.tsx"
+          },
+          {
+            "slug": "auth-three",
+            "id": "auth-three",
+            "name": "Auth Three",
+            "thumbnail": "/images/ui/auth/auth-three.png",
+            "path": "/src/ui/section/auth/auth-three.tsx"
+          },
+          {
+            "slug": "auth-four",
+            "id": "auth-four",
+            "name": "Auth Four",
+            "thumbnail": "/images/ui/auth/auth-four.png",
+            "path": "/src/ui/section/auth/auth-four.tsx"
           }
         ]
       },
@@ -377,6 +412,27 @@ export const data: ComponentData = [
             "name": "Career Four",
             "thumbnail": "/images/ui/career/career-four.png",
             "path": "/src/ui/section/career/career-four.tsx"
+          }
+        ]
+      },
+      {
+        "slug": "comparison",
+        "href": "comparison",
+        "name": "Comparison",
+        "blocks": [
+          {
+            "slug": "comparison-one",
+            "id": "comparison-one",
+            "name": "Comparison One",
+            "thumbnail": "/images/ui/comparison/comparison-one.png",
+            "path": "/src/ui/section/comparison/comparison-one.tsx"
+          },
+          {
+            "slug": "comparison-two",
+            "id": "comparison-two",
+            "name": "Comparison Two",
+            "thumbnail": "/images/ui/comparison/comparison-two.png",
+            "path": "/src/ui/section/comparison/comparison-two.tsx"
           }
         ]
       },
@@ -626,6 +682,41 @@ export const data: ComponentData = [
         ]
       },
       {
+        "slug": "loader",
+        "href": "loader",
+        "name": "Loader",
+        "blocks": [
+          {
+            "slug": "loader-one",
+            "id": "loader-one",
+            "name": "Loader One",
+            "thumbnail": "/images/ui/loader/loader-one.png",
+            "path": "/src/ui/section/loader/loader-one.tsx"
+          },
+          {
+            "slug": "loader-two",
+            "id": "loader-two",
+            "name": "Loader Two",
+            "thumbnail": "/images/ui/loader/loader-two.png",
+            "path": "/src/ui/section/loader/loader-two.tsx"
+          },
+          {
+            "slug": "loader-three",
+            "id": "loader-three",
+            "name": "Loader Three",
+            "thumbnail": "/images/ui/loader/loader-three.png",
+            "path": "/src/ui/section/loader/loader-three.tsx"
+          },
+          {
+            "slug": "loader-four",
+            "id": "loader-four",
+            "name": "Loader Four",
+            "thumbnail": "/images/ui/loader/loader-four.png",
+            "path": "/src/ui/section/loader/loader-four.tsx"
+          }
+        ]
+      },
+      {
         "slug": "logo",
         "href": "logo",
         "name": "Logo",
@@ -762,6 +853,27 @@ export const data: ComponentData = [
             "name": "Pricing Four",
             "thumbnail": "/images/ui/pricing/pricing-four.png",
             "path": "/src/ui/section/pricing/pricing-four.tsx"
+          }
+        ]
+      },
+      {
+        "slug": "table",
+        "href": "table",
+        "name": "Table",
+        "blocks": [
+          {
+            "slug": "table-one",
+            "id": "table-one",
+            "name": "Table One",
+            "thumbnail": "/images/ui/table/table-one.png",
+            "path": "/src/ui/section/table/table-one.tsx"
+          },
+          {
+            "slug": "table-two",
+            "id": "table-two",
+            "name": "Table Two",
+            "thumbnail": "/images/ui/table/table-two.png",
+            "path": "/src/ui/section/table/table-two.tsx"
           }
         ]
       },
@@ -930,13 +1042,36 @@ export const data: ComponentData = [
         "slug": "link-page",
         "href": "link-page",
         "name": "Link Page",
-        "blocks": []
-      },
-      {
-        "slug": "loaders",
-        "href": "loaders",
-        "name": "Loaders",
-        "blocks": []
+        "blocks": [
+          {
+            "slug": "link-page-one",
+            "id": "link-page-one",
+            "name": "Link Page One",
+            "thumbnail": "/images/ui/link-page/link-page-one.png",
+            "path": "/src/ui/section/link-page/link-page-one.tsx"
+          },
+          {
+            "slug": "link-page-two",
+            "id": "link-page-two",
+            "name": "Link Page Two",
+            "thumbnail": "/images/ui/link-page/link-page-two.png",
+            "path": "/src/ui/section/link-page/link-page-two.tsx"
+          },
+          {
+            "slug": "link-page-three",
+            "id": "link-page-three",
+            "name": "Link Page Three",
+            "thumbnail": "/images/ui/link-page/link-page-three.png",
+            "path": "/src/ui/section/link-page/link-page-three.tsx"
+          },
+          {
+            "slug": "link-page-four",
+            "id": "link-page-four",
+            "name": "Link Page Four",
+            "thumbnail": "/images/ui/link-page/link-page-four.png",
+            "path": "/src/ui/section/link-page/link-page-four.tsx"
+          }
+        ]
       },
       {
         "slug": "long-form-content",
@@ -944,18 +1079,18 @@ export const data: ComponentData = [
         "name": "Long Form Content",
         "blocks": [
           {
-            "slug": "long-form-content-four",
-            "id": "long-form-content-four",
-            "name": "Long Form Content Four",
-            "thumbnail": "/images/ui/long-form-content/long-form-content-four.png",
-            "path": "/src/ui/section/long-form-content/long-form-content-four.tsx"
-          },
-          {
             "slug": "long-form-content-one",
             "id": "long-form-content-one",
             "name": "Long Form Content One",
             "thumbnail": "/images/ui/long-form-content/long-form-content-one.png",
             "path": "/src/ui/section/long-form-content/long-form-content-one.tsx"
+          },
+          {
+            "slug": "long-form-content-two",
+            "id": "long-form-content-two",
+            "name": "Long Form Content Two",
+            "thumbnail": "/images/ui/long-form-content/long-form-content-two.png",
+            "path": "/src/ui/section/long-form-content/long-form-content-two.tsx"
           },
           {
             "slug": "long-form-content-three",
@@ -965,11 +1100,11 @@ export const data: ComponentData = [
             "path": "/src/ui/section/long-form-content/long-form-content-three.tsx"
           },
           {
-            "slug": "long-form-content-two",
-            "id": "long-form-content-two",
-            "name": "Long Form Content Two",
-            "thumbnail": "/images/ui/long-form-content/long-form-content-two.png",
-            "path": "/src/ui/section/long-form-content/long-form-content-two.tsx"
+            "slug": "long-form-content-four",
+            "id": "long-form-content-four",
+            "name": "Long Form Content Four",
+            "thumbnail": "/images/ui/long-form-content/long-form-content-four.png",
+            "path": "/src/ui/section/long-form-content/long-form-content-four.tsx"
           }
         ]
       },
@@ -1163,94 +1298,186 @@ export const data: ComponentData = [
     "name": "Dashboard",
     "sections": [
       {
-        "slug": "application-shell",
-        "href": "application-shell",
-        "name": "Application Shell",
-        "blocks": []
-      },
-      {
-        "slug": "card-header",
-        "href": "card-header",
-        "name": "Card Header",
-        "blocks": []
-      },
-      {
-        "slug": "description-list",
-        "href": "description-list",
-        "name": "Description List",
-        "blocks": []
-      },
-      {
-        "slug": "form",
-        "href": "form",
-        "name": "Form",
-        "blocks": []
-      },
-      {
-        "slug": "grid-list",
-        "href": "grid-list",
-        "name": "Grid List",
-        "blocks": []
-      },
-      {
-        "slug": "onboarding-form",
-        "href": "onboarding-form",
-        "name": "Onboarding Form",
-        "blocks": []
-      },
-      {
-        "slug": "page-header",
-        "href": "page-header",
-        "name": "Page Header",
-        "blocks": []
-      },
-      {
-        "slug": "section-header",
-        "href": "section-header",
-        "name": "Section Header",
-        "blocks": []
-      },
-      {
         "slug": "sidebar",
         "href": "sidebar",
         "name": "Sidebar",
-        "blocks": []
+        "blocks": [
+          {
+            "slug": "sidebar-one",
+            "id": "sidebar-one",
+            "name": "Sidebar One",
+            "thumbnail": "/images/ui/sidebar/sidebar-one.png",
+            "path": "/src/ui/dashboard/sidebar/sidebar-one.tsx"
+          },
+          {
+            "slug": "sidebar-two",
+            "id": "sidebar-two",
+            "name": "Sidebar Two",
+            "thumbnail": "/images/ui/sidebar/sidebar-two.png",
+            "path": "/src/ui/dashboard/sidebar/sidebar-two.tsx"
+          },
+          {
+            "slug": "sidebar-three",
+            "id": "sidebar-three",
+            "name": "Sidebar Three",
+            "thumbnail": "/images/ui/sidebar/sidebar-three.png",
+            "path": "/src/ui/dashboard/sidebar/sidebar-three.tsx"
+          },
+          {
+            "slug": "sidebar-four",
+            "id": "sidebar-four",
+            "name": "Sidebar Four",
+            "thumbnail": "/images/ui/sidebar/sidebar-four.png",
+            "path": "/src/ui/dashboard/sidebar/sidebar-four.tsx"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "card",
+    "href": "card",
+    "name": "Card",
+    "sections": [
+      {
+        "slug": "blog-card",
+        "href": "blog-card",
+        "name": "Blog Card",
+        "blocks": [
+          {
+            "slug": "blog-card-one",
+            "id": "blog-card-one",
+            "name": "Blog Card One",
+            "thumbnail": "/images/ui/blog-card/blog-card-one.png",
+            "path": "/src/ui/card/blog-card/blog-card-one.tsx"
+          },
+          {
+            "slug": "blog-card-two",
+            "id": "blog-card-two",
+            "name": "Blog Card Two",
+            "thumbnail": "/images/ui/blog-card/blog-card-two.png",
+            "path": "/src/ui/card/blog-card/blog-card-two.tsx"
+          },
+          {
+            "slug": "blog-card-three",
+            "id": "blog-card-three",
+            "name": "Blog Card Three",
+            "thumbnail": "/images/ui/blog-card/blog-card-three.png",
+            "path": "/src/ui/card/blog-card/blog-card-three.tsx"
+          },
+          {
+            "slug": "blog-card-four",
+            "id": "blog-card-four",
+            "name": "Blog Card Four",
+            "thumbnail": "/images/ui/blog-card/blog-card-four.png",
+            "path": "/src/ui/card/blog-card/blog-card-four.tsx"
+          }
+        ]
       },
       {
-        "slug": "sign-up-and-log-in-modal",
-        "href": "sign-up-and-log-in-modal",
-        "name": "Sign Up And Log In Modal",
-        "blocks": []
+        "slug": "event-card",
+        "href": "event-card",
+        "name": "Event Card",
+        "blocks": [
+          {
+            "slug": "event-card-one",
+            "id": "event-card-one",
+            "name": "Event Card One",
+            "thumbnail": "/images/ui/event-card/event-card-one.png",
+            "path": "/src/ui/card/event-card/event-card-one.tsx"
+          },
+          {
+            "slug": "event-card-two",
+            "id": "event-card-two",
+            "name": "Event Card Two",
+            "thumbnail": "/images/ui/event-card/event-card-two.png",
+            "path": "/src/ui/card/event-card/event-card-two.tsx"
+          },
+          {
+            "slug": "event-card-three",
+            "id": "event-card-three",
+            "name": "Event Card Three",
+            "thumbnail": "/images/ui/event-card/event-card-three.png",
+            "path": "/src/ui/card/event-card/event-card-three.tsx"
+          },
+          {
+            "slug": "event-card-four",
+            "id": "event-card-four",
+            "name": "Event Card Four",
+            "thumbnail": "/images/ui/event-card/event-card-four.png",
+            "path": "/src/ui/card/event-card/event-card-four.tsx"
+          }
+        ]
       },
       {
-        "slug": "sign-up-and-log-in-page",
-        "href": "sign-up-and-log-in-page",
-        "name": "Sign Up And Log In Page",
-        "blocks": []
+        "slug": "product-card",
+        "href": "product-card",
+        "name": "Product Card",
+        "blocks": [
+          {
+            "slug": "product-card-one",
+            "id": "product-card-one",
+            "name": "Product Card One",
+            "thumbnail": "/images/ui/product-card/product-card-one.png",
+            "path": "/src/ui/card/product-card/product-card-one.tsx"
+          },
+          {
+            "slug": "product-card-two",
+            "id": "product-card-two",
+            "name": "Product Card Two",
+            "thumbnail": "/images/ui/product-card/product-card-two.png",
+            "path": "/src/ui/card/product-card/product-card-two.tsx"
+          },
+          {
+            "slug": "product-card-three",
+            "id": "product-card-three",
+            "name": "Product Card Three",
+            "thumbnail": "/images/ui/product-card/product-card-three.png",
+            "path": "/src/ui/card/product-card/product-card-three.tsx"
+          },
+          {
+            "slug": "product-card-four",
+            "id": "product-card-four",
+            "name": "Product Card Four",
+            "thumbnail": "/images/ui/product-card/product-card-four.png",
+            "path": "/src/ui/card/product-card/product-card-four.tsx"
+          }
+        ]
       },
       {
-        "slug": "stacked-list",
-        "href": "stacked-list",
-        "name": "Stacked List",
-        "blocks": []
-      },
-      {
-        "slug": "stat-card",
-        "href": "stat-card",
-        "name": "Stat Card",
-        "blocks": []
-      },
-      {
-        "slug": "table",
-        "href": "table",
-        "name": "Table",
-        "blocks": []
-      },
-      {
-        "slug": "topbar",
-        "href": "topbar",
-        "name": "Topbar",
-        "blocks": []
+        "slug": "testimonial-card",
+        "href": "testimonial-card",
+        "name": "Testimonial Card",
+        "blocks": [
+          {
+            "slug": "testimonial-card-one",
+            "id": "testimonial-card-one",
+            "name": "Testimonial Card One",
+            "thumbnail": "/images/ui/testimonial-card/testimonial-card-one.png",
+            "path": "/src/ui/card/testimonial-card/testimonial-card-one.tsx"
+          },
+          {
+            "slug": "testimonial-card-two",
+            "id": "testimonial-card-two",
+            "name": "Testimonial Card Two",
+            "thumbnail": "/images/ui/testimonial-card/testimonial-card-two.png",
+            "path": "/src/ui/card/testimonial-card/testimonial-card-two.tsx"
+          },
+          {
+            "slug": "testimonial-card-three",
+            "id": "testimonial-card-three",
+            "name": "Testimonial Card Three",
+            "thumbnail": "/images/ui/testimonial-card/testimonial-card-three.png",
+            "path": "/src/ui/card/testimonial-card/testimonial-card-three.tsx"
+          },
+          {
+            "slug": "testimonial-card-four",
+            "id": "testimonial-card-four",
+            "name": "Testimonial Card Four",
+            "thumbnail": "/images/ui/testimonial-card/testimonial-card-four.png",
+            "path": "/src/ui/card/testimonial-card/testimonial-card-four.tsx"
+          }
+        ]
       }
     ]
   }

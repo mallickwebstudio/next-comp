@@ -6,6 +6,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export function getAllSections() {
+  return data.flatMap(category => category.sections.flatMap(section => ({ ...section })));
+}
+
 export function getAllBlocks() {
   return data.flatMap(category => category.sections.flatMap(section =>
     section.blocks.map(block => ({ ...block }))

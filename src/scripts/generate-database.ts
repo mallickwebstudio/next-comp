@@ -19,26 +19,28 @@ const sectionLast = [
 const UI_ROOT = path.join(process.cwd(), "src", "ui");
 const OUTPUT_FILE = path.join(process.cwd(), "src", "lib", "database.ts");
 
+const map: Record<string, number> = {
+  one: 1, two: 2, three: 3, four: 4, five: 5,
+  six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15,
+  sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20,
+  thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70,
+  eighty: 80, ninety: 90, hundred: 100
+};
+
 // 📌 Helper to extract number from slug (like navbar-one → 1)
 function extractBlockOrder(slug: string): number {
   const match = slug.match(/(\d+)/);
   if (match) return parseInt(match[1]);
-  const map: Record<string, number> = {
-    one: 1,
-    two: 2,
-    three: 3,
-    four: 4,
-    five: 5,
-    six: 6,
-    seven: 7,
-    eight: 8,
-    nine: 9,
-    ten: 10,
-  };
-  const wordMatch = slug.match(
-    /(one|two|three|four|five|six|seven|eight|nine|ten)/i,
-  );
-  return wordMatch ? map[wordMatch[1].toLowerCase()] || 99 : 99;
+
+  const words = slug.split(/[-_]/); // split by dash or underscore
+  let order = 0;
+  words.forEach((word) => {
+    const val = map[word.toLowerCase()];
+    if (val) order += val;
+  });
+
+  return order || 999;
 }
 
 function getComponentData() {
@@ -76,6 +78,7 @@ function getComponentData() {
         .readdirSync(sectionPath)
         .filter((f) => f.endsWith(".tsx"));
 
+      // ✳️ Enhanced sort to handle variants like hero-one-flip
       const blocks = files
         .map((file) => {
           const blockSlug = file.replace(/\.tsx$/, "");
@@ -87,11 +90,20 @@ function getComponentData() {
             thumbnail: `/images/ui/${sectionSlug}/${blockSlug}.png`,
             path: `/src/ui/${categorySlug}/${sectionSlug}/${file}`,
             _order: extractBlockOrder(blockSlug),
+            isVariant: /-(flip|slide|alt|animated|variant|v\d+)$/i.test(blockSlug),
           };
         })
-        .sort((a, b) => a._order - b._order)
+        .sort((a, b) => {
+          // Same order → base block comes first, then variant
+          if (a._order === b._order) {
+            if (a.isVariant && !b.isVariant) return 1;
+            if (!a.isVariant && b.isVariant) return -1;
+            return a.slug.localeCompare(b.slug);
+          }
+          return a._order - b._order;
+        })
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        .map(({ _order, ...rest }) => rest);
+        .map(({ _order, isVariant, ...rest }) => rest);
 
       return {
         slug: sectionSlug,

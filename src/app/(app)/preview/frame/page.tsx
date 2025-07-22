@@ -48,7 +48,9 @@ function PreviewFrameContent() {
 
         const PreviewComponent = dynamic(componentMap[slug], {
           ssr: false,
-          loading: () => <div className="text-center p-8">Loading {block!.name}...</div>,
+          loading: () => <div className="text-center p-8">
+            Loading {block!.name}...
+          </div>,
         });
 
         return (

@@ -27,17 +27,18 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ category: string; section: string }>;
+  params: Promise<{ category: string; section: string; block: string }>;
 }) {
-  const { category, section } = await params;
+  const { category, section, block } = await params;
 
   const categoryData = data.find((c) => c.slug === category);
   const sectionData = categoryData?.sections.find((s) => s.slug === section);
-  if (!categoryData || !sectionData) return { title: "Not Found" };
+  const blockData = sectionData?.blocks.find((b) => b.slug === block);
+  if (!categoryData || !sectionData || !blockData) return { title: "Not Found" };
 
-  const title = `${sectionData.name} - ${categoryData.name} | ${siteConfig.title}`;
-  const description = `Discover ${sectionData.name} components in the ${categoryData.name} category.`;
-  const url = `${siteConfig.baseUrl}/components/${category}/${section}`;
+  const title = `${blockData.name} | ${sectionData.name} - ${categoryData.name} | ${siteConfig.title}`;
+  const description = `Preview and use the ${blockData.name} component from the ${sectionData.name} section.`;
+  const url = `${siteConfig.baseUrl}/components/${category}/${section}/${block}`;
   const ogImage = siteConfig.ogImage;
 
   return {

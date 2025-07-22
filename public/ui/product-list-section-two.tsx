@@ -92,7 +92,6 @@ export default function ProductListSectionTwo() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {productData.map((item, index) => (
             <article
-              className="max-w-sm p-2"
               key={item.name + index + "ProductListSectionTwo"}
               itemScope
               itemType="https://schema.org/Product"

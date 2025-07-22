@@ -69,14 +69,14 @@ export default function BlogSectionTwo() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {blogData.map((item, index) => (
             <article
-              className="max-w-sm p-2"
+              className="flex flex-col"
               key={item.title + index + "Card" + "BlogSectionTwo"}
               itemScope
               itemType="https://schema.org/BlogPosting"
             >
               <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
                 <Image
-                  className="w-full aspect-square object-cover"
+                  className="w-full aspect-video object-cover select-none pointer-events-none"
                   src={item.blogImageSrc}
                   width={160}
                   height={160}
@@ -85,7 +85,7 @@ export default function BlogSectionTwo() {
                 <meta itemProp="url" content={item.blogImageSrc} />
               </figure>
 
-              <header className="mt-3">
+              <header className="mt-3 flex-1">
                 <Badge itemProp="articleSection">{item.category}</Badge>
                 <h3 className="mt-2 text-lg font-semibold hover:underline line-clamp-2" itemProp="headline">
                   <Link href={item.blogHref}>{item.title}</Link>
@@ -95,7 +95,7 @@ export default function BlogSectionTwo() {
                 </p>
               </header>
 
-              <div className="mx-auto mt-3 flex gap-3 items-center" itemProp="author" itemScope itemType="https://schema.org/Person">
+              <div className="mt-3 flex gap-3 items-center" itemProp="author" itemScope itemType="https://schema.org/Person">
                 <Image
                   className="h-12 w-12 aspect-square object-cover rounded-full shrink-0"
                   src={item.authorImageSrc}

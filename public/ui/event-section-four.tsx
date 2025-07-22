@@ -73,15 +73,15 @@ export default function EventSectionFour() {
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {eventData.map((item, index) => (
             <article
-              className="grid border"
+              className="flex flex-col border"
               itemScope
               itemType="https://schema.org/Event"
-              key={item.title + index + "Card" + "EventHeaderTwo"}
+              key={item.title + index + "Card" + "EventSectionFour"}
             >
               {/* Event Image */}
-              <div className="relative w-full">
+              <div className="relative w-full aspect-video">
                 <Image
-                  className="w-full aspect-video object-cover select-none"
+                  className="size-full object-cover select-none"
                   src={item.imageSrc}
                   width={160}
                   height={160}
@@ -102,34 +102,34 @@ export default function EventSectionFour() {
               </div>
 
               {/* Event Info */}
-              <header className="p-4">
+              <header className="p-4 flex flex-col flex-1">
                 {item.soldOut && (
                   <Badge className="mb-4" itemProp="eventStatus">
                     Sold Out
                   </Badge>
                 )}
+                <div className="flex-1">
+                  <h3
+                    className="text-lg font-semibold hover:underline line-clamp-2"
+                    itemProp="name"
+                  >
+                    <Link href={item.href}>{item.title}</Link>
+                  </h3>
 
-                <h3
-                  className="text-lg font-semibold hover:underline line-clamp-2"
-                  itemProp="name"
-                >
-                  <Link href={item.href}>{item.title}</Link>
-                </h3>
+                  <div
+                    className="-mt-1 text-sm"
+                    itemProp="location"
+                    itemScope
+                    itemType="https://schema.org/Place"
+                  >
+                    <span itemProp="address">{item.location}</span>
+                  </div>
 
-                <div
-                  className="-mt-1 text-sm"
-                  itemProp="location"
-                  itemScope
-                  itemType="https://schema.org/Place"
-                >
-                  <span itemProp="address">{item.location}</span>
+                  <p className="mt-2 text-muted-foreground line-clamp-3" itemProp="description">
+                    {item.excerpt}
+                  </p>
                 </div>
-
-                <p className="mt-2 text-muted-foreground line-clamp-3" itemProp="description">
-                  {item.excerpt}
-                </p>
-
-                <Link className={cn(buttonVariants({ variant: "link" }), "mt-4 !px-0 cursor-pointer")} href={item.href}>
+                <Link className={cn(buttonVariants({ variant: "link" }), "mt-4 !px-0 cursor-pointer w-fit")} href={item.href}>
                   View More
                   <ChevronRight />
                 </Link>

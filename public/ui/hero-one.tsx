@@ -12,7 +12,7 @@ export default function HeroOne() {
                 {/* Text Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
                     <header>
-                        <h1 className="text-4xl font-extrabold tracking-tight text-balance">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-balance">
                             Medium length hero heading goes here
                         </h1>
                         <p className="mt-4 text-lg text-muted-foreground">
